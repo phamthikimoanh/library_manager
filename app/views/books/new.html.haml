@@ -1,0 +1,12 @@
+%h1 Add new Book
+= simple_form_for :book do |form|
+  %p
+    = form.label :title
+    %br/
+    = form.text_field :title
+  %p
+    = form.label :text
+    %br/
+    = form.text_area :text
+  %p
+    = form.submit "Add"
