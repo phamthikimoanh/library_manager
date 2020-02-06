@@ -4739,3 +4739,47 @@ Migrating to AddIndexToBooks (20200206041601)
   ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/bin/rake:22
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/bin/rake:22
+Migrating to AddBookToOrderItem (20200206044435)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/bin/rake:22
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "order_items" ADD "book_id" integer[0m
+  ↳ db/migrate/20200206044435_add_book_to_order_item.rb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20200206044435_add_book_to_order_item.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_order_items_on_book_id" ON "order_items" ("book_id")[0m
+  ↳ db/migrate/20200206044435_add_book_to_order_item.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200206044435"]]
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/bin/rake:22
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/bin/rake:22
+Migrating to AddBookOrderToOrderItem (20200206044529)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/bin/rake:22
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "order_items" ADD "book_order_id" integer[0m
+  ↳ db/migrate/20200206044529_add_book_order_to_order_item.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_order_items_on_book_order_id" ON "order_items" ("book_order_id")[0m
+  ↳ db/migrate/20200206044529_add_book_order_to_order_item.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200206044529"]]
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/bin/rake:22
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/bin/rake:22
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/bin/rake:22
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/bin/rake:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/bin/rake:22
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/bin/rake:22
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/bin/rake:22
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/bin/rake:22

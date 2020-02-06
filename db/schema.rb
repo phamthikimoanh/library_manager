@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_06_041601) do
+ActiveRecord::Schema.define(version: 2020_02_06_044529) do
 
   create_table "admins", force: :cascade do |t|
     t.string "name"
@@ -44,6 +44,7 @@ ActiveRecord::Schema.define(version: 2020_02_06_041601) do
     t.datetime "updated_at", null: false
     t.integer "category_id"
     t.index ["category_id"], name: "index_books_on_category_id"
+    t.index [nil], name: "index_books_on_user_id"
   end
 
   create_table "categories", force: :cascade do |t|
@@ -56,6 +57,10 @@ ActiveRecord::Schema.define(version: 2020_02_06_041601) do
     t.integer "amount"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "book_id"
+    t.integer "book_order_id"
+    t.index ["book_id"], name: "index_order_items_on_book_id"
+    t.index ["book_order_id"], name: "index_order_items_on_book_order_id"
   end
 
   create_table "users", force: :cascade do |t|
