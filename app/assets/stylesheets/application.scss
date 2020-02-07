@@ -12,6 +12,8 @@
  *
  *= require_tree .
  *= require_self
- */
+ *= require data_grid/data_grid
+ *= require data_grid/grid_calendar/calendar-blue
+*/
 @import "bootstrap-sprockets";
 @import "bootstrap";

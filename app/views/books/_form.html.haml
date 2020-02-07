@@ -1,0 +1,17 @@
+= simple_form_for @book, url: books_path do |form|
+  %p
+    = form.input :isbn
+  %p
+    = form.input :name
+  %p
+    = form.input :desc, as: :text
+  %p
+    = form.input :author
+  %p
+    = form.input :image
+  %p
+    = form.input :books_total
+  %p
+    = form.association :category
+  %p
+    = form.submit "Add"
