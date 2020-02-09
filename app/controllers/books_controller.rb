@@ -1,8 +1,12 @@
 # frozen_string_literal: true
 
 class BooksController < ApplicationController
+  # before_action :set_book, only: [:show, :edit, :update, :destroy]
+
   def index
     @books = Book.all
+    @book = Book.new
+
     # @data_grid = prepare_grid do |grid|
     #     grid.add_column :auto
     #     grid.add_column :isbn, :title => 'Code Book', :sortable => true
@@ -16,10 +20,6 @@ class BooksController < ApplicationController
     # end
   end
 
-  def new
-    @book = Book.new
-  end
-
   def show
     @book = Book.find(params[:id])
   end
@@ -28,13 +28,25 @@ class BooksController < ApplicationController
     # render plain: params[:book].inspect
     @book = Book.new(book_params)
 
-    if @book.save
-      redirect_to books_path
+    respond_to do |format|
+      if @book.save
+        format.html { redirect_to @book, notice: 'Book was successfully created.' }
+        format.js   {}
+        format.json { render :show, status: :created, location: @book }
+      else
+        format.html { render :new }
+        format.json { render json: @book.errors, status: :unprocessable_entity }
+      end
+    end
+  end
 
-    else
-
-    #   binding.pry
-      render 'new'
+  def destroy
+    @book = Book.find(params[:id]) 
+    @book.destroy
+    respond_to do |format|
+      format.html { redirect_to books_url, notice: 'Book was successfully destroyed.' }
+      format.json { head :no_content }
+      format.js   { render layout: false }
     end
   end
 

@@ -12,10 +12,7 @@
 //
 //= require rails-ujs
 //= require activestorage
-//= require turbolinks
 //= require_tree .
-//= require bootstrap-sprockets
-//= require data_grid/data_grid
-//= require data_grid/grid_calendar/calendar
-//= require data_grid/grid_calendar/calendar-setup
-//= require data_grid/grid_calendar/lang/calendar-en
+//= require jquery
+//= require jquery_ujs
+//= require bootstrap.min
