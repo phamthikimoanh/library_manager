@@ -1,0 +1,23 @@
+#wapper-content
+
+  %h1 Listing users
+
+  %table.table.table-hover
+    %thead
+      %tr
+        %th Name
+        %th Birthday
+        %th Phone
+        %th Address
+        %th Image
+        %th #
+
+    %tbody#users
+      = render @users
+
+  %br
+
+  %button.btn.btn-default{:type => "button", :onclick => "addNew()"} Add New User
+  #form-add-new
+    = render 'form'
+

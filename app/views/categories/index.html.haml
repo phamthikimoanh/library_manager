@@ -1,14 +1,12 @@
 #wapper-content
-  %h1 Listing books 
+  %h1 Category list 
   %table.table.table-hover
     %thead
       %tr
         %th Name
-        %th Description
         %th #
-    %tbody#books
-      = render @books
-  = paginate @books 
+    %tbody#categories
+      = render @categories
 
   %hr
 
