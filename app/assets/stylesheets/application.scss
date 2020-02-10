@@ -17,3 +17,100 @@
 */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+#content-main {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+#wapper-content {
+  margin: 0 40px;
+  width: 100%;
+}
+#form-add-new {
+  display: none;
+}
+#menu-top {
+  flex-direction: row;
+  display: flex;
+  align-self: center;
+  background: #001438;
+  height: 65px;
+  a.brand {
+    align-self: center;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 0 60px 0 30px;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  ul {
+    align-self: center;
+    flex-direction: row;
+    display: flex;
+    margin-bottom: 0px;
+    li {
+      padding: 10px;
+      list-style: none;
+      cursor: pointer;
+      a {
+        color: #fff;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      &.active {
+        background: darkgray;
+      }
+    }
+  }
+}
+#side_bar {
+  width: 300px;
+  background: #1b1f26;
+  height: 100%;
+  ul {
+    margin-left: 30px;
+    li {
+      list-style-type: none;
+      padding: 10px 0;
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
+.row-one {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .form-group {
+    width: 100%;
+  }
+}
+.button-add-new, .button-edit {
+  color: #fff;
+  background: darkseagreen;
+  padding: 5px 20px;
+  border-radius: 3px;
+  width: 100px;
+  text-align: center;
+  input {
+    background: #fff0;
+    border: none;
+  }
+}
+// .content-detail {
+//   margin: 0 60px 0 30px;
+// }

@@ -1,17 +1,14 @@
 = simple_form_for @book,remote: true, url: books_path do |form|
-  %p
+  .row-one
     = form.input :isbn
-  %p
     = form.input :name
-  %p
-    = form.input :desc, as: :text
-  %p
+  .row-one
     = form.input :author
-  %p
-    = form.input :image
-  %p
     = form.input :books_total
-  %p
     = form.association :category
-  %p
-    = form.submit "Add"
+  .div
+    = form.input :desc, as: :text
+  .div
+    = form.input :image
+  .button-add-new
+    = form.submit "Save"

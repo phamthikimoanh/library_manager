@@ -16,3 +16,11 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap.min
+function addNew() {
+  var x = document.getElementById("form-add-new");
+  if (x.style.display === 'block'){
+      x.style.display = "none";
+  }else{
+      x.style.display = 'block';
+  }
+}

@@ -12597,3 +12597,2177 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 206ms (Views: 174.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2020-02-10 10:20:55 +0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (7.3ms)
+Completed 500 Internal Server Error in 543ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial home/_menu_top, application/_menu_top with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder, :haml]}. Searched in:
+  * "/Users/phamthikimoanh/Documents/ruby/library_manager/app/views"
+  * "/Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/data_grid-0.0.2/app/views"
+):
+     8:     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+     9:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    10:   %body
+    11:     = render 'menu_top'
+    12:     = yield
+  
+app/views/layouts/application.html.haml:11:in `_app_views_layouts_application_html_haml___3705688901805681452_70260887726940'
+Started GET "/" for ::1 at 2020-02-10 10:21:20 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (2.0ms)
+  Rendered layouts/_menu_top.html.haml (1.1ms)
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %div and nested within it.):
+    1: #wrap
+    2: .navbar.navbar-default.navbar-fixed-top role='navigation'
+    3:     .container
+    4:     .navbar-header
+    5:         button.navbar-toggle type='button' data={toggle: 'collapse', target: '.navbar-collapse'}
+    6:         span.sr-only Toggle navigation
+  
+app/views/layouts/_menu_top.html.haml:3
+app/views/layouts/application.html.haml:11:in `_app_views_layouts_application_html_haml___3705688901805681452_70260877132880'
+Started GET "/" for ::1 at 2020-02-10 10:21:21 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.5ms)
+  Rendered layouts/_menu_top.html.haml (0.9ms)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %div and nested within it.):
+    1: #wrap
+    2: .navbar.navbar-default.navbar-fixed-top role='navigation'
+    3:     .container
+    4:     .navbar-header
+    5:         button.navbar-toggle type='button' data={toggle: 'collapse', target: '.navbar-collapse'}
+    6:         span.sr-only Toggle navigation
+  
+app/views/layouts/_menu_top.html.haml:3
+app/views/layouts/application.html.haml:11:in `_app_views_layouts_application_html_haml___3705688901805681452_70260878262780'
+Started GET "/" for ::1 at 2020-02-10 10:21:44 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.7ms)
+  Rendered layouts/_menu_top.html.haml (1.0ms)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %div and nested within it.):
+    1: #wrap
+    2: .navbar.navbar-default.navbar-fixed-top role='navigation'
+    3:     .container
+    4:         .navbar-header
+    5:             button.navbar-toggle type='button' data={toggle: 'collapse', target: '.navbar-collapse'}
+    6:             span.sr-only Toggle navigation
+  
+app/views/layouts/_menu_top.html.haml:3
+app/views/layouts/application.html.haml:11:in `_app_views_layouts_application_html_haml___3705688901805681452_70260877695500'
+Started GET "/" for ::1 at 2020-02-10 10:22:35 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.7ms)
+  Rendered layouts/_menu_top.html.haml (1.1ms)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %div and nested within it.):
+    1: #wrap
+    2: .navbar.navbar-default.navbar-fixed-top role='navigation'
+    3:     .container
+    4:         .navbar-header
+    5:             button.navbar-toggle type='button' data={toggle: 'collapse', target: '.navbar-collapse'}
+    6:                 span.sr-only Toggle navigation
+  
+app/views/layouts/_menu_top.html.haml:3
+app/views/layouts/application.html.haml:11:in `_app_views_layouts_application_html_haml___3705688901805681452_70260938628240'
+Started GET "/" for ::1 at 2020-02-10 10:23:00 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (2.0ms)
+  Rendered layouts/_menu_top.html.haml (0.9ms)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %div and nested within it.):
+    1: #wrap
+    2: .navbar.navbar-default.navbar-fixed-top role='navigation'
+    3:     .container
+    4:         .navbar-header
+    5:             button.navbar-toggle type='button' data={toggle: 'collapse', target: '.navbar-collapse'}
+    6:                 span.sr-only Toggle navigation
+  
+app/views/layouts/_menu_top.html.haml:3
+app/views/layouts/application.html.haml:11:in `_app_views_layouts_application_html_haml___3705688901805681452_70260912483960'
+Started GET "/" for ::1 at 2020-02-10 10:23:01 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.9ms)
+  Rendered layouts/_menu_top.html.haml (0.9ms)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %div and nested within it.):
+    1: #wrap
+    2: .navbar.navbar-default.navbar-fixed-top role='navigation'
+    3:     .container
+    4:         .navbar-header
+    5:             button.navbar-toggle type='button' data={toggle: 'collapse', target: '.navbar-collapse'}
+    6:                 span.sr-only Toggle navigation
+  
+app/views/layouts/_menu_top.html.haml:3
+app/views/layouts/application.html.haml:11:in `_app_views_layouts_application_html_haml___3705688901805681452_70260872917940'
+Started GET "/" for ::1 at 2020-02-10 10:23:20 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.6ms)
+  Rendered layouts/_menu_top.html.haml (1.0ms)
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %div and nested within it.):
+    1: #wrap
+    2: .navbar.navbar-default.navbar-fixed-top role='navigation'
+    3:     .container
+    4:         .navbar-header
+    5:             button.navbar-toggle type='button' data={toggle: 'collapse', target: '.navbar-collapse'}
+    6:                 span.sr-only Toggle navigation
+  
+app/views/layouts/_menu_top.html.haml:3
+app/views/layouts/application.html.haml:11:in `_app_views_layouts_application_html_haml___3705688901805681452_70260892100440'
+Started GET "/" for ::1 at 2020-02-10 10:25:33 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.8ms)
+  Rendered layouts/_menu_top.html.haml (1.1ms)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %div and nested within it.):
+    1: #wrap
+    2:     .navbar.navbar-default.navbar-fixed-top role='navigation'
+    3:         .container
+    4:             .navbar-header
+    5:                 button.navbar-toggle type='button' data={toggle: 'collapse', target: '.navbar-collapse'}
+    6:                     span.sr-only Toggle navigation
+  
+app/views/layouts/_menu_top.html.haml:3
+app/views/layouts/application.html.haml:11:in `_app_views_layouts_application_html_haml___3705688901805681452_70260939377820'
+Started GET "/" for ::1 at 2020-02-10 10:25:46 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.6ms)
+  Rendered layouts/_menu_top.html.haml (4.7ms)
+Completed 200 OK in 55ms (Views: 50.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 10:26:51 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.8ms)
+  Rendered layouts/_menu_top.html.haml (4.2ms)
+Completed 200 OK in 63ms (Views: 59.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 10:26:52 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (2.1ms)
+  Rendered layouts/_menu_top.html.haml (4.2ms)
+Completed 200 OK in 56ms (Views: 52.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 10:26:53 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.7ms)
+  Rendered layouts/_menu_top.html.haml (4.8ms)
+Completed 200 OK in 60ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 10:35:04 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (2.2ms)
+  Rendered layouts/_menu_top.html.haml (1.2ms)
+Completed 500 Internal Server Error in 87ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid tag: "%= image_url 'src'".):
+    1: %nav#menu-top
+    2:     %a(href="#")
+    3:         %= image_url 'src'
+    4: 
+    5:     %ul
+    6:         %li Home
+  
+app/views/layouts/_menu_top.html.haml:3
+app/views/layouts/application.html.haml:11:in `_app_views_layouts_application_html_haml___3705688901805681452_70260887792440'
+Started GET "/" for ::1 at 2020-02-10 10:35:40 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (2.3ms)
+  Rendered layouts/_menu_top.html.haml (1.7ms)
+Completed 200 OK in 68ms (Views: 64.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 10:36:22 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.9ms)
+  Rendered layouts/_menu_top.html.haml (1.9ms)
+Completed 200 OK in 58ms (Views: 53.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 10:39:00 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (2.1ms)
+  Rendered layouts/_menu_top.html.haml (1.5ms)
+Completed 200 OK in 1739ms (Views: 1735.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 10:39:13 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.6ms)
+  Rendered layouts/_menu_top.html.haml (2.4ms)
+Completed 200 OK in 1690ms (Views: 1685.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 10:41:44 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (2.2ms)
+  Rendered layouts/_menu_top.html.haml (2.2ms)
+Completed 200 OK in 1655ms (Views: 1651.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 10:43:12 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (2.7ms)
+  Rendered layouts/_menu_top.html.haml (1.7ms)
+Completed 200 OK in 1660ms (Views: 1654.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 10:44:21 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.7ms)
+  Rendered layouts/_menu_top.html.haml (3.9ms)
+Completed 200 OK in 1758ms (Views: 1753.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 10:44:54 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (2.7ms)
+  Rendered layouts/_menu_top.html.haml (1.9ms)
+Completed 200 OK in 1537ms (Views: 1534.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 10:47:39 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.9ms)
+  Rendered layouts/_menu_top.html.haml (2.8ms)
+Completed 200 OK in 1865ms (Views: 1860.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 10:49:05 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.8ms)
+  Rendered layouts/_menu_top.html.haml (2.4ms)
+Completed 200 OK in 1534ms (Views: 1530.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 10:49:52 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.9ms)
+  Rendered layouts/_menu_top.html.haml (1.7ms)
+Completed 200 OK in 1597ms (Views: 1592.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 10:50:28 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (2.0ms)
+  Rendered layouts/_menu_top.html.haml (2.0ms)
+Completed 200 OK in 77ms (Views: 72.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 10:51:04 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (2.1ms)
+  Rendered layouts/_menu_top.html.haml (2.2ms)
+Completed 200 OK in 1552ms (Views: 1548.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 10:51:35 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (2.0ms)
+  Rendered layouts/_menu_top.html.haml (2.4ms)
+Completed 200 OK in 1463ms (Views: 1459.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 10:52:40 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (2.0ms)
+  Rendered layouts/_menu_top.html.haml (3.4ms)
+Completed 200 OK in 1595ms (Views: 1590.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 10:52:56 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.9ms)
+  Rendered layouts/_menu_top.html.haml (2.0ms)
+Completed 200 OK in 1632ms (Views: 1627.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 10:53:37 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (2.0ms)
+  Rendered layouts/_menu_top.html.haml (2.7ms)
+Completed 200 OK in 1548ms (Views: 1543.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 10:53:56 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (2.7ms)
+  Rendered layouts/_menu_top.html.haml (2.3ms)
+Completed 200 OK in 60ms (Views: 56.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 10:54:01 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.8ms)
+  Rendered layouts/_menu_top.html.haml (3.3ms)
+Completed 200 OK in 57ms (Views: 53.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 10:54:58 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (2.4ms)
+  Rendered layouts/_menu_top.html.haml (2.2ms)
+Completed 200 OK in 53ms (Views: 49.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 10:55:54 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (2.0ms)
+  Rendered layouts/_menu_top.html.haml (2.4ms)
+Completed 200 OK in 52ms (Views: 48.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 10:56:13 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.6ms)
+  Rendered layouts/_menu_top.html.haml (1.9ms)
+Completed 200 OK in 61ms (Views: 56.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 10:57:21 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.8ms)
+  Rendered layouts/_menu_top.html.haml (3.6ms)
+Completed 200 OK in 80ms (Views: 75.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 10:57:42 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (2.3ms)
+  Rendered layouts/_menu_top.html.haml (2.3ms)
+Completed 200 OK in 67ms (Views: 64.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 10:58:17 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (2.8ms)
+  Rendered layouts/_menu_top.html.haml (4.6ms)
+Completed 200 OK in 76ms (Views: 72.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 10:58:18 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (2.8ms)
+  Rendered layouts/_menu_top.html.haml (3.4ms)
+Completed 200 OK in 69ms (Views: 65.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 11:03:26 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (2.0ms)
+  Rendered layouts/_menu_top.html.haml (2.8ms)
+  Rendered layouts/_side_bar.html.haml (2.3ms)
+Completed 200 OK in 73ms (Views: 69.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 11:04:50 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.3ms)
+  Rendered layouts/_menu_top.html.haml (2.1ms)
+  Rendered layouts/_side_bar.html.haml (2.7ms)
+Completed 200 OK in 60ms (Views: 55.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 11:04:55 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.6ms)
+  Rendered layouts/_menu_top.html.haml (2.4ms)
+  Rendered layouts/_side_bar.html.haml (2.2ms)
+Completed 200 OK in 59ms (Views: 55.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 11:05:41 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.7ms)
+  Rendered layouts/_menu_top.html.haml (2.3ms)
+  Rendered layouts/_side_bar.html.haml (2.0ms)
+Completed 200 OK in 57ms (Views: 53.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 11:11:50 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (2.3ms)
+  Rendered layouts/_menu_top.html.haml (2.1ms)
+  Rendered layouts/_side_bar.html.haml (1.6ms)
+Completed 200 OK in 1771ms (Views: 1767.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 11:16:21 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (29.4ms)
+  Rendered layouts/_menu_top.html.haml (2.8ms)
+  Rendered layouts/_side_bar.html.haml (1.9ms)
+Completed 200 OK in 2099ms (Views: 2088.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 11:18:45 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.6ms)
+  Rendered layouts/_menu_top.html.haml (2.2ms)
+  Rendered layouts/_side_bar.html.haml (2.2ms)
+Completed 200 OK in 1648ms (Views: 1643.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 11:19:49 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.4ms)
+  Rendered layouts/_menu_top.html.haml (2.2ms)
+  Rendered layouts/_side_bar.html.haml (2.8ms)
+Completed 200 OK in 1605ms (Views: 1601.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 11:21:46 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.8ms)
+  Rendered layouts/_menu_top.html.haml (2.5ms)
+  Rendered layouts/_side_bar.html.haml (1.8ms)
+Completed 200 OK in 1843ms (Views: 1839.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 11:22:55 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.7ms)
+  Rendered layouts/_menu_top.html.haml (3.1ms)
+  Rendered layouts/_side_bar.html.haml (1.8ms)
+Completed 200 OK in 1599ms (Views: 1595.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 11:23:16 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.4ms)
+  Rendered layouts/_menu_top.html.haml (2.5ms)
+  Rendered layouts/_side_bar.html.haml (1.6ms)
+Completed 200 OK in 1702ms (Views: 1698.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 11:23:43 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.2ms)
+  Rendered layouts/_menu_top.html.haml (2.2ms)
+  Rendered layouts/_side_bar.html.haml (2.6ms)
+Completed 200 OK in 1767ms (Views: 1762.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 11:25:34 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (2.4ms)
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:15
+  Rendered books/_form.html.haml (77.3ms)
+  Rendered books/index.html.haml within layouts/application (90.9ms)
+  Rendered layouts/_menu_top.html.haml (2.1ms)
+  Rendered layouts/_side_bar.html.haml (1.6ms)
+Completed 200 OK in 1842ms (Views: 1817.3ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 11:25:47 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (1.9ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:15
+  Rendered books/_form.html.haml (10.8ms)
+  Rendered books/index.html.haml within layouts/application (19.1ms)
+  Rendered layouts/_menu_top.html.haml (1.8ms)
+  Rendered layouts/_side_bar.html.haml (1.4ms)
+Completed 200 OK in 68ms (Views: 64.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 11:25:48 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (2.4ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:15
+  Rendered books/_form.html.haml (9.0ms)
+  Rendered books/index.html.haml within layouts/application (18.4ms)
+  Rendered layouts/_menu_top.html.haml (1.7ms)
+  Rendered layouts/_side_bar.html.haml (2.1ms)
+Completed 200 OK in 69ms (Views: 64.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 11:25:52 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.1ms)
+  Rendered layouts/_menu_top.html.haml (1.8ms)
+  Rendered layouts/_side_bar.html.haml (1.5ms)
+Completed 200 OK in 50ms (Views: 46.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 11:25:54 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.1ms)
+  Rendered layouts/_menu_top.html.haml (2.3ms)
+  Rendered layouts/_side_bar.html.haml (1.5ms)
+Completed 200 OK in 69ms (Views: 66.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 11:25:54 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.1ms)
+  Rendered layouts/_menu_top.html.haml (2.0ms)
+  Rendered layouts/_side_bar.html.haml (2.0ms)
+Completed 200 OK in 55ms (Views: 51.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 11:25:56 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (2.7ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:15
+  Rendered books/_form.html.haml (10.8ms)
+  Rendered books/index.html.haml within layouts/application (20.5ms)
+  Rendered layouts/_menu_top.html.haml (2.0ms)
+  Rendered layouts/_side_bar.html.haml (1.4ms)
+Completed 200 OK in 73ms (Views: 68.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 11:26:50 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (2.6ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:15
+  Rendered books/_form.html.haml (10.5ms)
+  Rendered books/index.html.haml within layouts/application (19.8ms)
+  Rendered layouts/_menu_top.html.haml (2.0ms)
+  Rendered layouts/_side_bar.html.haml (1.4ms)
+Completed 500 Internal Server Error in 81ms (ActiveRecord: 0.4ms)
+
+
+  
+SyntaxError (/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/layouts/_side_bar.html.haml:4: unknown type of %string
+/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/layouts/_side_bar.html.haml:4: syntax error, unexpected end-of-input):
+  
+app/views/layouts/_side_bar.html.haml:4: unknown type of %string
+app/views/layouts/_side_bar.html.haml:4: syntax error, unexpected end-of-input
+app/views/layouts/application.html.haml:12:in `_app_views_layouts_application_html_haml___3705688901805681452_70260968266620'
+Started GET "/books" for ::1 at 2020-02-10 11:27:37 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (2.9ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:15
+  Rendered books/_form.html.haml (10.8ms)
+  Rendered books/index.html.haml within layouts/application (20.9ms)
+  Rendered layouts/_menu_top.html.haml (1.9ms)
+  Rendered layouts/_side_bar.html.haml (1.9ms)
+Completed 200 OK in 84ms (Views: 81.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 11:27:38 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (2.5ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:15
+  Rendered books/_form.html.haml (9.9ms)
+  Rendered books/index.html.haml within layouts/application (19.4ms)
+  Rendered layouts/_menu_top.html.haml (2.7ms)
+  Rendered layouts/_side_bar.html.haml (1.8ms)
+Completed 200 OK in 69ms (Views: 65.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 11:31:44 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (2.4ms)
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:15
+  Rendered books/_form.html.haml (12.6ms)
+  Rendered books/index.html.haml within layouts/application (26.3ms)
+  Rendered layouts/_menu_top.html.haml (2.6ms)
+  Rendered layouts/_side_bar.html.haml (2.1ms)
+Completed 200 OK in 1596ms (Views: 1592.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 11:31:56 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal element: classes and ids must have values.):
+    1: # %h1 Home#index
+    2: -# .btn-group.float_btn
+    3: -#   = link_to "All Books", books_path, class: "btn btn-xl btn-success", style: "color: #fff"
+  
+app/views/home/index.html.haml:1
+Started GET "/books" for ::1 at 2020-02-10 11:33:21 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (2.6ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:15
+  Rendered books/_form.html.haml (12.0ms)
+  Rendered books/index.html.haml within layouts/application (23.1ms)
+  Rendered layouts/_menu_top.html.haml (2.0ms)
+  Rendered layouts/_side_bar.html.haml (2.0ms)
+Completed 200 OK in 1665ms (Views: 1660.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 11:33:24 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (2.2ms)
+  Rendered layouts/_menu_top.html.haml (2.0ms)
+  Rendered layouts/_side_bar.html.haml (1.8ms)
+Completed 200 OK in 63ms (Views: 59.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 11:33:27 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (2.2ms)
+  Rendered layouts/_menu_top.html.haml (2.1ms)
+  Rendered layouts/_side_bar.html.haml (1.8ms)
+Completed 200 OK in 57ms (Views: 53.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 11:33:28 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (2.4ms)
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:15
+  Rendered books/_form.html.haml (14.1ms)
+  Rendered books/index.html.haml within layouts/application (23.8ms)
+  Rendered layouts/_menu_top.html.haml (3.7ms)
+  Rendered layouts/_side_bar.html.haml (2.5ms)
+Completed 200 OK in 88ms (Views: 83.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 11:35:31 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (2.5ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:15
+  Rendered books/_form.html.haml (12.4ms)
+  Rendered books/index.html.haml within layouts/application (24.4ms)
+  Rendered layouts/_menu_top.html.haml (2.4ms)
+  Rendered layouts/_side_bar.html.haml (1.5ms)
+Completed 200 OK in 1763ms (Views: 1758.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 11:36:27 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (2.5ms)
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:15
+  Rendered books/_form.html.haml (14.4ms)
+  Rendered books/index.html.haml within layouts/application (26.8ms)
+  Rendered layouts/_menu_top.html.haml (2.4ms)
+  Rendered layouts/_side_bar.html.haml (2.0ms)
+Completed 200 OK in 1699ms (Views: 1693.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 11:37:23 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (3.8ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:15
+  Rendered books/_form.html.haml (12.9ms)
+  Rendered books/index.html.haml within layouts/application (25.9ms)
+  Rendered layouts/_menu_top.html.haml (2.6ms)
+  Rendered layouts/_side_bar.html.haml (2.2ms)
+Completed 200 OK in 1658ms (Views: 1654.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 11:37:48 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.5ms)
+  Rendered layouts/_menu_top.html.haml (2.2ms)
+  Rendered layouts/_side_bar.html.haml (1.9ms)
+Completed 200 OK in 54ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 11:37:51 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.5ms)
+  Rendered layouts/_menu_top.html.haml (2.3ms)
+  Rendered layouts/_side_bar.html.haml (1.7ms)
+Completed 200 OK in 56ms (Views: 52.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 11:37:53 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.7ms)
+  Rendered layouts/_menu_top.html.haml (2.0ms)
+  Rendered layouts/_side_bar.html.haml (2.4ms)
+Completed 200 OK in 56ms (Views: 52.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 11:37:53 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.6ms)
+  Rendered layouts/_menu_top.html.haml (2.7ms)
+  Rendered layouts/_side_bar.html.haml (1.8ms)
+Completed 200 OK in 58ms (Views: 54.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 11:38:08 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (1.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (2.4ms)
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:15
+  Rendered books/_form.html.haml (12.1ms)
+  Rendered books/index.html.haml within layouts/application (22.6ms)
+  Rendered layouts/_menu_top.html.haml (2.2ms)
+  Rendered layouts/_side_bar.html.haml (1.7ms)
+Completed 200 OK in 74ms (Views: 68.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 11:44:58 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (2.5ms)
+  [1m[36mCategory Load (1.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:15
+  Rendered books/_form.html.haml (25.5ms)
+  Rendered books/index.html.haml within layouts/application (40.0ms)
+  Rendered layouts/_menu_top.html.haml (3.0ms)
+  Rendered layouts/_side_bar.html.haml (2.3ms)
+Completed 200 OK in 125ms (Views: 119.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 11:46:21 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (2.7ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:15
+  Rendered books/_form.html.haml (11.1ms)
+  Rendered books/index.html.haml within layouts/application (22.8ms)
+  Rendered layouts/_menu_top.html.haml (3.0ms)
+  Rendered layouts/_side_bar.html.haml (1.6ms)
+Completed 200 OK in 86ms (Views: 81.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 11:57:02 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (1.0ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (8.9ms)
+  [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:15
+  Rendered books/_form.html.haml (25.7ms)
+  Rendered books/index.html.haml within layouts/application (57.0ms)
+  Rendered layouts/_menu_top.html.haml (3.3ms)
+  Rendered layouts/_side_bar.html.haml (2.4ms)
+Completed 200 OK in 238ms (Views: 228.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 11:57:40 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (2.7ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:15
+  Rendered books/_form.html.haml (11.5ms)
+  Rendered books/index.html.haml within layouts/application (23.2ms)
+  Rendered layouts/_menu_top.html.haml (2.7ms)
+  Rendered layouts/_side_bar.html.haml (2.0ms)
+Completed 200 OK in 79ms (Views: 75.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 11:58:03 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (3.5ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:15
+  Rendered books/_form.html.haml (13.3ms)
+  Rendered books/index.html.haml within layouts/application (24.6ms)
+  Rendered layouts/_menu_top.html.haml (4.2ms)
+  Rendered layouts/_side_bar.html.haml (2.2ms)
+Completed 200 OK in 144ms (Views: 140.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 11:58:06 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (3.2ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:15
+  Rendered books/_form.html.haml (11.7ms)
+  Rendered books/index.html.haml within layouts/application (22.7ms)
+  Rendered layouts/_menu_top.html.haml (2.5ms)
+  Rendered layouts/_side_bar.html.haml (2.0ms)
+Completed 200 OK in 81ms (Views: 76.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 11:58:07 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (2.7ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:15
+  Rendered books/_form.html.haml (11.6ms)
+  Rendered books/index.html.haml within layouts/application (24.2ms)
+  Rendered layouts/_menu_top.html.haml (3.4ms)
+  Rendered layouts/_side_bar.html.haml (1.9ms)
+Completed 200 OK in 83ms (Views: 79.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 11:58:39 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (2.7ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:15
+  Rendered books/_form.html.haml (11.3ms)
+  Rendered books/index.html.haml within layouts/application (22.9ms)
+  Rendered layouts/_menu_top.html.haml (3.0ms)
+  Rendered layouts/_side_bar.html.haml (2.1ms)
+Completed 200 OK in 133ms (Views: 128.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 11:58:41 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (2.7ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:15
+  Rendered books/_form.html.haml (11.4ms)
+  Rendered books/index.html.haml within layouts/application (22.8ms)
+  Rendered layouts/_menu_top.html.haml (2.4ms)
+  Rendered layouts/_side_bar.html.haml (2.2ms)
+Completed 200 OK in 78ms (Views: 74.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 11:58:42 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (2.6ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:15
+  Rendered books/_form.html.haml (11.4ms)
+  Rendered books/index.html.haml within layouts/application (22.4ms)
+  Rendered layouts/_menu_top.html.haml (3.1ms)
+  Rendered layouts/_side_bar.html.haml (2.0ms)
+Completed 200 OK in 76ms (Views: 73.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 11:58:42 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (2.5ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:15
+  Rendered books/_form.html.haml (10.9ms)
+  Rendered books/index.html.haml within layouts/application (21.8ms)
+  Rendered layouts/_menu_top.html.haml (2.7ms)
+  Rendered layouts/_side_bar.html.haml (1.8ms)
+Completed 200 OK in 77ms (Views: 73.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 11:59:51 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (3.4ms)
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:15
+  Rendered books/_form.html.haml (16.6ms)
+  Rendered books/index.html.haml within layouts/application (29.7ms)
+  Rendered layouts/_menu_top.html.haml (2.6ms)
+  Rendered layouts/_side_bar.html.haml (1.7ms)
+Completed 200 OK in 1777ms (Views: 1773.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 11:59:57 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (3.1ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:15
+  Rendered books/_form.html.haml (12.9ms)
+  Rendered books/index.html.haml within layouts/application (24.2ms)
+  Rendered layouts/_menu_top.html.haml (2.1ms)
+  Rendered layouts/_side_bar.html.haml (2.3ms)
+Completed 200 OK in 80ms (Views: 75.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 12:00:03 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (2.3ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:15
+  Rendered books/_form.html.haml (11.0ms)
+  Rendered books/index.html.haml within layouts/application (21.4ms)
+  Rendered layouts/_menu_top.html.haml (2.1ms)
+  Rendered layouts/_side_bar.html.haml (1.5ms)
+Completed 200 OK in 69ms (Views: 66.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 12:00:09 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (2.3ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:15
+  Rendered books/_form.html.haml (9.9ms)
+  Rendered books/index.html.haml within layouts/application (20.0ms)
+  Rendered layouts/_menu_top.html.haml (2.2ms)
+  Rendered layouts/_side_bar.html.haml (1.8ms)
+Completed 200 OK in 69ms (Views: 65.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 12:02:22 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (7.3ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:15
+  Rendered books/_form.html.haml (25.6ms)
+  Rendered books/index.html.haml within layouts/application (56.9ms)
+  Rendered layouts/_menu_top.html.haml (3.3ms)
+  Rendered layouts/_side_bar.html.haml (2.5ms)
+Completed 200 OK in 160ms (Views: 151.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 12:03:18 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (2.6ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:15
+  Rendered books/_form.html.haml (15.4ms)
+  Rendered books/index.html.haml within layouts/application (28.5ms)
+  Rendered layouts/_menu_top.html.haml (2.0ms)
+  Rendered layouts/_side_bar.html.haml (1.6ms)
+Completed 200 OK in 1794ms (Views: 1789.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 12:06:12 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (2.1ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:17
+  Rendered books/_form.html.haml (12.2ms)
+  Rendered books/index.html.haml within layouts/application (21.9ms)
+  Rendered layouts/_menu_top.html.haml (2.4ms)
+  Rendered layouts/_side_bar.html.haml (1.8ms)
+Completed 200 OK in 73ms (Views: 69.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 12:08:11 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (2.7ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:17
+  Rendered books/_form.html.haml (15.9ms)
+  Rendered books/index.html.haml within layouts/application (28.9ms)
+  Rendered layouts/_menu_top.html.haml (2.5ms)
+  Rendered layouts/_side_bar.html.haml (1.9ms)
+Completed 200 OK in 103ms (Views: 98.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 12:09:01 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (2.9ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:17
+  Rendered books/_form.html.haml (19.1ms)
+  Rendered books/index.html.haml within layouts/application (32.7ms)
+  Rendered layouts/_menu_top.html.haml (2.5ms)
+  Rendered layouts/_side_bar.html.haml (2.1ms)
+Completed 200 OK in 105ms (Views: 100.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 12:10:34 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (3.3ms)
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:17
+  Rendered books/_form.html.haml (25.5ms)
+  Rendered books/index.html.haml within layouts/application (40.6ms)
+  Rendered layouts/_menu_top.html.haml (2.1ms)
+  Rendered layouts/_side_bar.html.haml (1.5ms)
+Completed 200 OK in 1772ms (Views: 1767.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 12:11:02 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (3.5ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:17
+  Rendered books/_form.html.haml (14.2ms)
+  Rendered books/index.html.haml within layouts/application (26.5ms)
+  Rendered layouts/_menu_top.html.haml (4.4ms)
+  Rendered layouts/_side_bar.html.haml (1.8ms)
+Completed 200 OK in 84ms (Views: 80.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 12:12:24 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (2.4ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:14
+  Rendered books/_form.html.haml (16.7ms)
+  Rendered books/index.html.haml within layouts/application (27.4ms)
+  Rendered layouts/_menu_top.html.haml (3.8ms)
+  Rendered layouts/_side_bar.html.haml (1.7ms)
+Completed 200 OK in 83ms (Views: 80.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 12:13:31 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (1.9ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:13
+  Rendered books/_form.html.haml (25.7ms)
+  Rendered books/index.html.haml within layouts/application (34.8ms)
+  Rendered layouts/_menu_top.html.haml (3.0ms)
+  Rendered layouts/_side_bar.html.haml (3.8ms)
+Completed 200 OK in 111ms (Views: 108.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 13:11:20 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (1.0ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (19.2ms)
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:13
+  Rendered books/_form.html.haml (54.7ms)
+  Rendered books/index.html.haml within layouts/application (116.5ms)
+  Rendered layouts/_menu_top.html.haml (5.2ms)
+  Rendered layouts/_side_bar.html.haml (4.1ms)
+Completed 200 OK in 266ms (Views: 246.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 13:12:07 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (2.9ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:8
+  Rendered books/_form.html.haml (20.7ms)
+  Rendered books/index.html.haml within layouts/application (34.4ms)
+  Rendered layouts/_menu_top.html.haml (7.5ms)
+  Rendered layouts/_side_bar.html.haml (2.9ms)
+Completed 200 OK in 132ms (Views: 127.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 13:13:06 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (4.9ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:8
+  Rendered books/_form.html.haml (20.7ms)
+  Rendered books/index.html.haml within layouts/application (37.6ms)
+  Rendered layouts/_menu_top.html.haml (4.6ms)
+  Rendered layouts/_side_bar.html.haml (2.8ms)
+Completed 200 OK in 130ms (Views: 124.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 13:21:44 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (4.4ms)
+  [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:8
+  Rendered books/_form.html.haml (19.3ms)
+  Rendered books/index.html.haml within layouts/application (37.6ms)
+  Rendered layouts/_menu_top.html.haml (2.4ms)
+  Rendered layouts/_side_bar.html.haml (1.6ms)
+Completed 200 OK in 1887ms (Views: 1880.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 13:23:38 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (3.2ms)
+  Rendered books/_form.html.haml (2.3ms)
+  Rendered books/index.html.haml within layouts/application (14.1ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/books/_form.html.haml:3: syntax error, unexpected '\n', expecting &. or :: or '[' or '.'
+/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/books/_form.html.haml:4: syntax error, unexpected '\n', expecting &. or :: or '[' or '.'
+/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/books/_form.html.haml:15: syntax error, unexpected keyword_end, expecting ')'
+... << ("\n</div>\n".freeze);; end;; _hamlout.buffer << ((::Ham...
+...                               ^
+/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/books/_form.html.haml:15: syntax error, unexpected keyword_ensure, expecting ')'
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/books/_form.html.haml:15: syntax error, unexpected keyword_end, expecting ')'
+...uffer.upper if @haml_buffer;end;
+...                               ^
+/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/books/_form.html.haml:18: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/books/_form.html.haml:3: syntax error, unexpected '\n', expecting &. or :: or '[' or '.'
+app/views/books/_form.html.haml:4: syntax error, unexpected '\n', expecting &. or :: or '[' or '.'
+app/views/books/_form.html.haml:15: syntax error, unexpected keyword_end, expecting ')'
+app/views/books/_form.html.haml:15: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/books/_form.html.haml:15: syntax error, unexpected keyword_end, expecting ')'
+app/views/books/_form.html.haml:18: syntax error, unexpected keyword_end, expecting ')'
+app/views/books/index.html.haml:20:in `_app_views_books_index_html_haml__1009359022652027087_70260949554000'
+Started GET "/books" for ::1 at 2020-02-10 13:24:23 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (2.5ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:8
+  Rendered books/_form.html.haml (19.5ms)
+  Rendered books/index.html.haml within layouts/application (31.6ms)
+  Rendered layouts/_menu_top.html.haml (2.1ms)
+  Rendered layouts/_side_bar.html.haml (1.6ms)
+Completed 200 OK in 1779ms (Views: 1775.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 13:25:26 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (2.4ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:8
+  Rendered books/_form.html.haml (12.4ms)
+  Rendered books/index.html.haml within layouts/application (25.0ms)
+  Rendered layouts/_menu_top.html.haml (4.2ms)
+  Rendered layouts/_side_bar.html.haml (2.2ms)
+Completed 200 OK in 1617ms (Views: 1612.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 13:28:25 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (2.8ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:8
+  Rendered books/_form.html.haml (16.6ms)
+  Rendered books/index.html.haml within layouts/application (29.6ms)
+  Rendered layouts/_menu_top.html.haml (2.2ms)
+  Rendered layouts/_side_bar.html.haml (1.8ms)
+Completed 200 OK in 106ms (Views: 101.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 13:39:05 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (1.0ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:16
+  Rendered collection of books/_book.html.haml [1 times] (9.0ms)
+  [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:8
+  Rendered books/_form.html.haml (38.4ms)
+  Rendered books/index.html.haml within layouts/application (72.4ms)
+  Rendered layouts/_menu_top.html.haml (2.4ms)
+  Rendered layouts/_side_bar.html.haml (1.9ms)
+Completed 200 OK in 1995ms (Views: 1982.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 13:39:45 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:4
+  Rendered collection of books/_book.html.haml [1 times] (2.6ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:8
+  Rendered books/_form.html.haml (11.8ms)
+  Rendered books/index.html.haml within layouts/application (23.6ms)
+  Rendered layouts/_menu_top.html.haml (1.9ms)
+  Rendered layouts/_side_bar.html.haml (1.7ms)
+Completed 200 OK in 80ms (Views: 76.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 13:40:40 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:4
+  Rendered collection of books/_book.html.haml [1 times] (2.9ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:8
+  Rendered books/_form.html.haml (10.0ms)
+  Rendered books/index.html.haml within layouts/application (22.6ms)
+  Rendered layouts/_menu_top.html.haml (2.8ms)
+  Rendered layouts/_side_bar.html.haml (2.1ms)
+Completed 200 OK in 93ms (Views: 88.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/books" for ::1 at 2020-02-10 13:44:36 +0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by BooksController#create as JS
+  Parameters: {"utf8"=>"✓", "book"=>{"isbn"=>"1234564241", "name"=>"Harry Poster", "author"=>"Harry", "books_total"=>"100", "category_id"=>"1", "desc"=>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.", "image"=>"dsakfdnaskl"}, "commit"=>"Add"}
+Unpermitted parameters: :books_total, :image
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:32
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:32
+  [1m[36mBook Create (2.3ms)[0m  [1m[32mINSERT INTO "books" ("isbn", "name", "desc", "author", "created_at", "updated_at", "category_id") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["isbn", "1234564241"], ["name", "Harry Poster"], ["desc", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."], ["author", "Harry"], ["created_at", "2020-02-10 06:44:36.679109"], ["updated_at", "2020-02-10 06:44:36.679109"], ["category_id", 1]]
+  ↳ app/controllers/books_controller.rb:32
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/books_controller.rb:32
+  Rendering books/create.js.erb
+  Rendered books/_book.html.haml (4.3ms)
+  Rendered books/create.js.erb (8.7ms)
+Completed 200 OK in 98ms (Views: 28.0ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 13:47:35 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:4
+  Rendered collection of books/_book.html.haml [2 times] (4.4ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:8
+  Rendered books/_form.html.haml (81.6ms)
+  Rendered books/index.html.haml within layouts/application (96.2ms)
+  Rendered layouts/_menu_top.html.haml (2.8ms)
+  Rendered layouts/_side_bar.html.haml (2.1ms)
+Completed 200 OK in 553ms (Views: 547.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 13:49:27 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:4
+  Rendered collection of books/_book.html.haml [2 times] (2.9ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:8
+  Rendered books/_form.html.haml (12.5ms)
+  Rendered books/index.html.haml within layouts/application (24.9ms)
+  Rendered layouts/_menu_top.html.haml (2.9ms)
+  Rendered layouts/_side_bar.html.haml (2.0ms)
+Completed 200 OK in 87ms (Views: 82.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 13:51:52 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:10
+  Rendered collection of books/_book.html.haml [2 times] (3.7ms)
+  Rendered books/index.html.haml within layouts/application (9.8ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (Indenting at the beginning of the document is illegal.):
+    1: 
+    2:     -# - @books.each do |book|
+    3:     %tr
+    4:       %td= book.name
+    5:       %td= book.desc
+  
+app/views/books/_book.html.haml:2
+app/views/books/index.html.haml:10:in `_app_views_books_index_html_haml__649147075724322311_70133540670620'
+Started GET "/books" for ::1 at 2020-02-10 13:52:11 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:10
+  Rendered collection of books/_book.html.haml [2 times] (1.1ms)
+  Rendered books/index.html.haml within layouts/application (6.8ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (Indenting at the beginning of the document is illegal.):
+    1:     %tr
+    2:       %td= book.name
+    3:       %td= book.desc
+    4:       %td= link_to 'Show', book_path(book), class: "btn btn-xl btn-primary", style: "color: #fff"
+  
+app/views/books/_book.html.haml:1
+app/views/books/index.html.haml:10:in `_app_views_books_index_html_haml__649147075724322311_70133488141980'
+Started GET "/books" for ::1 at 2020-02-10 13:52:26 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:10
+  Rendered collection of books/_book.html.haml [2 times] (2.6ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:8
+  Rendered books/_form.html.haml (18.4ms)
+  Rendered books/index.html.haml within layouts/application (29.2ms)
+  Rendered layouts/_menu_top.html.haml (1.9ms)
+  Rendered layouts/_side_bar.html.haml (1.4ms)
+Completed 200 OK in 81ms (Views: 77.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/13" for ::1 at 2020-02-10 13:52:52 +0700
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:24
+  Rendering books/show.html.haml within layouts/application
+  Rendered books/show.html.haml within layouts/application (1.4ms)
+  Rendered layouts/_menu_top.html.haml (2.0ms)
+  Rendered layouts/_side_bar.html.haml (2.1ms)
+Completed 200 OK in 55ms (Views: 49.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/13/edit" for ::1 at 2020-02-10 13:53:03 +0700
+  
+AbstractController::ActionNotFound (The action 'edit' could not be found for BooksController):
+  
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/tempfile_reaper.rb:17:in `call'
+rack (2.1.2) lib/rack/etag.rb:27:in `call'
+rack (2.1.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.1.2) lib/rack/head.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.1.2) lib/rack/session/abstract/id.rb:269:in `context'
+rack (2.1.2) lib/rack/session/abstract/id.rb:263:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started DELETE "/books/13" for ::1 at 2020-02-10 13:53:10 +0700
+Processing by BooksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gW7CjEwqsTyRAtsUe/CNudmBXjWGGLboiWvVFbZSJTpY0TiLMTlGFSU7XqVIni+ISCNJuET1+RiTo1qIBsMTTw==", "id"=>"13"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:45
+  [1m[36mBook Destroy (0.4ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = ?[0m  [["id", 13]]
+  ↳ app/controllers/books_controller.rb:45
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/books_controller.rb:45
+Redirected to http://localhost:3000/books
+Completed 302 Found in 5ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 13:53:10 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:10
+  Rendered collection of books/_book.html.haml [1 times] (2.0ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:8
+  Rendered books/_form.html.haml (9.7ms)
+  Rendered books/index.html.haml within layouts/application (19.6ms)
+  Rendered layouts/_menu_top.html.haml (2.2ms)
+  Rendered layouts/_side_bar.html.haml (1.7ms)
+Completed 200 OK in 75ms (Views: 71.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/14" for ::1 at 2020-02-10 13:54:05 +0700
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:24
+  Rendering books/show.html.haml within layouts/application
+  Rendered books/show.html.haml within layouts/application (2.0ms)
+  Rendered layouts/_menu_top.html.haml (2.5ms)
+  Rendered layouts/_side_bar.html.haml (1.8ms)
+Completed 200 OK in 57ms (Views: 52.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/14" for ::1 at 2020-02-10 13:55:14 +0700
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:24
+  Rendering books/show.html.haml within layouts/application
+  Rendered books/show.html.haml within layouts/application (2.0ms)
+  Rendered layouts/_menu_top.html.haml (1.9ms)
+  Rendered layouts/_side_bar.html.haml (1.6ms)
+Completed 200 OK in 1653ms (Views: 1646.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/14" for ::1 at 2020-02-10 13:55:51 +0700
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:24
+  Rendering books/show.html.haml within layouts/application
+  Rendered books/show.html.haml within layouts/application (2.4ms)
+  Rendered layouts/_menu_top.html.haml (2.3ms)
+  Rendered layouts/_side_bar.html.haml (1.7ms)
+Completed 200 OK in 60ms (Views: 55.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/14" for ::1 at 2020-02-10 13:56:09 +0700
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:24
+  Rendering books/show.html.haml within layouts/application
+  Rendered books/show.html.haml within layouts/application (1.9ms)
+  Rendered layouts/_menu_top.html.haml (2.1ms)
+  Rendered layouts/_side_bar.html.haml (1.7ms)
+Completed 200 OK in 1696ms (Views: 1691.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 13:56:16 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:10
+  Rendered collection of books/_book.html.haml [1 times] (2.3ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:8
+  Rendered books/_form.html.haml (12.4ms)
+  Rendered books/index.html.haml within layouts/application (22.5ms)
+  Rendered layouts/_menu_top.html.haml (1.8ms)
+  Rendered layouts/_side_bar.html.haml (1.7ms)
+Completed 200 OK in 75ms (Views: 70.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 13:57:11 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.7ms)
+  Rendered layouts/_menu_top.html.haml (1.9ms)
+  Rendered layouts/_side_bar.html.haml (3.5ms)
+Completed 200 OK in 56ms (Views: 51.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 13:57:15 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:10
+  Rendered collection of books/_book.html.haml [1 times] (1.8ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:8
+  Rendered books/_form.html.haml (8.9ms)
+  Rendered books/index.html.haml within layouts/application (18.2ms)
+  Rendered layouts/_menu_top.html.haml (1.7ms)
+  Rendered layouts/_side_bar.html.haml (1.6ms)
+Completed 200 OK in 65ms (Views: 60.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 14:13:58 +0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (8.1ms)
+  Rendered layouts/_menu_top.html.haml (2.5ms)
+  Rendered layouts/_side_bar.html.haml (2.1ms)
+Completed 200 OK in 2012ms (Views: 2001.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 14:14:01 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:10
+  Rendered collection of books/_book.html.haml [1 times] (2.3ms)
+  Rendered books/_form.html.haml (50.0ms)
+  Rendered books/index.html.haml within layouts/application (77.3ms)
+Completed 500 Internal Server Error in 95ms (ActiveRecord: 1.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `model_name' for nil:NilClass):
+    1: = simple_form_for @book,remote: true, url: books_path do |form|
+    2:   .row-one
+    3:     = form.input :isbn
+    4:     = form.input :name
+  
+app/views/books/_form.html.haml:1:in `_app_views_books__form_html_haml__2909291339032036508_70154050768600'
+app/views/books/index.html.haml:16:in `_app_views_books_index_html_haml__752298802220280671_70154041499240'
+Started GET "/books" for ::1 at 2020-02-10 14:14:21 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:10
+  Rendered collection of books/_book.html.haml [1 times] (2.4ms)
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:8
+  Rendered books/_form.html.haml (44.6ms)
+  Rendered books/index.html.haml within layouts/application (55.1ms)
+  Rendered layouts/_menu_top.html.haml (3.2ms)
+  Rendered layouts/_side_bar.html.haml (2.5ms)
+Completed 200 OK in 142ms (Views: 121.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/books/14/edit" for ::1 at 2020-02-10 14:14:25 +0700
+  
+AbstractController::ActionNotFound (The action 'edit' could not be found for BooksController):
+  
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/tempfile_reaper.rb:17:in `call'
+rack (2.1.2) lib/rack/etag.rb:27:in `call'
+rack (2.1.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.1.2) lib/rack/head.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.1.2) lib/rack/session/abstract/id.rb:269:in `context'
+rack (2.1.2) lib/rack/session/abstract/id.rb:263:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/books/14/edit" for ::1 at 2020-02-10 14:14:46 +0700
+  
+AbstractController::ActionNotFound (The action 'edit' could not be found for BooksController):
+  
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/tempfile_reaper.rb:17:in `call'
+rack (2.1.2) lib/rack/etag.rb:27:in `call'
+rack (2.1.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.1.2) lib/rack/head.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.1.2) lib/rack/session/abstract/id.rb:269:in `context'
+rack (2.1.2) lib/rack/session/abstract/id.rb:263:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/books" for ::1 at 2020-02-10 14:14:57 +0700
+Processing by BooksController#create as JS
+  Parameters: {"utf8"=>"✓", "book"=>{"isbn"=>"", "name"=>"", "author"=>"", "books_total"=>"", "category_id"=>"", "desc"=>"", "image"=>""}, "commit"=>"Add"}
+Unpermitted parameters: :books_total, :image
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/books_controller.rb:32
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/books_controller.rb:32
+  Rendering books/new.html.haml within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:8
+  Rendered books/_form.html.haml (16.8ms)
+  Rendered books/new.html.haml within layouts/application (21.3ms)
+  Rendered layouts/_menu_top.html.haml (2.1ms)
+  Rendered layouts/_side_bar.html.haml (2.4ms)
+Completed 200 OK in 87ms (Views: 73.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 14:17:51 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:10
+  Rendered collection of books/_book.html.haml [1 times] (2.8ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:8
+  Rendered books/_form.html.haml (11.3ms)
+  Rendered books/index.html.haml within layouts/application (31.5ms)
+  Rendered layouts/_menu_top.html.haml (3.0ms)
+  Rendered layouts/_side_bar.html.haml (1.5ms)
+Completed 200 OK in 1604ms (Views: 1598.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/books/14/edit" for ::1 at 2020-02-10 14:24:35 +0700
+  
+AbstractController::ActionNotFound (The action 'edit' could not be found for BooksController):
+  
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/tempfile_reaper.rb:17:in `call'
+rack (2.1.2) lib/rack/etag.rb:27:in `call'
+rack (2.1.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.1.2) lib/rack/head.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.1.2) lib/rack/session/abstract/id.rb:269:in `context'
+rack (2.1.2) lib/rack/session/abstract/id.rb:263:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/books/14" for ::1 at 2020-02-10 14:25:36 +0700
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:24
+  Rendering books/show.html.haml within layouts/application
+  Rendered books/show.html.haml within layouts/application (2.2ms)
+  Rendered layouts/_menu_top.html.haml (1.8ms)
+  Rendered layouts/_side_bar.html.haml (1.5ms)
+Completed 200 OK in 81ms (Views: 70.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/14/edit" for ::1 at 2020-02-10 14:25:39 +0700
+  
+AbstractController::ActionNotFound (The action 'edit' could not be found for BooksController):
+  
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/tempfile_reaper.rb:17:in `call'
+rack (2.1.2) lib/rack/etag.rb:27:in `call'
+rack (2.1.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.1.2) lib/rack/head.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.1.2) lib/rack/session/abstract/id.rb:269:in `context'
+rack (2.1.2) lib/rack/session/abstract/id.rb:263:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/books" for ::1 at 2020-02-10 14:29:37 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:10
+  Rendered collection of books/_book.html.haml [1 times] (2.0ms)
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:8
+  Rendered books/_form.html.haml (19.4ms)
+  Rendered books/index.html.haml within layouts/application (29.8ms)
+  Rendered layouts/_menu_top.html.haml (2.1ms)
+  Rendered layouts/_side_bar.html.haml (2.2ms)
+Completed 200 OK in 100ms (Views: 78.8ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/books/14/edit" for ::1 at 2020-02-10 14:29:39 +0700
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44
+  Rendering books/edit.html.haml within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:8
+  Rendered books/_form.html.haml (14.5ms)
+  Rendered books/edit.html.haml within layouts/application (19.1ms)
+  Rendered layouts/_menu_top.html.haml (2.6ms)
+  Rendered layouts/_side_bar.html.haml (2.6ms)
+Completed 200 OK in 79ms (Views: 73.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books/14/edit" for ::1 at 2020-02-10 14:29:48 +0700
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44
+  Rendering books/edit.html.haml within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:8
+  Rendered books/_form.html.haml (10.9ms)
+  Rendered books/edit.html.haml within layouts/application (15.1ms)
+  Rendered layouts/_menu_top.html.haml (1.9ms)
+  Rendered layouts/_side_bar.html.haml (1.8ms)
+Completed 200 OK in 71ms (Views: 66.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/14/edit" for ::1 at 2020-02-10 14:31:11 +0700
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44
+  Rendering books/edit.html.haml within layouts/application
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:8
+  Rendered books/_form.html.haml (12.6ms)
+  Rendered books/edit.html.haml within layouts/application (291.4ms)
+Completed 500 Internal Server Error in 304ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `form' for #<#<Class:0x00007f9c0492ad18>:0x00007f9c00eb6d58>
+Did you mean?  format
+               formats
+               form_tag
+               form_for
+               formats=
+               form_with
+               fork):
+    2:   %h1.text-center Edit book
+    3:   = render 'form'
+    4:   .button-edit
+    5:     = form.submit "Update"
+  
+app/views/books/edit.html.haml:5:in `_app_views_books_edit_html_haml__2289666834690230661_70154003528840'
+Started GET "/books/14/edit" for ::1 at 2020-02-10 14:31:33 +0700
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44
+  Rendering books/edit.html.haml within layouts/application
+  Rendered books/edit.html.haml within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/books/edit.html.haml:7: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/books/edit.html.haml:7: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/books/14/edit" for ::1 at 2020-02-10 14:32:50 +0700
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44
+  Rendering books/edit.html.haml within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:8
+  Rendered books/_form.html.haml (11.9ms)
+  Rendered books/edit.html.haml within layouts/application (15.5ms)
+  Rendered layouts/_menu_top.html.haml (2.5ms)
+  Rendered layouts/_side_bar.html.haml (1.5ms)
+Completed 200 OK in 1736ms (Views: 1731.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-02-10 14:32:56 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.5ms)
+  Rendered layouts/_menu_top.html.haml (1.9ms)
+  Rendered layouts/_side_bar.html.haml (1.5ms)
+Completed 200 OK in 57ms (Views: 53.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 14:32:57 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:10
+  Rendered collection of books/_book.html.haml [1 times] (1.7ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:8
+  Rendered books/_form.html.haml (9.4ms)
+  Rendered books/index.html.haml within layouts/application (17.9ms)
+  Rendered layouts/_menu_top.html.haml (1.8ms)
+  Rendered layouts/_side_bar.html.haml (1.4ms)
+Completed 200 OK in 68ms (Views: 64.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/14/edit" for ::1 at 2020-02-10 14:32:59 +0700
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44
+  Rendering books/edit.html.haml within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:8
+  Rendered books/_form.html.haml (11.3ms)
+  Rendered books/edit.html.haml within layouts/application (14.7ms)
+  Rendered layouts/_menu_top.html.haml (1.9ms)
+  Rendered layouts/_side_bar.html.haml (1.7ms)
+Completed 200 OK in 63ms (Views: 59.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/14/edit" for ::1 at 2020-02-10 14:33:03 +0700
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44
+  Rendering books/edit.html.haml within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:8
+  Rendered books/_form.html.haml (31.9ms)
+  Rendered books/edit.html.haml within layouts/application (35.6ms)
+  Rendered layouts/_menu_top.html.haml (3.5ms)
+  Rendered layouts/_side_bar.html.haml (1.7ms)
+Completed 200 OK in 95ms (Views: 90.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/14/edit" for ::1 at 2020-02-10 14:33:25 +0700
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:44
+  Rendering books/edit.html.haml within layouts/application
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:8
+  Rendered books/_form.html.haml (10.8ms)
+  Rendered books/edit.html.haml within layouts/application (14.7ms)
+  Rendered layouts/_menu_top.html.haml (2.7ms)
+  Rendered layouts/_side_bar.html.haml (1.9ms)
+Completed 200 OK in 70ms (Views: 65.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 14:33:32 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:10
+  Rendered collection of books/_book.html.haml [1 times] (2.0ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:8
+  Rendered books/_form.html.haml (12.7ms)
+  Rendered books/index.html.haml within layouts/application (22.5ms)
+  Rendered layouts/_menu_top.html.haml (2.6ms)
+  Rendered layouts/_side_bar.html.haml (1.8ms)
+Completed 200 OK in 74ms (Views: 70.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for ::1 at 2020-02-10 14:33:39 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.haml:10
+  Rendered collection of books/_book.html.haml [1 times] (2.3ms)
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:8
+  Rendered books/_form.html.haml (11.8ms)
+  Rendered books/index.html.haml within layouts/application (21.9ms)
+  Rendered layouts/_menu_top.html.haml (1.9ms)
+  Rendered layouts/_side_bar.html.haml (1.5ms)
+Completed 200 OK in 72ms (Views: 68.8ms | ActiveRecord: 0.3ms)
+
+
