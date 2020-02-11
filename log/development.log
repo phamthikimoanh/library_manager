@@ -20481,3 +20481,1696 @@ Processing by BooksController#index as HTML
 Completed 200 OK in 100ms (Views: 96.0ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/users" for ::1 at 2020-02-11 14:46:12 +0700
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant User::ImageUploader):
+  
+app/models/user.rb:9:in `<class:User>'
+app/models/user.rb:1:in `<top (required)>'
+app/controllers/users_controller.rb:7:in `index'
+Started GET "/users" for ::1 at 2020-02-11 14:48:29 +0700
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant User::ImageUploader):
+  
+app/models/user.rb:9:in `<class:User>'
+app/models/user.rb:1:in `<top (required)>'
+app/controllers/users_controller.rb:7:in `index'
+Started GET "/users" for ::1 at 2020-02-11 14:49:29 +0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.haml within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.haml:16
+  Rendered collection of users/_user.html.haml [1 times] (3.6ms)
+  Rendered users/_form.html.haml (987.1ms)
+  Rendered users/index.html.haml within layouts/application (1005.5ms)
+  Rendered layouts/_menu_top.html.haml (4.9ms)
+  Rendered layouts/_side_bar.html.haml (3.7ms)
+Completed 200 OK in 1565ms (Views: 1534.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/uploads/user/image/1/ahihiahihi.img" for ::1 at 2020-02-11 14:49:31 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/user/image/1/ahihiahihi.img"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/1" for ::1 at 2020-02-11 14:49:36 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:69
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (3.0ms)
+  Rendered layouts/_menu_top.html.haml (2.2ms)
+  Rendered layouts/_side_bar.html.haml (1.7ms)
+Completed 200 OK in 119ms (Views: 104.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2020-02-11 14:49:49 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.haml within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.haml:16
+  Rendered collection of users/_user.html.haml [1 times] (3.0ms)
+  Rendered users/_form.html.haml (10.1ms)
+  Rendered users/index.html.haml within layouts/application (23.2ms)
+  Rendered layouts/_menu_top.html.haml (2.1ms)
+  Rendered layouts/_side_bar.html.haml (2.5ms)
+Completed 200 OK in 80ms (Views: 75.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/uploads/user/image/1/ahihiahihi.img" for ::1 at 2020-02-11 14:49:49 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/user/image/1/ahihiahihi.img"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/1/edit" for ::1 at 2020-02-11 14:49:51 +0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:69
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/_form.html.haml (7.7ms)
+  Rendered users/edit.html.haml within layouts/application (11.3ms)
+  Rendered layouts/_menu_top.html.haml (2.0ms)
+  Rendered layouts/_side_bar.html.haml (1.8ms)
+Completed 200 OK in 68ms (Views: 62.7ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/users/1" for ::1 at 2020-02-11 14:50:15 +0700
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mkQiQ6/a48qZXPh2J2t646UF5fbN2ktJIn6Vz9i6qvxD+9hE0skU4y1lfccUBdjSNKfyew83BLk4thpSaCuciQ==", "user"=>{"name"=>"Phạm Thị Kim Oanh", "birthday(1i)"=>"2020", "birthday(2i)"=>"2", "birthday(3i)"=>"11", "phone"=>"0123456789", "address"=>"123 Nguyên Thi Minh Khai, quận 1, HCM", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fda72baa438 @tempfile=#<Tempfile:/var/folders/9f/6k2b00cs5sn2vs574z1klmvr0000gn/T/RackMultipart20200211-29945-80nyed.jpeg>, @original_filename="05FCA012-2EA5-45D8-8CCB-4E3A310DEA5C.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"05FCA012-2EA5-45D8-8CCB-4E3A310DEA5C.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update User", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:69
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:46
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "image" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["image", "05FCA012-2EA5-45D8-8CCB-4E3A310DEA5C.jpeg"], ["updated_at", "2020-02-11 07:50:15.852533"], ["id", 1]]
+  ↳ app/controllers/users_controller.rb:46
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:46
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 21ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/users/1" for ::1 at 2020-02-11 14:50:15 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:69
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (2.6ms)
+  Rendered layouts/_menu_top.html.haml (2.0ms)
+  Rendered layouts/_side_bar.html.haml (2.0ms)
+Completed 200 OK in 66ms (Views: 62.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for ::1 at 2020-02-11 14:50:19 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.haml within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.haml:16
+  Rendered collection of users/_user.html.haml [1 times] (2.4ms)
+  Rendered users/_form.html.haml (18.9ms)
+  Rendered users/index.html.haml within layouts/application (29.8ms)
+  Rendered layouts/_menu_top.html.haml (2.8ms)
+  Rendered layouts/_side_bar.html.haml (1.7ms)
+Completed 200 OK in 98ms (Views: 94.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for ::1 at 2020-02-11 14:50:34 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.haml within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.haml:16
+  Rendered collection of users/_user.html.haml [1 times] (2.4ms)
+  Rendered users/_form.html.haml (8.3ms)
+  Rendered users/index.html.haml within layouts/application (20.7ms)
+  Rendered layouts/_menu_top.html.haml (3.2ms)
+  Rendered layouts/_side_bar.html.haml (2.2ms)
+Completed 200 OK in 115ms (Views: 111.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for ::1 at 2020-02-11 15:02:31 +0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.haml within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.haml:16
+  Rendered collection of users/_user.html.haml [1 times] (3.2ms)
+  Rendered users/_form.html.haml (919.6ms)
+  Rendered users/index.html.haml within layouts/application (936.8ms)
+  Rendered layouts/_menu_top.html.haml (3.1ms)
+  Rendered layouts/_side_bar.html.haml (1.7ms)
+Completed 200 OK in 1474ms (Views: 1435.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/1/edit" for ::1 at 2020-02-11 15:02:37 +0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:69
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/_form.html.haml (13.2ms)
+  Rendered users/edit.html.haml within layouts/application (17.9ms)
+  Rendered layouts/_menu_top.html.haml (2.9ms)
+  Rendered layouts/_side_bar.html.haml (1.9ms)
+Completed 200 OK in 102ms (Views: 84.5ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/users/1" for ::1 at 2020-02-11 15:02:59 +0700
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YQgZ2/KmjUfCVRi8QCowcctgw0Lek163IMXx2GZLNfu4t+Pcj7V6bnZsnQ1zRJJAWsLUzxx+EUc6DX5F1toDjg==", "user"=>{"name"=>"Phạm Thị Kim Oanh", "birthday(1i)"=>"2020", "birthday(2i)"=>"2", "birthday(3i)"=>"11", "phone"=>"0123456789", "address"=>"123 Nguyên Thi Minh Khai, quận 1, HCM", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f8ff7717378 @tempfile=#<Tempfile:/var/folders/9f/6k2b00cs5sn2vs574z1klmvr0000gn/T/RackMultipart20200211-30301-2ox9gf.jpeg>, @original_filename="1A881911-E06A-4657-8367-DDAFE92E237F.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"1A881911-E06A-4657-8367-DDAFE92E237F.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update User", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:69
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:46
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:46
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/_form.html.haml (11.5ms)
+  Rendered users/edit.html.haml within layouts/application (15.2ms)
+  Rendered layouts/_menu_top.html.haml (3.1ms)
+  Rendered layouts/_side_bar.html.haml (1.9ms)
+Completed 200 OK in 87ms (Views: 73.5ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/users/1" for ::1 at 2020-02-11 15:03:18 +0700
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Q7j5haVbDez+wi3nnO9/DLQwnK5zbQ2G2QZTz73EV/qaBwOC2Ej6xUr7qFavgd09JZKLI7GAQnbDztxSDVVhjw==", "user"=>{"name"=>"Phạm Thị Kim Oanh", "birthday(1i)"=>"2020", "birthday(2i)"=>"2", "birthday(3i)"=>"11", "phone"=>"0123456789", "address"=>"123 Nguyên Thi Minh Khai, quận 1, HCM", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f8ff757ae70 @tempfile=#<Tempfile:/var/folders/9f/6k2b00cs5sn2vs574z1klmvr0000gn/T/RackMultipart20200211-30301-1jg6bhf.jpeg>, @original_filename="6A261727-8DAE-4D40-A43B-02650AEC1A51.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"6A261727-8DAE-4D40-A43B-02650AEC1A51.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update User", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:69
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:46
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:46
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/_form.html.haml (9.1ms)
+  Rendered users/edit.html.haml within layouts/application (13.6ms)
+  Rendered layouts/_menu_top.html.haml (2.7ms)
+  Rendered layouts/_side_bar.html.haml (2.1ms)
+Completed 200 OK in 100ms (Views: 90.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1" for ::1 at 2020-02-11 15:03:26 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:69
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (2.7ms)
+  Rendered layouts/_menu_top.html.haml (1.9ms)
+  Rendered layouts/_side_bar.html.haml (1.8ms)
+Completed 200 OK in 64ms (Views: 58.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2020-02-11 15:03:29 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.haml within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.haml:16
+  Rendered collection of users/_user.html.haml [1 times] (2.8ms)
+  Rendered users/_form.html.haml (9.0ms)
+  Rendered users/index.html.haml within layouts/application (19.6ms)
+  Rendered layouts/_menu_top.html.haml (2.1ms)
+  Rendered layouts/_side_bar.html.haml (2.4ms)
+Completed 200 OK in 81ms (Views: 76.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for ::1 at 2020-02-11 15:05:52 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.haml within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.haml:16
+  Rendered collection of users/_user.html.haml [1 times] (4.6ms)
+  Rendered users/_form.html.haml (10.1ms)
+  Rendered users/index.html.haml within layouts/application (41.7ms)
+  Rendered layouts/_menu_top.html.haml (3.3ms)
+  Rendered layouts/_side_bar.html.haml (3.2ms)
+Completed 200 OK in 167ms (Views: 146.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/1/edit" for ::1 at 2020-02-11 15:06:01 +0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:69
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/_form.html.haml (13.2ms)
+  Rendered users/edit.html.haml within layouts/application (17.6ms)
+  Rendered layouts/_menu_top.html.haml (2.5ms)
+  Rendered layouts/_side_bar.html.haml (1.9ms)
+Completed 200 OK in 151ms (Views: 138.7ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/users/1" for ::1 at 2020-02-11 15:06:11 +0700
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vy5TweRuAyekmPpcgJQ9qTrY5le3XN/rW0JgrYndwz+OkanGmX30DhChf+2z+p+Yq3rx2nWxkBtBiu8wOUz1Sg==", "user"=>{"name"=>"Phạm Thị Kim Oanh", "birthday(1i)"=>"2020", "birthday(2i)"=>"2", "birthday(3i)"=>"11", "phone"=>"0123456789", "address"=>"123 Nguyên Thi Minh Khai, quận 1, HCM", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f8ff749d408 @tempfile=#<Tempfile:/var/folders/9f/6k2b00cs5sn2vs574z1klmvr0000gn/T/RackMultipart20200211-30301-1j64gh1.jpeg>, @original_filename="6A261727-8DAE-4D40-A43B-02650AEC1A51.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"6A261727-8DAE-4D40-A43B-02650AEC1A51.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update User", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:69
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:46
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:46
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.4ms)
+
+
+  
+NoMethodError (undefined method `scale' for #<ImageUploader:0x00007f8ff7034920>):
+  
+app/controllers/users_controller.rb:46:in `block in update'
+app/controllers/users_controller.rb:45:in `update'
+Started GET "/users" for ::1 at 2020-02-11 15:07:19 +0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.haml within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.haml:16
+  Rendered collection of users/_user.html.haml [1 times] (3.3ms)
+  Rendered users/_form.html.haml (975.8ms)
+  Rendered users/index.html.haml within layouts/application (994.1ms)
+  Rendered layouts/_menu_top.html.haml (4.4ms)
+  Rendered layouts/_side_bar.html.haml (1.7ms)
+Completed 200 OK in 1541ms (Views: 1505.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/1/edit" for ::1 at 2020-02-11 15:07:28 +0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:69
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/_form.html.haml (7.9ms)
+  Rendered users/edit.html.haml within layouts/application (12.3ms)
+  Rendered layouts/_menu_top.html.haml (4.0ms)
+  Rendered layouts/_side_bar.html.haml (1.8ms)
+Completed 200 OK in 77ms (Views: 67.5ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/users/1" for ::1 at 2020-02-11 15:07:38 +0700
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dMm1p+vMBE5c3naAW+l/8oVEHoDAW0puOaRH/C71fK2tdk+glt/zZ+jn8zFoh93DFOYJDQK2BZ4jbMhhnmRK2A==", "user"=>{"name"=>"Phạm Thị Kim Oanh", "birthday(1i)"=>"2020", "birthday(2i)"=>"2", "birthday(3i)"=>"11", "phone"=>"0123456789", "address"=>"123 Nguyên Thi Minh Khai, quận 1, HCM", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f8c288f86d8 @tempfile=#<Tempfile:/var/folders/9f/6k2b00cs5sn2vs574z1klmvr0000gn/T/RackMultipart20200211-30428-5jfcu8.jpeg>, @original_filename="6A261727-8DAE-4D40-A43B-02650AEC1A51.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"6A261727-8DAE-4D40-A43B-02650AEC1A51.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Update User", "id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:69
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:46
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:46
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/_form.html.haml (8.6ms)
+  Rendered users/edit.html.haml within layouts/application (12.2ms)
+  Rendered layouts/_menu_top.html.haml (2.3ms)
+  Rendered layouts/_side_bar.html.haml (2.2ms)
+Completed 200 OK in 90ms (Views: 72.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users" for ::1 at 2020-02-11 15:08:12 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aRyCz3hAoPNNemP6SRweX6JxqSrrFjcCTLdtqg1XBtCwo3jIBVNX2vlD5kt6crxuM9O+pyn7ePJWf+I3vcYwpQ==", "user"=>{"name"=>"Võ Thế Duy", "birthday(1i)"=>"2020", "birthday(2i)"=>"2", "birthday(3i)"=>"11", "phone"=>"0123456788", "address"=>"123 Nguyên Thi Minh Khai, quận 1, HCM", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f8c28345d08 @tempfile=#<Tempfile:/var/folders/9f/6k2b00cs5sn2vs574z1klmvr0000gn/T/RackMultipart20200211-30428-18b9wfe.jpeg>, @original_filename="6A261727-8DAE-4D40-A43B-02650AEC1A51.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"6A261727-8DAE-4D40-A43B-02650AEC1A51.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:32
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:32
+  Rendering users/new.html.haml within layouts/application
+  Rendered users/_form.html.haml (9.0ms)
+  Rendered users/new.html.haml within layouts/application (12.7ms)
+  Rendered layouts/_menu_top.html.haml (2.2ms)
+  Rendered layouts/_side_bar.html.haml (1.9ms)
+Completed 200 OK in 101ms (Views: 93.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users" for ::1 at 2020-02-11 15:13:36 +0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iE9HpRd0WQZRpJMVaJbitHnGifgmFsMiUEwWYFjgOU9R8L2iameuL+WdFqRb+ECF6GSedeT7jNJKhJn96HEPOg==", "user"=>{"name"=>"Võ Thế Duy", "birthday(1i)"=>"2020", "birthday(2i)"=>"2", "birthday(3i)"=>"11", "phone"=>"0123456788", "address"=>"123 Nguyên Thi Minh Khai, quận 1, HCM", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fb4247e0b28 @tempfile=#<Tempfile:/var/folders/9f/6k2b00cs5sn2vs574z1klmvr0000gn/T/RackMultipart20200211-30573-1ni284n.png>, @original_filename="flowers-1973875_640.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"flowers-1973875_640.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:32
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:32
+  Rendering users/new.html.haml within layouts/application
+  Rendered users/_form.html.haml (78.2ms)
+  Rendered users/new.html.haml within layouts/application (86.9ms)
+  Rendered layouts/_menu_top.html.haml (3.3ms)
+  Rendered layouts/_side_bar.html.haml (1.8ms)
+Completed 200 OK in 1557ms (Views: 623.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users" for ::1 at 2020-02-11 15:13:46 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YOphV4Hj4y/YC9f346FNhgfYZ079OpsZWmEjp5VjQdi5VZtQ/PAUBmwyUkbQz++3lnpwwz/X1OlAqaw6JfJ3rQ==", "user"=>{"name"=>"Võ Thế Duy", "birthday(1i)"=>"2020", "birthday(2i)"=>"2", "birthday(3i)"=>"11", "phone"=>"0123456788", "address"=>"123 Nguyên Thi Minh Khai, quận 1, HCM", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fb41de44160 @tempfile=#<Tempfile:/var/folders/9f/6k2b00cs5sn2vs574z1klmvr0000gn/T/RackMultipart20200211-30573-1ounqsy.png>, @original_filename="flowers-1973875_640.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"flowers-1973875_640.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:32
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:32
+  Rendering users/new.html.haml within layouts/application
+  Rendered users/_form.html.haml (13.4ms)
+  Rendered users/new.html.haml within layouts/application (17.2ms)
+  Rendered layouts/_menu_top.html.haml (3.4ms)
+  Rendered layouts/_side_bar.html.haml (2.3ms)
+Completed 200 OK in 82ms (Views: 75.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for ::1 at 2020-02-11 15:14:00 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.haml within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.haml:16
+  Rendered collection of users/_user.html.haml [1 times] (4.7ms)
+  Rendered users/_form.html.haml (8.9ms)
+  Rendered users/index.html.haml within layouts/application (23.9ms)
+  Rendered layouts/_menu_top.html.haml (3.7ms)
+  Rendered layouts/_side_bar.html.haml (1.9ms)
+Completed 200 OK in 82ms (Views: 77.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for ::1 at 2020-02-11 15:14:29 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PFeTr1kc7xIJxHE+r/tG8L7uQf/a9WxY2c5wphA+u1jl6GmoJA8YO7399I+cleTBL0xWchgYI6jDBv87oK+NLQ==", "user"=>{"name"=>"Võ Thế Duy", "birthday(1i)"=>"2020", "birthday(2i)"=>"2", "birthday(3i)"=>"11", "phone"=>"0123456788", "address"=>"124 Nguyên Thi Minh Khai, quận 1, HCM", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fb42677b1e0 @tempfile=#<Tempfile:/var/folders/9f/6k2b00cs5sn2vs574z1klmvr0000gn/T/RackMultipart20200211-30573-1ufxtt8.png>, @original_filename="flowers-1973875_640.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"flowers-1973875_640.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:32
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:32
+  Rendering users/new.html.haml within layouts/application
+  Rendered users/_form.html.haml (10.0ms)
+  Rendered users/new.html.haml within layouts/application (13.7ms)
+  Rendered layouts/_menu_top.html.haml (2.5ms)
+  Rendered layouts/_side_bar.html.haml (1.5ms)
+Completed 200 OK in 86ms (Views: 78.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for ::1 at 2020-02-11 15:14:39 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.haml within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.haml:16
+  Rendered collection of users/_user.html.haml [1 times] (3.7ms)
+  Rendered users/_form.html.haml (7.6ms)
+  Rendered users/index.html.haml within layouts/application (19.2ms)
+  Rendered layouts/_menu_top.html.haml (1.8ms)
+  Rendered layouts/_side_bar.html.haml (2.2ms)
+Completed 200 OK in 74ms (Views: 70.3ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/users/1" for ::1 at 2020-02-11 15:14:47 +0700
+Processing by UsersController#destroy as JS
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:69
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:59
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/users_controller.rb:59
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:59
+Redirected to http://localhost:3000/users
+Completed 200 OK in 11ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/users" for ::1 at 2020-02-11 15:14:51 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.haml within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.haml:16
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered users/_form.html.haml (8.0ms)
+  Rendered users/index.html.haml within layouts/application (13.3ms)
+  Rendered layouts/_menu_top.html.haml (2.0ms)
+  Rendered layouts/_side_bar.html.haml (2.1ms)
+Completed 200 OK in 67ms (Views: 64.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users" for ::1 at 2020-02-11 15:15:11 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tOn5AouO3kZBdIyvrlhoaZSFK9vzrDd3SlTsjJxlVhBtVgMF9p0pb/VNCR6dNspYBSc8VjFBeIdQnGMRLPRgZQ==", "user"=>{"name"=>"Phạm Thị Kim Oanh", "birthday(1i)"=>"2015", "birthday(2i)"=>"2", "birthday(3i)"=>"11", "phone"=>"0123456789", "address"=>"124 Nguyên Thi Minh Khai, quận 1, HCM", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fb420065a00 @tempfile=#<Tempfile:/var/folders/9f/6k2b00cs5sn2vs574z1klmvr0000gn/T/RackMultipart20200211-30573-j8nuh.png>, @original_filename="flowers-1973875_640.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"flowers-1973875_640.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:32
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:32
+  Rendering users/new.html.haml within layouts/application
+  Rendered users/_form.html.haml (12.8ms)
+  Rendered users/new.html.haml within layouts/application (16.7ms)
+  Rendered layouts/_menu_top.html.haml (2.8ms)
+  Rendered layouts/_side_bar.html.haml (1.9ms)
+Completed 200 OK in 89ms (Views: 80.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for ::1 at 2020-02-11 15:16:47 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.haml within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.haml:16
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered users/_form.html.haml (9.6ms)
+  Rendered users/index.html.haml within layouts/application (26.3ms)
+  Rendered layouts/_menu_top.html.haml (2.6ms)
+  Rendered layouts/_side_bar.html.haml (2.4ms)
+Completed 200 OK in 123ms (Views: 97.8ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/users" for ::1 at 2020-02-11 15:17:04 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b6qZmMnoa4QBHjRm8zUbRcRt2sWPUyl8Wq7ZAaBSxFe2FWOftPucrbUnsdfAW7l0Vc/NSE2+ZoxAZlacEMPyIg==", "user"=>{"name"=>"Phạm Thị Kim Oanh", "birthday(1i)"=>"2020", "birthday(2i)"=>"2", "birthday(3i)"=>"11", "phone"=>"0123456789", "address"=>"123 Nguyên Thi Minh Khai, quận 1, HCM", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fb4270f5f68 @tempfile=#<Tempfile:/var/folders/9f/6k2b00cs5sn2vs574z1klmvr0000gn/T/RackMultipart20200211-30573-tvu5jv.png>, @original_filename="flowers-1973875_640.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"flowers-1973875_640.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:32
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:32
+  Rendering users/new.html.haml within layouts/application
+  Rendered users/_form.html.haml (10.7ms)
+  Rendered users/new.html.haml within layouts/application (14.5ms)
+  Rendered layouts/_menu_top.html.haml (2.5ms)
+  Rendered layouts/_side_bar.html.haml (1.7ms)
+Completed 200 OK in 76ms (Views: 69.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for ::1 at 2020-02-11 15:17:06 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.haml within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.haml:16
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered users/_form.html.haml (8.5ms)
+  Rendered users/index.html.haml within layouts/application (16.2ms)
+  Rendered layouts/_menu_top.html.haml (2.2ms)
+  Rendered layouts/_side_bar.html.haml (1.5ms)
+Completed 200 OK in 77ms (Views: 73.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2020-02-11 15:17:33 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.haml within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.haml:16
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered users/_form.html.haml (7.9ms)
+  Rendered users/index.html.haml within layouts/application (12.5ms)
+  Rendered layouts/_menu_top.html.haml (2.2ms)
+  Rendered layouts/_side_bar.html.haml (1.5ms)
+Completed 200 OK in 72ms (Views: 59.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users" for ::1 at 2020-02-11 15:17:45 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T6VfUL2Zx0IBMiKYvA/fO4eN/Av99MOPTwXRPsANVu+WGqVXwIowa7ULpymPYX0KFi/rhj8ZjH9VzV6jcJxgmg==", "user"=>{"name"=>"Phạm Thị Kim Oanh", "birthday(1i)"=>"2020", "birthday(2i)"=>"2", "birthday(3i)"=>"11", "phone"=>"0123456789", "address"=>"123 Nguyên Thi Minh Khai, quận 1, HCM", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fb42751b5e8 @tempfile=#<Tempfile:/var/folders/9f/6k2b00cs5sn2vs574z1klmvr0000gn/T/RackMultipart20200211-30573-btabhr.png>, @original_filename="flowers-1973875_640.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"flowers-1973875_640.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:32
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "birthday", "phone", "address", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Phạm Thị Kim Oanh"], ["birthday", "2020-02-11"], ["phone", "0123456789"], ["address", "123 Nguyên Thi Minh Khai, quận 1, HCM"], ["image", "flowers-1973875_640.png"], ["created_at", "2020-02-11 08:17:45.761614"], ["updated_at", "2020-02-11 08:17:45.761614"]]
+  ↳ app/controllers/users_controller.rb:32
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:32
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 14ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/users/2" for ::1 at 2020-02-11 15:17:45 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:69
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (3.0ms)
+  Rendered layouts/_menu_top.html.haml (3.0ms)
+  Rendered layouts/_side_bar.html.haml (1.9ms)
+Completed 200 OK in 90ms (Views: 84.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for ::1 at 2020-02-11 15:17:47 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.haml within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.haml:16
+  Rendered collection of users/_user.html.haml [1 times] (3.0ms)
+  Rendered users/_form.html.haml (10.8ms)
+  Rendered users/index.html.haml within layouts/application (23.4ms)
+  Rendered layouts/_menu_top.html.haml (3.2ms)
+  Rendered layouts/_side_bar.html.haml (1.8ms)
+Completed 200 OK in 82ms (Views: 78.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for ::1 at 2020-02-11 15:24:04 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.haml:16
+  Rendered collection of users/_user.html.haml [1 times] (3.7ms)
+  Rendered users/_form.html.haml (8.4ms)
+  Rendered users/index.html.haml within layouts/application (22.0ms)
+  Rendered layouts/_menu_top.html.haml (2.9ms)
+  Rendered layouts/_side_bar.html.haml (2.0ms)
+Completed 200 OK in 117ms (Views: 99.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users" for ::1 at 2020-02-11 15:25:32 +0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.haml within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.haml:16
+  Rendered collection of users/_user.html.haml [1 times] (3.8ms)
+  Rendered users/_form.html.haml (944.2ms)
+  Rendered users/index.html.haml within layouts/application (961.7ms)
+  Rendered layouts/_menu_top.html.haml (3.5ms)
+  Rendered layouts/_side_bar.html.haml (2.4ms)
+Completed 200 OK in 1498ms (Views: 1460.2ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/users" for ::1 at 2020-02-11 15:25:51 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rJALxFZgq29Y91mkDP3GHntSEsPfqni2u+cCUMh+syp1L/HDK3NcRuzO3BU/k2Qv6vAFTh1HN0ahL43NeO+FXw==", "user"=>{"name"=>"Võ Thế Duy", "birthday(1i)"=>"2020", "birthday(2i)"=>"2", "birthday(3i)"=>"11", "phone"=>"0123456788", "address"=>"124 Nguyên Thi Minh Khai, quận 1, HCM", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f96a191bec0 @tempfile=#<Tempfile:/var/folders/9f/6k2b00cs5sn2vs574z1klmvr0000gn/T/RackMultipart20200211-30801-1nkz1n0.png>, @original_filename="flowers-1973875_640.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"flowers-1973875_640.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create User"}
+Completed 500 Internal Server Error in 214ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `my_file' for #<UsersController:0x00007f96a2000858>):
+  
+app/controllers/users_controller.rb:30:in `create'
+Started POST "/users" for ::1 at 2020-02-11 15:26:57 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rJALxFZgq29Y91mkDP3GHntSEsPfqni2u+cCUMh+syp1L/HDK3NcRuzO3BU/k2Qv6vAFTh1HN0ahL43NeO+FXw==", "user"=>{"name"=>"Võ Thế Duy", "birthday(1i)"=>"2020", "birthday(2i)"=>"2", "birthday(3i)"=>"11", "phone"=>"0123456788", "address"=>"124 Nguyên Thi Minh Khai, quận 1, HCM", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f969fc6bd20 @tempfile=#<Tempfile:/var/folders/9f/6k2b00cs5sn2vs574z1klmvr0000gn/T/RackMultipart20200211-30801-bbqgqi.png>, @original_filename="flowers-1973875_640.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"flowers-1973875_640.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create User"}
+Completed 500 Internal Server Error in 265ms (ActiveRecord: 0.6ms)
+
+
+  
+NameError (undefined local variable or method `uploader' for #<UsersController:0x00007f969fc5a228>):
+  
+app/controllers/users_controller.rb:32:in `create'
+Started POST "/users" for ::1 at 2020-02-11 15:28:21 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rJALxFZgq29Y91mkDP3GHntSEsPfqni2u+cCUMh+syp1L/HDK3NcRuzO3BU/k2Qv6vAFTh1HN0ahL43NeO+FXw==", "user"=>{"name"=>"Võ Thế Duy", "birthday(1i)"=>"2020", "birthday(2i)"=>"2", "birthday(3i)"=>"11", "phone"=>"0123456788", "address"=>"124 Nguyên Thi Minh Khai, quận 1, HCM", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f9697dc7d20 @tempfile=#<Tempfile:/var/folders/9f/6k2b00cs5sn2vs574z1klmvr0000gn/T/RackMultipart20200211-30801-pizu36.png>, @original_filename="flowers-1973875_640.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"flowers-1973875_640.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create User"}
+Completed 500 Internal Server Error in 253ms (ActiveRecord: 0.9ms)
+
+
+  
+NameError (undefined local variable or method `user' for #<UsersController:0x00007f9697da1918>
+Did you mean?  @user):
+  
+app/controllers/users_controller.rb:32:in `create'
+Started POST "/users" for ::1 at 2020-02-11 15:32:06 +0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rJALxFZgq29Y91mkDP3GHntSEsPfqni2u+cCUMh+syp1L/HDK3NcRuzO3BU/k2Qv6vAFTh1HN0ahL43NeO+FXw==", "user"=>{"name"=>"Võ Thế Duy", "birthday(1i)"=>"2020", "birthday(2i)"=>"2", "birthday(3i)"=>"11", "phone"=>"0123456788", "address"=>"124 Nguyên Thi Minh Khai, quận 1, HCM", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fba02aef010 @tempfile=#<Tempfile:/var/folders/9f/6k2b00cs5sn2vs574z1klmvr0000gn/T/RackMultipart20200211-30898-xcm601.png>, @original_filename="flowers-1973875_640.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"flowers-1973875_640.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:35
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:35
+  Rendering users/new.html.haml within layouts/application
+  Rendered users/_form.html.haml (67.9ms)
+  Rendered users/new.html.haml within layouts/application (77.2ms)
+  Rendered layouts/_menu_top.html.haml (4.2ms)
+  Rendered layouts/_side_bar.html.haml (3.4ms)
+Completed 200 OK in 1483ms (Views: 564.0ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users" for ::1 at 2020-02-11 15:32:18 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+brHtytXztMBOuQQ/o3YiVX4v4yKrQufalHUQQnY4cogBT2wVkQ5+rUDYaHN43q4xFqoAUhARG9wmVvcuUnXvw==", "user"=>{"name"=>"Võ Thế Duy", "birthday(1i)"=>"2020", "birthday(2i)"=>"2", "birthday(3i)"=>"11", "phone"=>"0123456788", "address"=>"124 Nguyên Thi Minh Khai, quận 1, HCM", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fba0b5537b0 @tempfile=#<Tempfile:/var/folders/9f/6k2b00cs5sn2vs574z1klmvr0000gn/T/RackMultipart20200211-30898-5g4sfu.jpg>, @original_filename="Oanh_01.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"Oanh_01.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:35
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:35
+  Rendering users/new.html.haml within layouts/application
+  Rendered users/_form.html.haml (17.1ms)
+  Rendered users/new.html.haml within layouts/application (21.5ms)
+  Rendered layouts/_menu_top.html.haml (2.2ms)
+  Rendered layouts/_side_bar.html.haml (1.8ms)
+Completed 200 OK in 94ms (Views: 86.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users" for ::1 at 2020-02-11 15:33:12 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G3fYhtrU4LOkAJvD/Oq0RlfMaI2/8EnbT8hLVu8PoeHCyCKBp8cXmhA5HnLPhBZ3xm5/AH0dBitVAMTLX56XlA==", "user"=>{"name"=>"Võ Thế Duy", "birthday(1i)"=>"2020", "birthday(2i)"=>"2", "birthday(3i)"=>"11", "phone"=>"0123456788", "address"=>"124 Nguyên Thi Minh Khai, quận 1, HCM", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fba0a7bd1c8 @tempfile=#<Tempfile:/var/folders/9f/6k2b00cs5sn2vs574z1klmvr0000gn/T/RackMultipart20200211-30898-ptfin4.png>, @original_filename="flowers-1973875_640.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"flowers-1973875_640.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:35
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:35
+  Rendering users/new.html.haml within layouts/application
+  Rendered users/_form.html.haml (7.2ms)
+  Rendered users/new.html.haml within layouts/application (10.4ms)
+  Rendered layouts/_menu_top.html.haml (3.0ms)
+  Rendered layouts/_side_bar.html.haml (1.6ms)
+Completed 200 OK in 88ms (Views: 65.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/books" for ::1 at 2020-02-11 15:33:14 +0700
+Processing by BooksController#index as HTML
+  Rendering books/index.html.haml within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/books/index.html.haml:11
+  Rendered collection of books/_book.html.haml [10 times] (3.8ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  ↳ app/views/books/index.html.haml:12
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/books/_form.html.haml:17
+  Rendered books/_form.html.haml (24.7ms)
+  Rendered books/index.html.haml within layouts/application (49.0ms)
+  Rendered layouts/_menu_top.html.haml (1.9ms)
+  Rendered layouts/_side_bar.html.haml (2.2ms)
+Completed 200 OK in 120ms (Views: 100.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users" for ::1 at 2020-02-11 15:33:16 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.haml:16
+  Rendered collection of users/_user.html.haml [1 times] (2.5ms)
+  Rendered users/_form.html.haml (7.6ms)
+  Rendered users/index.html.haml within layouts/application (19.0ms)
+  Rendered layouts/_menu_top.html.haml (2.0ms)
+  Rendered layouts/_side_bar.html.haml (2.1ms)
+Completed 200 OK in 78ms (Views: 73.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users" for ::1 at 2020-02-11 15:33:31 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AQgfSLAUME2WKezRtvqWMiR/ac7TLkL0yLkdTC3/zGnYt+VPzQfHZCIQaWCFlDQDtd1+QxHDDQTScZLRnW76HA==", "user"=>{"name"=>"", "birthday(1i)"=>"2020", "birthday(2i)"=>"2", "birthday(3i)"=>"11", "phone"=>"0123456789", "address"=>"124 Nguyên Thi Minh Khai, quận 1, HCM", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fba0d912480 @tempfile=#<Tempfile:/var/folders/9f/6k2b00cs5sn2vs574z1klmvr0000gn/T/RackMultipart20200211-30898-jrjimv.png>, @original_filename="flowers-1973875_640.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"flowers-1973875_640.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:35
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:35
+  Rendering users/new.html.haml within layouts/application
+  Rendered users/_form.html.haml (10.9ms)
+  Rendered users/new.html.haml within layouts/application (14.6ms)
+  Rendered layouts/_menu_top.html.haml (3.6ms)
+  Rendered layouts/_side_bar.html.haml (1.8ms)
+Completed 200 OK in 83ms (Views: 72.7ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users" for ::1 at 2020-02-11 15:38:43 +0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AQgfSLAUME2WKezRtvqWMiR/ac7TLkL0yLkdTC3/zGnYt+VPzQfHZCIQaWCFlDQDtd1+QxHDDQTScZLRnW76HA==", "user"=>{"name"=>"", "birthday(1i)"=>"2020", "birthday(2i)"=>"2", "birthday(3i)"=>"11", "phone"=>"0123456789", "address"=>"124 Nguyên Thi Minh Khai, quận 1, HCM", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f8afadb8558 @tempfile=#<Tempfile:/var/folders/9f/6k2b00cs5sn2vs574z1klmvr0000gn/T/RackMultipart20200211-31103-1lanvu5.png>, @original_filename="flowers-1973875_640.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"flowers-1973875_640.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:35
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:35
+  Rendering users/new.html.haml within layouts/application
+  Rendered users/_form.html.haml (70.2ms)
+  Rendered users/new.html.haml within layouts/application (79.4ms)
+  Rendered layouts/_menu_top.html.haml (2.7ms)
+  Rendered layouts/_side_bar.html.haml (3.6ms)
+Completed 200 OK in 1429ms (Views: 557.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users" for ::1 at 2020-02-11 15:38:47 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.haml:16
+  Rendered collection of users/_user.html.haml [1 times] (300.4ms)
+  Rendered users/index.html.haml within layouts/application (309.3ms)
+Completed 500 Internal Server Error in 326ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x00007f8af5a5caa8>:0x00007f8af6040b18>):
+    4:     %td= user.phone
+    5:     %td= user.address
+    6:     %td= image_tag user.image.thumb.url.to_s
+    7:     - if f.object.image?
+    8:         = image_tag f.object.image.thumb.url
+    9:         = f.label :remove_image
+   10:         = f.check_box :remove_image
+  
+app/views/users/_user.html.haml:7:in `_app_views_users__user_html_haml___3230594441645455773_70117404565960'
+app/views/users/index.html.haml:16:in `_app_views_users_index_html_haml___4611020624351649873_70117404838560'
+Started GET "/users" for ::1 at 2020-02-11 15:40:46 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.haml within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.haml:16
+  Rendered collection of users/_user.html.haml [1 times] (2.6ms)
+  Rendered users/_form.html.haml (8.3ms)
+  Rendered users/index.html.haml within layouts/application (19.3ms)
+  Rendered layouts/_menu_top.html.haml (2.0ms)
+  Rendered layouts/_side_bar.html.haml (2.0ms)
+Completed 200 OK in 95ms (Views: 91.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/uploads/user/image/2/thumb_flowers-1973875_640.png" for ::1 at 2020-02-11 15:40:46 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/user/image/2/thumb_flowers-1973875_640.png"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/users" for ::1 at 2020-02-11 15:41:10 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4XyEfM36VUDN6OtpPWHX9LM1GkmPCRVXWbrYZdKKGcE4w357sOmiaXnRbtgOD3XFIpcNxE3kWqdDclf4YhsvtA==", "user"=>{"name"=>"Võ Thế Duy", "birthday(1i)"=>"2020", "birthday(2i)"=>"2", "birthday(3i)"=>"11", "phone"=>"0123456788", "address"=>"124 Nguyên Thi Minh Khai, quận 1, HCM", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f8afe893b78 @tempfile=#<Tempfile:/var/folders/9f/6k2b00cs5sn2vs574z1klmvr0000gn/T/RackMultipart20200211-31103-n7eo7z.png>, @original_filename="flowers-1973875_640.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"flowers-1973875_640.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:35
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:35
+  Rendering users/new.html.haml within layouts/application
+  Rendered users/_form.html.haml (7.8ms)
+  Rendered users/new.html.haml within layouts/application (12.6ms)
+  Rendered layouts/_menu_top.html.haml (2.4ms)
+  Rendered layouts/_side_bar.html.haml (1.8ms)
+Completed 200 OK in 85ms (Views: 78.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users" for ::1 at 2020-02-11 15:41:12 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4CEvObfwsnIZ+tKaEupR6NTttWO47w8k+bnxlyH4mhE5ntU+yuNFW63DVyshhPPZRU+i7noCQNTjcX4KkWmsZA==", "user"=>{"name"=>"Võ Thế Duy", "birthday(1i)"=>"2020", "birthday(2i)"=>"2", "birthday(3i)"=>"11", "phone"=>"0123456788", "address"=>"124 Nguyên Thi Minh Khai, quận 1, HCM"}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:35
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:35
+  Rendering users/new.html.haml within layouts/application
+  Rendered users/_form.html.haml (8.7ms)
+  Rendered users/new.html.haml within layouts/application (12.1ms)
+  Rendered layouts/_menu_top.html.haml (1.9ms)
+  Rendered layouts/_side_bar.html.haml (1.9ms)
+Completed 200 OK in 69ms (Views: 64.4ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users" for ::1 at 2020-02-11 15:41:13 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c3fb7hs7GZYArjO5WpbNhkw0vH8WBAdlZlog3SQ5SyiqyCHpZijuv7SXtghp+G+33Zar8tTpSJV8kq9AlKh9XQ==", "user"=>{"name"=>"Võ Thế Duy", "birthday(1i)"=>"2020", "birthday(2i)"=>"2", "birthday(3i)"=>"11", "phone"=>"0123456788", "address"=>"124 Nguyên Thi Minh Khai, quận 1, HCM"}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:35
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:35
+  Rendering users/new.html.haml within layouts/application
+  Rendered users/_form.html.haml (10.4ms)
+  Rendered users/new.html.haml within layouts/application (13.7ms)
+  Rendered layouts/_menu_top.html.haml (2.1ms)
+  Rendered layouts/_side_bar.html.haml (2.2ms)
+Completed 200 OK in 74ms (Views: 68.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2020-02-11 15:41:30 +0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (4.2ms)
+  Rendered layouts/_menu_top.html.haml (4.8ms)
+  Rendered layouts/_side_bar.html.haml (3.4ms)
+Completed 200 OK in 390ms (Views: 378.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2020-02-11 15:41:31 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.haml within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.haml:16
+  Rendered collection of users/_user.html.haml [1 times] (3.8ms)
+  Rendered users/_form.html.haml (935.3ms)
+  Rendered users/index.html.haml within layouts/application (951.5ms)
+  Rendered layouts/_menu_top.html.haml (2.6ms)
+  Rendered layouts/_side_bar.html.haml (2.1ms)
+Completed 200 OK in 1057ms (Views: 1018.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/uploads/user/image/2/thumb_flowers-1973875_640.png" for ::1 at 2020-02-11 15:41:33 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/user/image/2/thumb_flowers-1973875_640.png"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/users" for ::1 at 2020-02-11 15:41:53 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KtJcKME3RKUhsbmdXs85gbV4RwuegCUDjaPNPsAYCk3zbaYvvCSzjJWIPCxtoZuwJNpQhlxtavOXa0KjcIk8OA==", "user"=>{"name"=>"Võ Thế Duy", "birthday(1i)"=>"2020", "birthday(2i)"=>"2", "birthday(3i)"=>"11", "phone"=>"0123456788", "address"=>"124 Nguyên Thi Minh Khai, quận 1, HCM", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f931f394838 @tempfile=#<Tempfile:/var/folders/9f/6k2b00cs5sn2vs574z1klmvr0000gn/T/RackMultipart20200211-31181-1sa85f1.png>, @original_filename="flowers-1973875_640.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"flowers-1973875_640.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:35
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:35
+  Rendering users/new.html.haml within layouts/application
+  Rendered users/_form.html.haml (11.3ms)
+  Rendered users/new.html.haml within layouts/application (16.8ms)
+  Rendered layouts/_menu_top.html.haml (2.6ms)
+  Rendered layouts/_side_bar.html.haml (1.8ms)
+Completed 200 OK in 102ms (Views: 90.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2020-02-11 15:45:33 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (2.5ms)
+  Rendered layouts/_menu_top.html.haml (2.8ms)
+  Rendered layouts/_side_bar.html.haml (3.2ms)
+Completed 500 Internal Server Error in 188ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial home/_notice, application/_notice with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder, :haml]}. Searched in:
+  * "/Users/phamthikimoanh/Documents/ruby/library_manager/app/views"
+  * "/Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/kaminari-core-1.2.0/app/views"
+  * "/Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/data_grid-0.0.2/app/views"
+):
+    12:     #content-main
+    13:       = render 'layouts/side_bar'
+    14:       .main
+    15:         = render 'notice'
+    16:         = yield
+  
+app/views/layouts/application.html.haml:15:in `_app_views_layouts_application_html_haml__1705459614702241797_70134901743760'
+Started GET "/" for ::1 at 2020-02-11 15:46:00 +0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (4.4ms)
+  Rendered layouts/_menu_top.html.haml (3.7ms)
+  Rendered layouts/_side_bar.html.haml (3.4ms)
+Completed 500 Internal Server Error in 422ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial home/_notice, application/_notice with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder, :haml]}. Searched in:
+  * "/Users/phamthikimoanh/Documents/ruby/library_manager/app/views"
+  * "/Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/kaminari-core-1.2.0/app/views"
+  * "/Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/data_grid-0.0.2/app/views"
+):
+    12:     #content-main
+    13:       = render 'layouts/side_bar'
+    14:       .main
+    15:         = render 'notice'
+    16:         = yield
+  
+app/views/layouts/application.html.haml:15:in `_app_views_layouts_application_html_haml___1003117438923283603_70296875697920'
+Started GET "/" for ::1 at 2020-02-11 15:46:03 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.7ms)
+  Rendered layouts/_menu_top.html.haml (3.0ms)
+  Rendered layouts/_side_bar.html.haml (2.6ms)
+Completed 500 Internal Server Error in 96ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial home/_notice, application/_notice with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder, :haml]}. Searched in:
+  * "/Users/phamthikimoanh/Documents/ruby/library_manager/app/views"
+  * "/Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/kaminari-core-1.2.0/app/views"
+  * "/Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/data_grid-0.0.2/app/views"
+):
+    12:     #content-main
+    13:       = render 'layouts/side_bar'
+    14:       .main
+    15:         = render 'notice'
+    16:         = yield
+  
+app/views/layouts/application.html.haml:15:in `_app_views_layouts_application_html_haml___1003117438923283603_70296862726580'
+Started GET "/" for ::1 at 2020-02-11 15:46:39 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.6ms)
+  Rendered layouts/_menu_top.html.haml (2.4ms)
+  Rendered layouts/_side_bar.html.haml (1.8ms)
+  Rendered layouts/_notice.html.haml (1.4ms)
+Completed 200 OK in 63ms (Views: 60.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2020-02-11 15:46:41 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.haml within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.haml:16
+  Rendered collection of users/_user.html.haml [1 times] (2.7ms)
+  Rendered users/_form.html.haml (853.5ms)
+  Rendered users/index.html.haml within layouts/application (876.2ms)
+  Rendered layouts/_menu_top.html.haml (3.5ms)
+  Rendered layouts/_side_bar.html.haml (1.9ms)
+  Rendered layouts/_notice.html.haml (1.3ms)
+Completed 200 OK in 1027ms (Views: 936.1ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users" for ::1 at 2020-02-11 15:47:05 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8hfCjGevVe/449dLVGpTBmrVSd2ISDwLkqZVz6mbmGIrqDiLGryixkzaUvpnBPE3+3deUEqlc/uIbtpSGQquFw==", "user"=>{"name"=>"Võ Thế Duy", "birthday(1i)"=>"2016", "birthday(2i)"=>"2", "birthday(3i)"=>"11", "phone"=>"0123456788", "address"=>"124 Nguyên Thi Minh Khai, quận 1, HCM", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fde80abc6b8 @tempfile=#<Tempfile:/var/folders/9f/6k2b00cs5sn2vs574z1klmvr0000gn/T/RackMultipart20200211-31338-1pvgyzj.png>, @original_filename="flowers-1973875_640.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"flowers-1973875_640.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:35
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:35
+  Rendering users/new.html.haml within layouts/application
+  Rendered users/_form.html.haml (11.4ms)
+  Rendered users/new.html.haml within layouts/application (14.8ms)
+  Rendered layouts/_menu_top.html.haml (3.0ms)
+  Rendered layouts/_side_bar.html.haml (1.6ms)
+  Rendered layouts/_notice.html.haml (1.0ms)
+Completed 200 OK in 90ms (Views: 76.4ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users" for ::1 at 2020-02-11 15:47:26 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8hfCjGevVe/449dLVGpTBmrVSd2ISDwLkqZVz6mbmGIrqDiLGryixkzaUvpnBPE3+3deUEqlc/uIbtpSGQquFw==", "user"=>{"name"=>"Võ Thế Duy", "birthday(1i)"=>"2016", "birthday(2i)"=>"2", "birthday(3i)"=>"11", "phone"=>"0123456788", "address"=>"124 Nguyên Thi Minh Khai, quận 1, HCM", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007fde816b7828 @tempfile=#<Tempfile:/var/folders/9f/6k2b00cs5sn2vs574z1klmvr0000gn/T/RackMultipart20200211-31338-1t25r6o.png>, @original_filename="flowers-1973875_640.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"flowers-1973875_640.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:35
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:35
+  Rendering users/new.html.haml within layouts/application
+  Rendered users/_form.html.haml (7.2ms)
+  Rendered users/new.html.haml within layouts/application (12.5ms)
+  Rendered layouts/_menu_top.html.haml (1.7ms)
+  Rendered layouts/_side_bar.html.haml (1.7ms)
+  Rendered layouts/_notice.html.haml (1.4ms)
+Completed 200 OK in 73ms (Views: 66.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users" for ::1 at 2020-02-11 15:47:31 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b/mmYCtAszUWUyDP0YIPzaQXXXd0It/67Bu+hpWBt8S2RlxnVlNEHKJqpX7i7K38NbVK+rbPkAr20zEbJRCBsQ==", "user"=>{"name"=>"Võ Thế Duy", "birthday(1i)"=>"2016", "birthday(2i)"=>"2", "birthday(3i)"=>"11", "phone"=>"0123456788", "address"=>"124 Nguyên Thi Minh Khai, quận 1, HCM"}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:35
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:35
+  Rendering users/new.html.haml within layouts/application
+  Rendered users/_form.html.haml (9.9ms)
+  Rendered users/new.html.haml within layouts/application (13.6ms)
+  Rendered layouts/_menu_top.html.haml (2.6ms)
+  Rendered layouts/_side_bar.html.haml (2.4ms)
+  Rendered layouts/_notice.html.haml (1.5ms)
+Completed 200 OK in 100ms (Views: 94.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2020-02-11 15:47:33 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.haml within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.haml:16
+  Rendered collection of users/_user.html.haml [1 times] (2.6ms)
+  Rendered users/_form.html.haml (9.4ms)
+  Rendered users/index.html.haml within layouts/application (19.4ms)
+  Rendered layouts/_menu_top.html.haml (3.3ms)
+  Rendered layouts/_side_bar.html.haml (1.8ms)
+  Rendered layouts/_notice.html.haml (1.3ms)
+Completed 200 OK in 83ms (Views: 79.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for ::1 at 2020-02-11 15:52:50 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.haml within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.haml:16
+  Rendered collection of users/_user.html.haml [1 times] (4.0ms)
+  Rendered users/_form.html.haml (10.1ms)
+  Rendered users/index.html.haml within layouts/application (26.7ms)
+  Rendered layouts/_menu_top.html.haml (3.2ms)
+  Rendered layouts/_side_bar.html.haml (2.5ms)
+  Rendered layouts/_notice.html.haml (1.6ms)
+Completed 200 OK in 147ms (Views: 121.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/uploads/user/image/2/thumb_flowers-1973875_640.png" for ::1 at 2020-02-11 15:52:50 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/user/image/2/thumb_flowers-1973875_640.png"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-02-11 15:53:51 +0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (4.8ms)
+  Rendered layouts/_menu_top.html.haml (3.2ms)
+  Rendered layouts/_side_bar.html.haml (20.9ms)
+  Rendered layouts/_notice.html.haml (1.6ms)
+Completed 200 OK in 421ms (Views: 411.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2020-02-11 15:53:53 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.haml within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.haml:16
+  Rendered collection of users/_user.html.haml [1 times] (4.2ms)
+  Rendered users/_form.html.haml (887.6ms)
+  Rendered users/index.html.haml within layouts/application (902.5ms)
+  Rendered layouts/_menu_top.html.haml (3.1ms)
+  Rendered layouts/_side_bar.html.haml (1.8ms)
+  Rendered layouts/_notice.html.haml (1.8ms)
+Completed 200 OK in 1001ms (Views: 964.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/uploads/user/image/2/thumb_flowers-1973875_640.png" for ::1 at 2020-02-11 15:53:54 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/user/image/2/thumb_flowers-1973875_640.png"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/users" for ::1 at 2020-02-11 15:54:18 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Kya5n7Q3R6XsBiQ0kJZCVaZP7dNRwU20n6FhmwSdlqfymUOYySSwjFg/oYWj+OBkN+36XpMsAkSFae4GtAyg0g==", "user"=>{"name"=>"Võ Thế Duy", "birthday(1i)"=>"2020", "birthday(2i)"=>"2", "birthday(3i)"=>"11", "phone"=>"0123456788", "address"=>"124 Nguyên Thi Minh Khai, quận 1, HCM", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f7ff0559840 @tempfile=#<Tempfile:/var/folders/9f/6k2b00cs5sn2vs574z1klmvr0000gn/T/RackMultipart20200211-31519-bb1tl2.png>, @original_filename="flowers-1973875_640.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"flowers-1973875_640.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:35
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:35
+  Rendering users/new.html.haml within layouts/application
+  Rendered users/_form.html.haml (12.4ms)
+  Rendered users/new.html.haml within layouts/application (16.1ms)
+  Rendered layouts/_menu_top.html.haml (2.2ms)
+  Rendered layouts/_side_bar.html.haml (2.1ms)
+  Rendered layouts/_notice.html.haml (1.6ms)
+Completed 200 OK in 106ms (Views: 91.8ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users" for ::1 at 2020-02-11 15:55:17 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xEkLTRguMTTxr3vidmCUEkpm4IJziaBDAk7ExEB+h0Yd9vFKZT3GHUWW/lNFDjYj28T3D7Fk77MYhktZ8O+xMw==", "user"=>{"name"=>"Võ Thế Duy", "birthday(1i)"=>"2020", "birthday(2i)"=>"2", "birthday(3i)"=>"11", "phone"=>"0123456788", "address"=>"124 Nguyên Thi Minh Khai, quận 1, HCM", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f7fe8ba44c8 @tempfile=#<Tempfile:/var/folders/9f/6k2b00cs5sn2vs574z1klmvr0000gn/T/RackMultipart20200211-31519-o505zk.png>, @original_filename="flowers-1973875_640.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"flowers-1973875_640.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:35
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:35
+  Rendering users/new.html.haml within layouts/application
+  Rendered users/_form.html.haml (9.5ms)
+  Rendered users/new.html.haml within layouts/application (20.1ms)
+  Rendered layouts/_menu_top.html.haml (2.1ms)
+  Rendered layouts/_side_bar.html.haml (1.8ms)
+  Rendered layouts/_notice.html.haml (1.2ms)
+Completed 200 OK in 157ms (Views: 134.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for ::1 at 2020-02-11 15:55:21 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.haml within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.haml:16
+  Rendered collection of users/_user.html.haml [1 times] (2.6ms)
+  Rendered users/_form.html.haml (7.7ms)
+  Rendered users/index.html.haml within layouts/application (19.0ms)
+  Rendered layouts/_menu_top.html.haml (2.2ms)
+  Rendered layouts/_side_bar.html.haml (1.7ms)
+  Rendered layouts/_notice.html.haml (1.3ms)
+Completed 200 OK in 90ms (Views: 85.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/2" for ::1 at 2020-02-11 15:55:24 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:73
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (3.0ms)
+  Rendered layouts/_menu_top.html.haml (3.3ms)
+  Rendered layouts/_side_bar.html.haml (1.7ms)
+  Rendered layouts/_notice.html.haml (1.3ms)
+Completed 200 OK in 75ms (Views: 61.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/2" for ::1 at 2020-02-11 15:55:52 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:73
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (3.4ms)
+  Rendered layouts/_menu_top.html.haml (2.6ms)
+  Rendered layouts/_side_bar.html.haml (1.6ms)
+  Rendered layouts/_notice.html.haml (1.4ms)
+Completed 200 OK in 68ms (Views: 63.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/2" for ::1 at 2020-02-11 15:55:55 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:73
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (3.1ms)
+  Rendered layouts/_menu_top.html.haml (2.2ms)
+  Rendered layouts/_side_bar.html.haml (1.8ms)
+  Rendered layouts/_notice.html.haml (1.3ms)
+Completed 200 OK in 67ms (Views: 63.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/2" for ::1 at 2020-02-11 15:56:09 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:73
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (4.5ms)
+  Rendered layouts/_menu_top.html.haml (2.2ms)
+  Rendered layouts/_side_bar.html.haml (1.9ms)
+  Rendered layouts/_notice.html.haml (1.5ms)
+Completed 200 OK in 72ms (Views: 67.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/2" for ::1 at 2020-02-11 15:56:10 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:73
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (3.0ms)
+  Rendered layouts/_menu_top.html.haml (1.9ms)
+  Rendered layouts/_side_bar.html.haml (1.4ms)
+  Rendered layouts/_notice.html.haml (1.2ms)
+Completed 200 OK in 63ms (Views: 59.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2020-02-11 15:56:14 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.haml within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.haml:16
+  Rendered collection of users/_user.html.haml [1 times] (2.4ms)
+  Rendered users/_form.html.haml (10.0ms)
+  Rendered users/index.html.haml within layouts/application (60.0ms)
+  Rendered layouts/_menu_top.html.haml (2.2ms)
+  Rendered layouts/_side_bar.html.haml (2.2ms)
+  Rendered layouts/_notice.html.haml (1.7ms)
+Completed 200 OK in 154ms (Views: 150.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/uploads/user/image/2/thumb_flowers-1973875_640.png" for ::1 at 2020-02-11 15:56:15 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/user/image/2/thumb_flowers-1973875_640.png"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/2" for ::1 at 2020-02-11 15:56:16 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:73
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (3.5ms)
+  Rendered layouts/_menu_top.html.haml (2.3ms)
+  Rendered layouts/_side_bar.html.haml (1.7ms)
+  Rendered layouts/_notice.html.haml (1.4ms)
+Completed 200 OK in 69ms (Views: 64.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/2/edit" for ::1 at 2020-02-11 15:56:19 +0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:73
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/_form.html.haml (8.3ms)
+  Rendered users/edit.html.haml within layouts/application (12.3ms)
+  Rendered layouts/_menu_top.html.haml (2.2ms)
+  Rendered layouts/_side_bar.html.haml (1.5ms)
+  Rendered layouts/_notice.html.haml (1.3ms)
+Completed 200 OK in 75ms (Views: 70.8ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/users/2" for ::1 at 2020-02-11 15:56:28 +0700
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jmgUPvYIVPXso/WH9KmdqVPPtfxv8UpeheaO6OEOQYtX1+45ixuj3FiacDbHxz+Ywm2ica0cBa6fLgF1UZ93/g==", "user"=>{"name"=>"Phạm Thị Kim Oanh", "birthday(1i)"=>"2020", "birthday(2i)"=>"2", "birthday(3i)"=>"11", "phone"=>"0123456789", "address"=>"123 Nguyên Thi Minh Khai, quận 1, HCM", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f7ff077a598 @tempfile=#<Tempfile:/var/folders/9f/6k2b00cs5sn2vs574z1klmvr0000gn/T/RackMultipart20200211-31519-qsiimv.png>, @original_filename="flowers-1973875_640.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"flowers-1973875_640.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Update User", "id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:73
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:49
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:49
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/_form.html.haml (9.3ms)
+  Rendered users/edit.html.haml within layouts/application (13.9ms)
+  Rendered layouts/_menu_top.html.haml (2.3ms)
+  Rendered layouts/_side_bar.html.haml (2.0ms)
+  Rendered layouts/_notice.html.haml (1.5ms)
+Completed 200 OK in 88ms (Views: 76.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for ::1 at 2020-02-11 15:56:31 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.haml within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.haml:16
+  Rendered collection of users/_user.html.haml [1 times] (2.5ms)
+  Rendered users/_form.html.haml (9.8ms)
+  Rendered users/index.html.haml within layouts/application (20.4ms)
+  Rendered layouts/_menu_top.html.haml (2.3ms)
+  Rendered layouts/_side_bar.html.haml (1.8ms)
+  Rendered layouts/_notice.html.haml (1.4ms)
+Completed 200 OK in 83ms (Views: 80.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/uploads/user/image/2/thumb_flowers-1973875_640.png" for ::1 at 2020-02-11 15:56:31 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/user/image/2/thumb_flowers-1973875_640.png"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/2/edit" for ::1 at 2020-02-11 15:57:15 +0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:73
+  Rendering users/edit.html.haml within layouts/application
+  Rendered users/_form.html.haml (8.7ms)
+  Rendered users/edit.html.haml within layouts/application (13.5ms)
+  Rendered layouts/_menu_top.html.haml (2.2ms)
+  Rendered layouts/_side_bar.html.haml (1.8ms)
+  Rendered layouts/_notice.html.haml (1.4ms)
+Completed 200 OK in 94ms (Views: 89.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/2" for ::1 at 2020-02-11 15:57:17 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:73
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (2.9ms)
+  Rendered layouts/_menu_top.html.haml (2.2ms)
+  Rendered layouts/_side_bar.html.haml (1.6ms)
+  Rendered layouts/_notice.html.haml (1.2ms)
+Completed 200 OK in 67ms (Views: 63.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/uploads/user/image/2/thumb_flowers-1973875_640.png" for ::1 at 2020-02-11 15:57:17 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/user/image/2/thumb_flowers-1973875_640.png"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-02-11 16:07:58 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.9ms)
+  Rendered layouts/_menu_top.html.haml (2.7ms)
+  Rendered layouts/_side_bar.html.haml (1.8ms)
+  Rendered layouts/_notice.html.haml (1.4ms)
+Completed 200 OK in 116ms (Views: 99.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2020-02-11 16:07:59 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.haml within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.haml:16
+  Rendered collection of users/_user.html.haml [1 times] (2.7ms)
+  Rendered users/_form.html.haml (8.0ms)
+  Rendered users/index.html.haml within layouts/application (21.0ms)
+  Rendered layouts/_menu_top.html.haml (3.1ms)
+  Rendered layouts/_side_bar.html.haml (1.6ms)
+  Rendered layouts/_notice.html.haml (1.1ms)
+Completed 200 OK in 99ms (Views: 79.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/uploads/user/image/2/thumb_flowers-1973875_640.png" for ::1 at 2020-02-11 16:08:00 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/user/image/2/thumb_flowers-1973875_640.png"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/users" for ::1 at 2020-02-11 16:08:17 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PJ5pGTD0j/fWuoWw6Py5jxsH1jRtyqH//X02FwktYeHlIZMeTed43mKDAAHbkhu+iqXBua8n7g/ntbmKubxXlA==", "user"=>{"name"=>"Võ Thế Duy", "birthday(1i)"=>"2020", "birthday(2i)"=>"2", "birthday(3i)"=>"11", "phone"=>"0123456788", "address"=>"124 Nguyên Thi Minh Khai, quận 1, HCM", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f7ff2a18398 @tempfile=#<Tempfile:/var/folders/9f/6k2b00cs5sn2vs574z1klmvr0000gn/T/RackMultipart20200211-31519-10oa4i5.png>, @original_filename="flowers-1973875_640.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"flowers-1973875_640.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:35
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:35
+  Rendering users/new.html.haml within layouts/application
+  Rendered users/_form.html.haml (9.3ms)
+  Rendered users/new.html.haml within layouts/application (13.4ms)
+  Rendered layouts/_menu_top.html.haml (2.5ms)
+  Rendered layouts/_side_bar.html.haml (1.8ms)
+  Rendered layouts/_notice.html.haml (1.4ms)
+Completed 200 OK in 100ms (Views: 88.7ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users" for ::1 at 2020-02-11 16:09:24 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PJ5pGTD0j/fWuoWw6Py5jxsH1jRtyqH//X02FwktYeHlIZMeTed43mKDAAHbkhu+iqXBua8n7g/ntbmKubxXlA==", "user"=>{"name"=>"Võ Thế Duy", "birthday(1i)"=>"2020", "birthday(2i)"=>"2", "birthday(3i)"=>"11", "phone"=>"0123456788", "address"=>"124 Nguyên Thi Minh Khai, quận 1, HCM", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f7fe7adc1b8 @tempfile=#<Tempfile:/var/folders/9f/6k2b00cs5sn2vs574z1klmvr0000gn/T/RackMultipart20200211-31519-4r54ds.png>, @original_filename="flowers-1973875_640.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"flowers-1973875_640.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:35
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:35
+  Rendering users/new.html.haml within layouts/application
+  Rendered users/_form.html.haml (9.6ms)
+  Rendered users/new.html.haml within layouts/application (13.4ms)
+  Rendered layouts/_menu_top.html.haml (2.4ms)
+  Rendered layouts/_side_bar.html.haml (2.0ms)
+  Rendered layouts/_notice.html.haml (1.9ms)
+Completed 200 OK in 95ms (Views: 86.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for ::1 at 2020-02-11 16:09:27 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.haml:16
+  Rendered collection of users/_user.html.haml [1 times] (2.5ms)
+  Rendered users/_form.html.haml (9.2ms)
+  Rendered users/index.html.haml within layouts/application (20.3ms)
+  Rendered layouts/_menu_top.html.haml (3.0ms)
+  Rendered layouts/_side_bar.html.haml (2.1ms)
+  Rendered layouts/_notice.html.haml (1.5ms)
+Completed 200 OK in 95ms (Views: 89.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/uploads/user/image/2/thumb_flowers-1973875_640.png" for ::1 at 2020-02-11 16:09:27 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/user/image/2/thumb_flowers-1973875_640.png"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2020-02-11 16:20:28 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.haml:16
+  Rendered collection of users/_user.html.haml [1 times] (4.4ms)
+  Rendered users/_form.html.haml (15.5ms)
+  Rendered users/index.html.haml within layouts/application (49.6ms)
+  Rendered layouts/_menu_top.html.haml (2.5ms)
+  Rendered layouts/_side_bar.html.haml (3.1ms)
+  Rendered layouts/_notice.html.haml (1.7ms)
+Completed 200 OK in 201ms (Views: 194.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/uploads/user/image/2/thumb_flowers-1973875_640.png" for ::1 at 2020-02-11 16:20:28 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/user/image/2/thumb_flowers-1973875_640.png"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/users" for ::1 at 2020-02-11 16:20:46 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X2minRyKkP/Iz4IOnOdmBWgBhoRkko7sDsLkNY0L/BqG1liaYZln1nz2B7+vicQ0+aORCaZ/wRwUCmuoPZrKbw==", "user"=>{"name"=>"Võ Thế Duy", "birthday(1i)"=>"2020", "birthday(2i)"=>"2", "birthday(3i)"=>"11", "phone"=>"0123456788", "address"=>"124 Nguyên Thi Minh Khai, quận 1, HCM", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f7ff2548598 @tempfile=#<Tempfile:/var/folders/9f/6k2b00cs5sn2vs574z1klmvr0000gn/T/RackMultipart20200211-31519-1emhj1z.png>, @original_filename="flowers-1973875_640.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"flowers-1973875_640.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:35
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "birthday", "phone", "address", "image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Võ Thế Duy"], ["birthday", "2020-02-11"], ["phone", "0123456788"], ["address", "124 Nguyên Thi Minh Khai, quận 1, HCM"], ["image", "flowers-1973875_640.png"], ["created_at", "2020-02-11 09:20:52.264933"], ["updated_at", "2020-02-11 09:20:52.264933"]]
+  ↳ app/controllers/users_controller.rb:35
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:35
+Redirected to http://localhost:3000/users/3
+Completed 302 Found in 5334ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/users/3" for ::1 at 2020-02-11 16:20:52 +0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:73
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (4.0ms)
+  Rendered layouts/_menu_top.html.haml (2.4ms)
+  Rendered layouts/_side_bar.html.haml (3.4ms)
+  Rendered layouts/_notice.html.haml (1.5ms)
+Completed 200 OK in 104ms (Views: 99.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2020-02-11 16:20:59 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.haml within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.haml:16
+  Rendered collection of users/_user.html.haml [2 times] (4.2ms)
+  Rendered users/_form.html.haml (9.0ms)
+  Rendered users/index.html.haml within layouts/application (22.4ms)
+  Rendered layouts/_menu_top.html.haml (3.3ms)
+  Rendered layouts/_side_bar.html.haml (1.8ms)
+  Rendered layouts/_notice.html.haml (1.3ms)
+Completed 200 OK in 87ms (Views: 82.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/uploads/user/image/2/thumb_flowers-1973875_640.png" for ::1 at 2020-02-11 16:20:59 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/user/image/2/thumb_flowers-1973875_640.png"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'

@@ -30,6 +30,8 @@ gem 'jbuilder', '~> 2.5'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
+# gem 'mini_magick', '~> 4.5', '>= 4.5.1'
+gem 'mini_magick', :git => 'git://github.com/minimagick/minimagick.git'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -51,7 +53,6 @@ group :development do
   # # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   # gem 'spring'
   # gem 'spring-watcher-listen', '~> 2.0.0'
-  # gem 'ffaker', :git => 'https://github.com/EmmanuelOga/ffaker.git'
   gem 'faker', '~> 2.2'
 end
 
@@ -59,9 +60,14 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 # gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+# write layout faster
 gem "haml-rails", "~> 1.0.0"
+# create form
 gem 'simple_form'
 gem 'bootstrap-sass'
+#filter data form
 gem 'data_grid'
 gem 'jquery-rails'
 gem 'kaminari'
+# upload and resize image
+gem 'carrierwave'

@@ -5,5 +5,6 @@ class User < ApplicationRecord
                       length: { :minimum => 10, :maximum => 15 }    
     validates :birthday, presence: true
     validates :address, presence: true, length: { minimum: 5 }
-    validates :image, presence: true, length: { minimum: 5 }
+    # validates :image, presence: true, length: { minimum: 5 }
+    mount_uploader :image, ImageUploader
 end

@@ -11,4 +11,6 @@
     = render 'layouts/menu_top'
     #content-main
       = render 'layouts/side_bar'
-      = yield
+      .main
+        = render 'layouts/notice'
+        = yield
