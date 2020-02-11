@@ -1,5 +1,6 @@
 %tr
   %td= book.id
+  %td= image_tag book.image.thumb.url.to_s
   %td= book.name
   %td= book.desc
   %td= link_to 'Show', book_path(book), class: "btn btn-xl btn-primary", style: "color: #fff"

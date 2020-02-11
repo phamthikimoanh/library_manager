@@ -1,4 +1,17 @@
 #wapper-content
   %h1.text-center Edit category
-  = render 'form'
-  = link_to "Cancle", categories_path
+  -# = render 'form'
+  = simple_form_for @category do |form|
+    - if @category.errors.any?
+      #error_explanation
+        %h2
+          = pluralize(@category.errors.count, "error")
+          prohibited
+          this category from being saved:
+        %ul
+          - @category.errors.full_messages.each do |msg|
+            %li= msg
+    = form.input :name
+    .button-add-new
+      = form.submit "Save"
+    = link_to "Cancle", categories_path

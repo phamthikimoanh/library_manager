@@ -33,9 +33,13 @@ html {
   flex-direction: row;
   height: 100%;
 }
-#wapper-content {
+// #wapper-content {
+//   margin: 0 40px;
+//   width: 78% !important;
+// }
+.main{
+  width: 80%;
   margin: 0 40px;
-  width: 100%;
 }
 #form-add-new {
   display: none;
@@ -77,7 +81,7 @@ html {
   }
 }
 #side_bar {
-  width: 300px;
+  width: 20%;
   background: #1b1f26;
   height: 100%;
   ul {

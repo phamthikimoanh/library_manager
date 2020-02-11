@@ -2,8 +2,21 @@
   %h1 Book detail 
   .content-detail
     %p
+      %strong ISBN:
+      = @book.isbn
+    %p
+      %strong Image:
+      = image_tag @book.image.thumb.url
+    %p
       %strong Name:
       = @book.name
     %p
       %strong Description:
       = @book.desc
+    %p
+      %strong Author:
+      = @book.author
+    %p
+      %strong Total:
+      = @book.books_total
+   

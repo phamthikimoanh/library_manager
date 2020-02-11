@@ -1,4 +1,27 @@
 #wapper-content
   %h1.text-center Edit book
-  = render 'form'
-  = link_to "Cancle", books_path
+  -# = render 'form'
+  = simple_form_for @book do |form|
+    - if @book.errors.any?
+      #error_explanation
+        %h2
+          = pluralize(@book.errors.count, "error")
+          prohibited
+          this book from being saved:
+        %ul
+          - @book.errors.full_messages.each do |msg|
+            %li= msg
+    .row-one
+      = form.input :isbn
+      = form.input :name
+    .row-one
+      = form.input :author
+      = form.input :books_total
+      = form.association :category
+    .div
+      = form.input :desc, as: :text
+    .div
+      = form.file_field :image
+    .button-add-new
+      = form.submit "Save"
+    = link_to "Cancle", books_path
