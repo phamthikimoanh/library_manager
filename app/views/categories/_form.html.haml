@@ -1,10 +1,10 @@
-= simple_form_for @category, remote: true, url: categories_path do |form|
+= simple_form_for @category, remote: true do |form|
   - if @category.errors.any?
     #error_explanation
       %h2
         = pluralize(@category.errors.count, "error")
         prohibited
-        this book from being saved:
+        this category from being saved:
       %ul
         - @category.errors.full_messages.each do |msg|
           %li= msg

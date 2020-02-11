@@ -2,12 +2,31 @@
 
 class CategoriesController < ApplicationController
   def index
-    @categories = Category.all
+    @categories = Category.all.page params[:page]
     @category = Category.new
   end
 
   def edit
     @category = Category.find(params[:id])
+  end
+
+  def update
+    @category = Category.find(params[:id])
+
+    if @category.update(category_params)
+      redirect_to categories_path
+    else
+      render 'edit'
+    end
+    # respond_to do |format|
+    #   if @category.save
+    #     format.html { redirect_to @category, notice: 'Category was successfully edited.' }
+    #     format.js   {}
+    #   else
+    #     format.html { render :new }
+    #     format.json { render json: @category.errors, status: :unprocessable_entity }
+    #   end
+    # end
   end
 
   def create

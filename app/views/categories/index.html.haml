@@ -3,10 +3,12 @@
   %table.table.table-hover
     %thead
       %tr
+        %th No.
         %th Name
         %th #
     %tbody#categories
       = render @categories
+  = paginate @categories 
 
   %hr
 

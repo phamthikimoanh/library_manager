@@ -1,4 +1,4 @@
-= simple_form_for @book,remote: true, url: books_path do |form|
+= simple_form_for @book, remote: true do |form|
   - if @book.errors.any?
     #error_explanation
       %h2
