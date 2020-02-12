@@ -8,10 +8,10 @@ class UsersGrid
   end
 
   # Filters
-  # filter(:id, :string, multiple: ',')
-  # filter(:name, :string)
-  # filter(:phone, :enum)
-  # filter(:address, :string)
+  filter(:id, :string, multiple: ',')
+  filter(:name, :string)
+  filter(:phone, :string)
+  filter(:address, :string)
 
   # Columns
   column(:id, mandatory: true)

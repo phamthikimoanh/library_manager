@@ -1,17 +1,34 @@
 #wapper-content
-  %h1 Category list 
-  %table.table.table-hover
-    %thead
-      %tr
-        %th No.
-        %th Name
-        %th #
-    %tbody#categories
-      = render @categories
-  = paginate @categories 
+  %h1 Listing categories
+  %p.total
+    Total category: #{@categories_grid.assets.total_count}
+    %button.btn.btn-default{:type => "button", :onclick => "addFill()"} Fillter 
+  #form-fill
+    = datagrid_form_for @categories_grid, url: categories_path
 
-  %hr
+  = datagrid_table(@categories_grid)
+  = paginate @categories_grid.assets
 
-  %button.btn.btn-default{:type => "button", :onclick => "addNew()"} Add New
+  %br
+
+  %button.btn.btn-default{:type => "button", :onclick => "addNew()"} Add New Category
   #form-add-new
     = render 'form'
+
+-# #wapper-content
+-#   %h1 Category list 
+-#   %table.table.table-hover
+-#     %thead
+-#       %tr
+-#         %th No.
+-#         %th Name
+-#         %th #
+-#     %tbody#categories
+-#       = render @categories
+-#   = paginate @categories 
+
+-#   %hr
+
+-#   %button.btn.btn-default{:type => "button", :onclick => "addNew()"} Add New
+-#   #form-add-new
+-#     = render 'form'

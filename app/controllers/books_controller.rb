@@ -4,19 +4,12 @@ class BooksController < ApplicationController
   # before_action :set_book, only: [:show, :edit, :update, :destroy]
 
   def index
-    @books = Book.all.page params[:page]
+    # @books = Book.all.page params[:page]
     @book = Book.new
 
-    # @data_grid = prepare_grid do |grid|
-    #     grid.add_column :auto
-    #     grid.add_column :isbn, :title => 'Code Book', :sortable => true
-    #     grid.add_column :name, :title => 'Name', :sortable => true
-    #     grid.add_column :desc, :title => 'Description', :sortable => true, :filter => :text
-    #     grid.add_column :author, :title => 'Author', :sortable => true
-
-    #     grid.initial_sort = "books.created_at DESC"
-
-    #     grid.data = Book.scoped
+    @books_grid = BooksGrid.new(params[:books_grid]) do |scope|
+      scope.page(params[:page])  
+    end
     # end
   end
 

@@ -25,4 +25,12 @@ function addNew() {
   }
 }
 
+function addFill() {
+  var x = document.getElementById("form-fill");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
 

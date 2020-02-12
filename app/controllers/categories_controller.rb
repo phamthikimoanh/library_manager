@@ -2,8 +2,11 @@
 
 class CategoriesController < ApplicationController
   def index
-    @categories = Category.all.page params[:page]
+    # @categories = Category.all.page params[:page]
     @category = Category.new
+    @categories_grid = CategoriesGrid.new(params[:categories_grid]) do |scope|
+      scope.page(params[:page])  
+    end
   end
 
   def edit
@@ -18,15 +21,6 @@ class CategoriesController < ApplicationController
     else
       render 'edit'
     end
-    # respond_to do |format|
-    #   if @category.save
-    #     format.html { redirect_to @category, notice: 'Category was successfully edited.' }
-    #     format.js   {}
-    #   else
-    #     format.html { render :new }
-    #     format.json { render json: @category.errors, status: :unprocessable_entity }
-    #   end
-    # end
   end
 
   def create

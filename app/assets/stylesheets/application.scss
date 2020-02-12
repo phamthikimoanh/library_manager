@@ -39,7 +39,8 @@ html {
   width: 80%;
   margin: 0 40px;
 }
-#form-add-new {
+#form-add-new,
+#form-fill {
   display: none;
 }
 #menu-top {
@@ -128,14 +129,19 @@ html {
   width: 100%;
 }
 
-.datagrid td, .datagrid th {
+.datagrid td,
+.datagrid th {
   border: 1px solid #ddd;
   padding: 14px 10px;
 }
 
-.datagrid tr:nth-child(even){background-color: #f2f2f2;}
+.datagrid tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
 
-.datagrid tr:hover {background-color: #ddd;}
+.datagrid tr:hover {
+  background-color: #ddd;
+}
 
 .datagrid th {
   padding-top: 12px;
@@ -143,4 +149,31 @@ html {
   text-align: left;
   background-color: #00143852;
   color: white;
+}
+
+.datagrid-form {
+  .datagrid-filter {
+    float: left;
+    width: 45%;
+    margin: auto 20px;
+    label {
+      margin-right: 5px;
+      width: 80px;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 5px 10px;
+      box-sizing: border-box;
+    }
+  }
+  .datagrid-actions {
+    clear: both;
+    margin: 10px;
+    .datagrid-submit {
+      padding: 5px 10px;
+      margin-top: 10px;
+      background: #565656;
+      color: #fff;
+    }
+  }
 }
