@@ -1,23 +1,30 @@
 #wapper-content
-
   %h1 Listing users
-
-  %table.table.table-hover
-    %thead
-      %tr
-        %th Name
-        %th Birthday
-        %th Phone
-        %th Address
-        %th Image
-        %th #
-
-    %tbody#users
-      = render @users
+  %p.total
+    Total user: #{@users_grid.assets.total_count}
+  = datagrid_table(@users_grid)
+  = paginate @users_grid.assets
 
   %br
 
   %button.btn.btn-default{:type => "button", :onclick => "addNew()"} Add New User
   #form-add-new
     = render 'form'
+
+-#   %h1 Listing users
+
+-#   %table.table.table-hover
+-#     %thead
+-#       %tr
+-#         %th Name
+-#         %th Birthday
+-#         %th Phone
+-#         %th Address
+-#         %th Image
+-#         %th #
+
+-#     %tbody#users
+-#       = render @users
+
+-#   %br
 

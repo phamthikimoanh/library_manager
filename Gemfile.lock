@@ -75,15 +75,13 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.5)
     crass (1.0.6)
-    data_grid (0.0.2)
-      fastercsv
-      rails (>= 3.0)
+    datagrid (1.5.9)
+      rails (>= 4.0)
     erubi (1.9.0)
     erubis (2.7.0)
     execjs (2.7.0)
     faker (2.10.1)
       i18n (>= 1.6, < 2)
-    fastercsv (1.5.5)
     ffi (1.12.2)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
@@ -230,7 +228,7 @@ DEPENDENCIES
   byebug
   carrierwave
   coffee-rails (~> 4.2)
-  data_grid
+  datagrid (~> 1.4, >= 1.4.4)
   faker (~> 2.2)
   haml-rails (~> 1.0.0)
   jbuilder (~> 2.5)

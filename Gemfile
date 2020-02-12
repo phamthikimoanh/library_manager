@@ -66,7 +66,7 @@ gem "haml-rails", "~> 1.0.0"
 gem 'simple_form'
 gem 'bootstrap-sass'
 #filter data form
-gem 'data_grid'
+gem 'datagrid', '~> 1.4', '>= 1.4.4'
 gem 'jquery-rails'
 gem 'kaminari'
 # upload and resize image

@@ -12,8 +12,6 @@
  *
  *= require_tree .
  *= require_self
- *= require data_grid/data_grid
- *= require data_grid/grid_calendar/calendar-blue
 */
 @import "bootstrap-sprockets";
 @import "bootstrap";
@@ -37,7 +35,7 @@ html {
 //   margin: 0 40px;
 //   width: 78% !important;
 // }
-.main{
+.main {
   width: 80%;
   margin: 0 40px;
 }
@@ -103,7 +101,9 @@ html {
     width: 100%;
   }
 }
-.button-add-new, .button-edit, .form-actions{
+.button-add-new,
+.button-edit,
+.form-actions {
   color: #fff;
   background: darkseagreen;
   padding: 5px 20px;
@@ -115,6 +115,32 @@ html {
     border: none;
   }
 }
-// .content-detail {
-//   margin: 0 60px 0 30px;
-// }
+.total {
+  color: #ffffff;
+  background: #2800388a;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+.datagrid {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.datagrid td, .datagrid th {
+  border: 1px solid #ddd;
+  padding: 14px 10px;
+}
+
+.datagrid tr:nth-child(even){background-color: #f2f2f2;}
+
+.datagrid tr:hover {background-color: #ddd;}
+
+.datagrid th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #00143852;
+  color: white;
+}

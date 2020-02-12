@@ -1,8 +1,12 @@
 #side_bar
     %ul
         %li
-            = link_to "Books Manager", books_path,class: "btn-sidebar"
+            = link_to "Books", books_path,class: "btn-sidebar"
         %li
-            = link_to "Category Manager", categories_path
+            = link_to "Category", categories_path
         %li
-            = link_to "User Manager", users_path
+            = link_to "User", users_path
+        %li
+            = link_to "Borrow Book", categories_path
+        %li
+            = link_to "Return Book", users_path
