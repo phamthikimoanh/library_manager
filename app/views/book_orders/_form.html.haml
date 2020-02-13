@@ -1,0 +1,6 @@
+= simple_form_for @book_order, remote: true do |form| 
+    = form.input :amount_book
+    = form.input :brorrow_date , as: :date
+    = form.association :user   
+    .button-add
+        = form.submit "Save"

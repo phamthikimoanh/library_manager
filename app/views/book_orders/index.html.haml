@@ -1,0 +1,18 @@
+#wapper-content
+  %h1 List book order
+  %table.table.table-hover
+    %thead
+      %tr
+        %th No.
+        %th Amount book
+        %th Brorrow_date
+        %th User Id
+        %th #
+    %tbody#book_orders
+      = render @book_orders
+
+  %hr
+
+  %button.btn.btn-default{:type => "button", :onclick => "addNewBookOrder()"} Add New 
+  #form-add
+    = render 'form'

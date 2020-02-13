@@ -31154,3 +31154,2467 @@ Processing by CategoriesController#index as HTML
 Completed 200 OK in 162ms (Views: 153.8ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/" for ::1 at 2020-02-13 15:59:48 +0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (5.0ms)
+  Rendered layouts/_menu_top.html.haml (3.5ms)
+  Rendered layouts/_side_bar.html.haml (3.1ms)
+  Rendered layouts/_notice.html.haml (2.2ms)
+Completed 200 OK in 444ms (Views: 434.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories" for ::1 at 2020-02-13 15:59:51 +0700
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.haml within layouts/application
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "categories"[0m
+  ↳ app/views/categories/index.html.haml:4
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_form.html.erb (894.3ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_order_for.html.erb (0.8ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_order_for.html.erb (0.3ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_head.html.erb (14.4ms)
+  [1m[36mCategory Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "categories" LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/views/categories/index.html.haml:9
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/categories/index.html.haml:9
+  Rendered categories/_category.html.haml (1.5ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_row.html.erb (5.1ms)
+  Rendered categories/_category.html.haml (0.1ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_row.html.erb (2.0ms)
+  Rendered categories/_category.html.haml (0.1ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_row.html.erb (2.1ms)
+  Rendered categories/_category.html.haml (0.1ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_row.html.erb (2.0ms)
+  Rendered categories/_category.html.haml (0.2ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_row.html.erb (2.3ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_table.html.erb (70.0ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "categories"[0m
+  ↳ app/views/categories/index.html.haml:10
+  Rendered categories/_form.html.haml (57.0ms)
+  Rendered categories/index.html.haml within layouts/application (1054.6ms)
+  Rendered layouts/_menu_top.html.haml (3.5ms)
+  Rendered layouts/_side_bar.html.haml (2.0ms)
+  Rendered layouts/_notice.html.haml (1.4ms)
+Completed 200 OK in 1181ms (Views: 1113.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/categories" for ::1 at 2020-02-13 15:59:57 +0700
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.haml within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "categories"[0m
+  ↳ app/views/categories/index.html.haml:4
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_form.html.erb (2.5ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_order_for.html.erb (0.8ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_order_for.html.erb (0.4ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_head.html.erb (14.6ms)
+  [1m[36mCategory Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "categories" LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/views/categories/index.html.haml:9
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/categories/index.html.haml:9
+  Rendered categories/_category.html.haml (1.3ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_row.html.erb (3.6ms)
+  Rendered categories/_category.html.haml (0.1ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_row.html.erb (2.0ms)
+  Rendered categories/_category.html.haml (0.1ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_row.html.erb (1.9ms)
+  Rendered categories/_category.html.haml (0.1ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_row.html.erb (2.1ms)
+  Rendered categories/_category.html.haml (0.1ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_row.html.erb (2.1ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_table.html.erb (66.4ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "categories"[0m
+  ↳ app/views/categories/index.html.haml:10
+  Rendered categories/_form.html.haml (4.2ms)
+  Rendered categories/index.html.haml within layouts/application (99.7ms)
+  Rendered layouts/_menu_top.html.haml (2.5ms)
+  Rendered layouts/_side_bar.html.haml (2.2ms)
+  Rendered layouts/_notice.html.haml (1.6ms)
+Completed 200 OK in 164ms (Views: 159.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/categories" for ::1 at 2020-02-13 16:01:10 +0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.haml within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "categories"[0m
+  ↳ app/views/categories/index.html.haml:4
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_form.html.erb (930.6ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_order_for.html.erb (0.9ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_order_for.html.erb (0.3ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_head.html.erb (14.9ms)
+  [1m[36mCategory Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "categories" LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/views/categories/index.html.haml:9
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/categories/index.html.haml:9
+  Rendered categories/_category.html.haml (1.9ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_row.html.erb (5.4ms)
+  Rendered categories/_category.html.haml (0.1ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_row.html.erb (2.2ms)
+  Rendered categories/_category.html.haml (0.1ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_row.html.erb (2.1ms)
+  Rendered categories/_category.html.haml (0.2ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_row.html.erb (2.2ms)
+  Rendered categories/_category.html.haml (0.2ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_row.html.erb (2.1ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_table.html.erb (73.1ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "categories"[0m
+  ↳ app/views/categories/index.html.haml:10
+  Rendered categories/_form.html.haml (50.6ms)
+  Rendered categories/index.html.haml within layouts/application (1089.0ms)
+  Rendered layouts/_menu_top.html.haml (2.6ms)
+  Rendered layouts/_side_bar.html.haml (2.8ms)
+  Rendered layouts/_notice.html.haml (1.5ms)
+Completed 200 OK in 1532ms (Views: 1462.7ms | ActiveRecord: 1.7ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/bin/rake:22
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/bin/rake:22
+Started GET "/" for ::1 at 2020-02-13 16:17:56 +0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (4.7ms)
+  Rendered layouts/_menu_top.html.haml (11.8ms)
+  Rendered layouts/_side_bar.html.haml (2.7ms)
+  Rendered layouts/_notice.html.haml (1.7ms)
+Completed 200 OK in 419ms (Views: 408.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories" for ::1 at 2020-02-13 16:17:58 +0700
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.haml within layouts/application
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "categories"[0m
+  ↳ app/views/categories/index.html.haml:4
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_form.html.erb (930.7ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_order_for.html.erb (0.9ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_order_for.html.erb (0.4ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_head.html.erb (16.4ms)
+  [1m[36mCategory Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "categories" LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/views/categories/index.html.haml:9
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/categories/index.html.haml:9
+  Rendered categories/_category.html.haml (1.8ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_row.html.erb (5.9ms)
+  Rendered categories/_category.html.haml (0.1ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_row.html.erb (2.1ms)
+  Rendered categories/_category.html.haml (0.2ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_row.html.erb (2.2ms)
+  Rendered categories/_category.html.haml (0.1ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_row.html.erb (1.9ms)
+  Rendered categories/_category.html.haml (0.2ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_row.html.erb (2.4ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_table.html.erb (73.4ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "categories"[0m
+  ↳ app/views/categories/index.html.haml:10
+  Rendered categories/_form.html.haml (54.9ms)
+  Rendered categories/index.html.haml within layouts/application (1089.9ms)
+  Rendered layouts/_menu_top.html.haml (3.9ms)
+  Rendered layouts/_side_bar.html.haml (2.1ms)
+  Rendered layouts/_notice.html.haml (2.0ms)
+Completed 200 OK in 1206ms (Views: 1147.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/categories" for ::1 at 2020-02-13 16:18:31 +0700
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.haml within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "categories"[0m
+  ↳ app/views/categories/index.html.haml:4
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_form.html.erb (1.5ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_order_for.html.erb (0.9ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_order_for.html.erb (0.4ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_head.html.erb (14.5ms)
+  [1m[36mCategory Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "categories" LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/views/categories/index.html.haml:9
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/categories/index.html.haml:9
+  Rendered categories/_category.html.haml (1.5ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_row.html.erb (3.9ms)
+  Rendered categories/_category.html.haml (0.1ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_row.html.erb (2.1ms)
+  Rendered categories/_category.html.haml (0.1ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_row.html.erb (2.2ms)
+  Rendered categories/_category.html.haml (0.2ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_row.html.erb (2.2ms)
+  Rendered categories/_category.html.haml (0.1ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_row.html.erb (2.3ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_table.html.erb (67.9ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "categories"[0m
+  ↳ app/views/categories/index.html.haml:10
+  Rendered categories/_form.html.haml (4.2ms)
+  Rendered categories/index.html.haml within layouts/application (101.6ms)
+  Rendered layouts/_menu_top.html.haml (2.5ms)
+  Rendered layouts/_side_bar.html.haml (334.6ms)
+Completed 500 Internal Server Error in 500ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `book_orders_path' for #<#<Class:0x00007fb962ce1ad0>:0x00007fb96799d298>
+Did you mean?  book_path):
+     7:         %li
+     8:             = link_to "User", users_path
+     9:         %li
+    10:             = link_to "Borrow Book", book_orders_path
+    11:         %li
+    12:             = link_to "Return Book", users_path
+  
+app/views/layouts/_side_bar.html.haml:10:in `_app_views_layouts__side_bar_html_haml___188890825261813146_70217060506640'
+app/views/layouts/application.html.haml:13:in `_app_views_layouts_application_html_haml__3073868737838796416_70217141852960'
+Started GET "/" for ::1 at 2020-02-13 16:19:01 +0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (4.4ms)
+  Rendered layouts/_menu_top.html.haml (3.5ms)
+  Rendered layouts/_side_bar.html.haml (372.9ms)
+Completed 500 Internal Server Error in 706ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `book_orders_path' for #<#<Class:0x00007fd085c7cdf8>:0x00007fd08bbcfad0>
+Did you mean?  book_path):
+     7:         %li
+     8:             = link_to "User", users_path
+     9:         %li
+    10:             = link_to "Borrow Book", book_orders_path
+    11:         %li
+    12:             = link_to "Return Book", users_path
+  
+app/views/layouts/_side_bar.html.haml:10:in `_app_views_layouts__side_bar_html_haml___2186515067461526451_70266778510940'
+app/views/layouts/application.html.haml:13:in `_app_views_layouts_application_html_haml___704425754202652901_70266836004300'
+Started GET "/" for ::1 at 2020-02-13 16:19:05 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.4ms)
+  Rendered layouts/_menu_top.html.haml (3.5ms)
+  Rendered layouts/_side_bar.html.haml (262.9ms)
+Completed 500 Internal Server Error in 320ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `book_orders_path' for #<#<Class:0x00007fd085c7cdf8>:0x00007fd08b8a4fb8>
+Did you mean?  book_path):
+     7:         %li
+     8:             = link_to "User", users_path
+     9:         %li
+    10:             = link_to "Borrow Book", book_orders_path
+    11:         %li
+    12:             = link_to "Return Book", users_path
+  
+app/views/layouts/_side_bar.html.haml:10:in `_app_views_layouts__side_bar_html_haml___2186515067461526451_70266775289940'
+app/views/layouts/application.html.haml:13:in `_app_views_layouts_application_html_haml___704425754202652901_70266835546480'
+Started GET "/" for ::1 at 2020-02-13 16:21:18 +0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (4.5ms)
+  Rendered layouts/_menu_top.html.haml (3.2ms)
+  Rendered layouts/_side_bar.html.haml (3.2ms)
+  Rendered layouts/_notice.html.haml (2.1ms)
+Completed 200 OK in 364ms (Views: 353.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book_orders" for ::1 at 2020-02-13 16:21:20 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  Rendered book_orders/index.html.haml within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error ('nil' is not an ActiveModel-compatible object. It must implement :to_partial_path.):
+    10:         %th #
+    11: 
+    12:     %tbody#categories
+    13:       = render @categories
+    14: 
+    15:   %hr
+    16: 
+  
+app/views/book_orders/index.html.haml:13:in `_app_views_book_orders_index_html_haml__1256474429377893279_70280282224500'
+Started GET "/book_orders" for ::1 at 2020-02-13 16:22:19 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.2ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (3.2ms)
+  Rendered book_orders/index.html.haml within layouts/application (13.7ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:18: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:21: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/book_orders/_form.html.haml:18: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/book_orders/_form.html.haml:21: syntax error, unexpected end-of-input, expecting keyword_end
+app/views/book_orders/index.html.haml:19:in `_app_views_book_orders_index_html_haml__1256474429377893279_70280268452900'
+Started GET "/book_orders" for ::1 at 2020-02-13 16:22:36 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  Rendered book_orders/index.html.haml within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %button and nested within it.):
+    15:   %hr
+    16: 
+    17:   %button.btn.btn-default{:type => "button", :onclick => "addNew()"} Add New
+    18:     #form-add-new
+    19:       = render 'form'
+  
+app/views/book_orders/index.html.haml:18
+Started GET "/book_orders" for ::1 at 2020-02-13 16:23:58 +0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.2ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (2.0ms)
+  Rendered book_orders/index.html.haml within layouts/application (12.3ms)
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 0.7ms)
+
+
+  
+SyntaxError (/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:18: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:21: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/book_orders/_form.html.haml:18: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/book_orders/_form.html.haml:21: syntax error, unexpected end-of-input, expecting keyword_end
+app/views/book_orders/index.html.haml:19:in `_app_views_book_orders_index_html_haml___2081530630269392431_70240171776700'
+Started GET "/book_orders" for ::1 at 2020-02-13 16:24:50 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.1ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (2.6ms)
+  Rendered book_orders/index.html.haml within layouts/application (8.3ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:18: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:21: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/book_orders/_form.html.haml:18: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/book_orders/_form.html.haml:21: syntax error, unexpected end-of-input, expecting keyword_end
+app/views/book_orders/index.html.haml:19:in `_app_views_book_orders_index_html_haml___2081530630269392431_70240103783980'
+Started GET "/book_orders" for ::1 at 2020-02-13 16:25:22 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.1ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/index.html.haml within layouts/application (3.1ms)
+  Rendered layouts/_menu_top.html.haml (3.4ms)
+  Rendered layouts/_side_bar.html.haml (1.7ms)
+  Rendered layouts/_notice.html.haml (1.0ms)
+Completed 200 OK in 385ms (Views: 382.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/book_orders/new" for ::1 at 2020-02-13 16:25:31 +0700
+Processing by BookOrdersController#new as HTML
+Completed 406 Not Acceptable in 426ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (BookOrdersController#new is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.4.1) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.4.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.4.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.4.1) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.4.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.1.2) lib/rack/tempfile_reaper.rb:17:in `call'
+rack (2.1.2) lib/rack/etag.rb:27:in `call'
+rack (2.1.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.1.2) lib/rack/head.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.1.2) lib/rack/session/abstract/id.rb:269:in `context'
+rack (2.1.2) lib/rack/session/abstract/id.rb:263:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/book_orders/new" for ::1 at 2020-02-13 16:28:35 +0700
+Processing by BookOrdersController#new as HTML
+Completed 406 Not Acceptable in 432ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (BookOrdersController#new is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.4.1) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.4.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.4.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.4.1) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.4.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.1.2) lib/rack/tempfile_reaper.rb:17:in `call'
+rack (2.1.2) lib/rack/etag.rb:27:in `call'
+rack (2.1.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.1.2) lib/rack/head.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.1.2) lib/rack/session/abstract/id.rb:269:in `context'
+rack (2.1.2) lib/rack/session/abstract/id.rb:263:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/method_override.rb:24:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/book_orders/" for ::1 at 2020-02-13 16:29:29 +0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.2ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (2.3ms)
+  Rendered book_orders/index.html.haml within layouts/application (11.6ms)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 0.7ms)
+
+
+  
+SyntaxError (/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:17: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:20: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/book_orders/_form.html.haml:17: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/book_orders/_form.html.haml:20: syntax error, unexpected end-of-input, expecting keyword_end
+app/views/book_orders/index.html.haml:19:in `_app_views_book_orders_index_html_haml__304169564173363541_70251310050700'
+Started GET "/book_orders/" for ::1 at 2020-02-13 16:30:02 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.1ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (1.8ms)
+  Rendered book_orders/index.html.haml within layouts/application (7.1ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:17: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:20: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/book_orders/_form.html.haml:17: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/book_orders/_form.html.haml:20: syntax error, unexpected end-of-input, expecting keyword_end
+app/views/book_orders/index.html.haml:19:in `_app_views_book_orders_index_html_haml__304169564173363541_70251379606400'
+Started GET "/book_orders/" for ::1 at 2020-02-13 16:30:03 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.1ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (2.2ms)
+  Rendered book_orders/index.html.haml within layouts/application (8.0ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:17: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:20: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/book_orders/_form.html.haml:17: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/book_orders/_form.html.haml:20: syntax error, unexpected end-of-input, expecting keyword_end
+app/views/book_orders/index.html.haml:19:in `_app_views_book_orders_index_html_haml__304169564173363541_70251366152760'
+Started GET "/book_orders/" for ::1 at 2020-02-13 16:30:04 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.1ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (3.2ms)
+  Rendered book_orders/index.html.haml within layouts/application (8.9ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:17: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:20: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/book_orders/_form.html.haml:17: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/book_orders/_form.html.haml:20: syntax error, unexpected end-of-input, expecting keyword_end
+app/views/book_orders/index.html.haml:19:in `_app_views_book_orders_index_html_haml__304169564173363541_70251375421000'
+Started GET "/book_orders/" for ::1 at 2020-02-13 16:31:30 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.1ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (2.1ms)
+  Rendered book_orders/index.html.haml within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:17: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:20: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/book_orders/_form.html.haml:17: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/book_orders/_form.html.haml:20: syntax error, unexpected end-of-input, expecting keyword_end
+app/views/book_orders/index.html.haml:19:in `_app_views_book_orders_index_html_haml__304169564173363541_70251375504180'
+Started GET "/book_orders/" for ::1 at 2020-02-13 16:31:31 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.1ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (2.2ms)
+  Rendered book_orders/index.html.haml within layouts/application (7.8ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:17: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:20: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/book_orders/_form.html.haml:17: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/book_orders/_form.html.haml:20: syntax error, unexpected end-of-input, expecting keyword_end
+app/views/book_orders/index.html.haml:19:in `_app_views_book_orders_index_html_haml__304169564173363541_70251326540320'
+Started GET "/book_orders/" for ::1 at 2020-02-13 16:31:32 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.1ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (2.2ms)
+  Rendered book_orders/index.html.haml within layouts/application (7.8ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:17: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:20: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/book_orders/_form.html.haml:17: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/book_orders/_form.html.haml:20: syntax error, unexpected end-of-input, expecting keyword_end
+app/views/book_orders/index.html.haml:19:in `_app_views_book_orders_index_html_haml__304169564173363541_70251315882040'
+Started GET "/book_orders/" for ::1 at 2020-02-13 16:31:32 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.1ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (1.6ms)
+  Rendered book_orders/index.html.haml within layouts/application (6.6ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:17: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:20: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/book_orders/_form.html.haml:17: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/book_orders/_form.html.haml:20: syntax error, unexpected end-of-input, expecting keyword_end
+app/views/book_orders/index.html.haml:19:in `_app_views_book_orders_index_html_haml__304169564173363541_70251322227800'
+Started GET "/book_orders/" for ::1 at 2020-02-13 16:32:09 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.1ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (3.0ms)
+  Rendered book_orders/index.html.haml within layouts/application (9.4ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:17: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:20: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/book_orders/_form.html.haml:17: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/book_orders/_form.html.haml:20: syntax error, unexpected end-of-input, expecting keyword_end
+app/views/book_orders/index.html.haml:19:in `_app_views_book_orders_index_html_haml__304169564173363541_70251365339620'
+Started GET "/book_orders/" for ::1 at 2020-02-13 16:32:10 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.1ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (2.0ms)
+  Rendered book_orders/index.html.haml within layouts/application (7.5ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:17: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:20: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/book_orders/_form.html.haml:17: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/book_orders/_form.html.haml:20: syntax error, unexpected end-of-input, expecting keyword_end
+app/views/book_orders/index.html.haml:19:in `_app_views_book_orders_index_html_haml__304169564173363541_70251322487140'
+Started GET "/book_orders/" for ::1 at 2020-02-13 16:32:11 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.1ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (1.8ms)
+  Rendered book_orders/index.html.haml within layouts/application (6.9ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:17: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:20: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/book_orders/_form.html.haml:17: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/book_orders/_form.html.haml:20: syntax error, unexpected end-of-input, expecting keyword_end
+app/views/book_orders/index.html.haml:19:in `_app_views_book_orders_index_html_haml__304169564173363541_70251365030300'
+Started GET "/book_orders/" for ::1 at 2020-02-13 16:32:11 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.1ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (4.8ms)
+  Rendered book_orders/index.html.haml within layouts/application (10.3ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:17: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:20: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/book_orders/_form.html.haml:17: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/book_orders/_form.html.haml:20: syntax error, unexpected end-of-input, expecting keyword_end
+app/views/book_orders/index.html.haml:19:in `_app_views_book_orders_index_html_haml__304169564173363541_70251321794800'
+Started GET "/book_orders/" for ::1 at 2020-02-13 16:32:12 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.1ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (1.8ms)
+  Rendered book_orders/index.html.haml within layouts/application (6.9ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:17: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:20: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/book_orders/_form.html.haml:17: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/book_orders/_form.html.haml:20: syntax error, unexpected end-of-input, expecting keyword_end
+app/views/book_orders/index.html.haml:19:in `_app_views_book_orders_index_html_haml__304169564173363541_70251364929380'
+Started GET "/" for ::1 at 2020-02-13 16:33:30 +0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (4.6ms)
+  Rendered layouts/_menu_top.html.haml (5.9ms)
+  Rendered layouts/_side_bar.html.haml (10.6ms)
+  Rendered layouts/_notice.html.haml (1.6ms)
+Completed 200 OK in 424ms (Views: 414.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book_orders" for ::1 at 2020-02-13 16:33:32 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.3ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (2.4ms)
+  Rendered book_orders/index.html.haml within layouts/application (10.3ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.8ms)
+
+
+  
+SyntaxError (/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:17: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:20: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/book_orders/_form.html.haml:17: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/book_orders/_form.html.haml:20: syntax error, unexpected end-of-input, expecting keyword_end
+app/views/book_orders/index.html.haml:19:in `_app_views_book_orders_index_html_haml___2346120947057076638_70194624035980'
+Started GET "/book_orders" for ::1 at 2020-02-13 16:34:00 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.2ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/index.html.haml within layouts/application (3.8ms)
+  Rendered layouts/_menu_top.html.haml (2.3ms)
+  Rendered layouts/_side_bar.html.haml (2.5ms)
+  Rendered layouts/_notice.html.haml (1.6ms)
+Completed 200 OK in 76ms (Views: 72.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/book_orders" for ::1 at 2020-02-13 16:37:10 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.1ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (2.5ms)
+  Rendered book_orders/index.html.haml within layouts/application (9.7ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:17: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:20: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/book_orders/_form.html.haml:17: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/book_orders/_form.html.haml:20: syntax error, unexpected end-of-input, expecting keyword_end
+app/views/book_orders/index.html.haml:19:in `_app_views_book_orders_index_html_haml___2346120947057076638_70194647221160'
+Started GET "/book_orders" for ::1 at 2020-02-13 16:38:09 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.3ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (909.7ms)
+  Rendered book_orders/index.html.haml within layouts/application (916.6ms)
+Completed 500 Internal Server Error in 932ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<BookOrder:0x00007faeeb280d10>):
+    1: = simple_form_for @book_order, remote: true do |form|
+    2:     = form.input :name
+    3:     = form.input :amount_book
+    4:     = form.input :brorrow_date
+    5:     = form.association :user
+  
+app/views/book_orders/_form.html.haml:2:in `block in _app_views_book_orders__form_html_haml___4071940621213591810_70194708306880'
+app/views/book_orders/_form.html.haml:1:in `_app_views_book_orders__form_html_haml___4071940621213591810_70194708306880'
+app/views/book_orders/index.html.haml:19:in `_app_views_book_orders_index_html_haml___2346120947057076638_70194700408600'
+Started GET "/book_orders" for ::1 at 2020-02-13 16:38:21 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.2ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (9.0ms)
+  Rendered book_orders/index.html.haml within layouts/application (14.7ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<BookOrder:0x00007faef2dad7e0>):
+    1: = simple_form_for :book_order, remote: true do |form|
+    2:     = form.input :name
+    3:     = form.input :amount_book
+    4:     = form.input :brorrow_date
+    5:     = form.association :user
+  
+app/views/book_orders/_form.html.haml:2:in `block in _app_views_book_orders__form_html_haml___4071940621213591810_70194697481720'
+app/views/book_orders/_form.html.haml:1:in `_app_views_book_orders__form_html_haml___4071940621213591810_70194697481720'
+app/views/book_orders/index.html.haml:19:in `_app_views_book_orders_index_html_haml___2346120947057076638_70194687729940'
+Started GET "/book_orders" for ::1 at 2020-02-13 16:39:39 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.2ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (1.6ms)
+  Rendered book_orders/index.html.haml within layouts/application (6.3ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.9ms)
+
+
+  
+SyntaxError (/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:16: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:19: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/book_orders/_form.html.haml:16: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/book_orders/_form.html.haml:19: syntax error, unexpected end-of-input, expecting keyword_end
+app/views/book_orders/index.html.haml:19:in `_app_views_book_orders_index_html_haml___2346120947057076638_70194706203400'
+Started GET "/book_orders" for ::1 at 2020-02-13 16:40:01 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.1ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (2.5ms)
+  Rendered book_orders/index.html.haml within layouts/application (8.1ms)
+  Rendered layouts/_menu_top.html.haml (2.7ms)
+  Rendered layouts/_side_bar.html.haml (2.4ms)
+  Rendered layouts/_notice.html.haml (1.5ms)
+Completed 200 OK in 267ms (Views: 264.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/book_orders" for ::1 at 2020-02-13 16:40:55 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.1ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:13
+  Rendered collection of templates [0 times] (0.1ms)
+  Rendered book_orders/_form.html.haml (3.2ms)
+  Rendered book_orders/index.html.haml within layouts/application (10.7ms)
+  Rendered layouts/_menu_top.html.haml (2.3ms)
+  Rendered layouts/_side_bar.html.haml (2.4ms)
+  Rendered layouts/_notice.html.haml (1.7ms)
+Completed 200 OK in 79ms (Views: 75.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/book_orders" for ::1 at 2020-02-13 16:41:47 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.2ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (3.1ms)
+  Rendered book_orders/index.html.haml within layouts/application (11.1ms)
+  Rendered layouts/_menu_top.html.haml (2.6ms)
+  Rendered layouts/_side_bar.html.haml (2.1ms)
+  Rendered layouts/_notice.html.haml (2.2ms)
+Completed 200 OK in 1719ms (Views: 1714.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/book_orders" for ::1 at 2020-02-13 16:46:05 +0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.2ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (53.8ms)
+  Rendered book_orders/index.html.haml within layouts/application (63.2ms)
+  Rendered layouts/_menu_top.html.haml (3.0ms)
+  Rendered layouts/_side_bar.html.haml (2.2ms)
+  Rendered layouts/_notice.html.haml (1.6ms)
+Completed 200 OK in 595ms (Views: 568.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/book_orders" for ::1 at 2020-02-13 16:47:40 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.2ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (3.4ms)
+  Rendered book_orders/index.html.haml within layouts/application (11.6ms)
+  Rendered layouts/_menu_top.html.haml (4.2ms)
+  Rendered layouts/_side_bar.html.haml (2.8ms)
+  Rendered layouts/_notice.html.haml (1.7ms)
+Completed 200 OK in 131ms (Views: 127.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/book_orders" for ::1 at 2020-02-13 16:48:05 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.2ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (2.3ms)
+  Rendered book_orders/index.html.haml within layouts/application (10.4ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:16: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:19: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/book_orders/_form.html.haml:16: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/book_orders/_form.html.haml:19: syntax error, unexpected end-of-input, expecting keyword_end
+app/views/book_orders/index.html.haml:19:in `_app_views_book_orders_index_html_haml___4214452979545920418_70278904685660'
+Started GET "/book_orders" for ::1 at 2020-02-13 16:48:07 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.2ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (2.1ms)
+  Rendered book_orders/index.html.haml within layouts/application (7.7ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:16: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:19: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/book_orders/_form.html.haml:16: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/book_orders/_form.html.haml:19: syntax error, unexpected end-of-input, expecting keyword_end
+app/views/book_orders/index.html.haml:19:in `_app_views_book_orders_index_html_haml___4214452979545920418_70278979863540'
+Started GET "/book_orders" for ::1 at 2020-02-13 16:48:08 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.1ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (1.8ms)
+  Rendered book_orders/index.html.haml within layouts/application (6.8ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:16: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:19: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/book_orders/_form.html.haml:16: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/book_orders/_form.html.haml:19: syntax error, unexpected end-of-input, expecting keyword_end
+app/views/book_orders/index.html.haml:19:in `_app_views_book_orders_index_html_haml___4214452979545920418_70278904246320'
+Started GET "/book_orders" for ::1 at 2020-02-13 16:48:58 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.2ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (1.8ms)
+  Rendered book_orders/index.html.haml within layouts/application (7.3ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:16: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:19: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/book_orders/_form.html.haml:16: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/book_orders/_form.html.haml:19: syntax error, unexpected end-of-input, expecting keyword_end
+app/views/book_orders/index.html.haml:19:in `_app_views_book_orders_index_html_haml___4214452979545920418_70278970515020'
+Started GET "/book_orders" for ::1 at 2020-02-13 16:48:59 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.2ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (2.3ms)
+  Rendered book_orders/index.html.haml within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:16: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:19: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/book_orders/_form.html.haml:16: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/book_orders/_form.html.haml:19: syntax error, unexpected end-of-input, expecting keyword_end
+app/views/book_orders/index.html.haml:19:in `_app_views_book_orders_index_html_haml___4214452979545920418_70278998773760'
+Started GET "/book_orders" for ::1 at 2020-02-13 16:49:00 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.1ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (2.0ms)
+  Rendered book_orders/index.html.haml within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:16: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:19: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/book_orders/_form.html.haml:16: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/book_orders/_form.html.haml:19: syntax error, unexpected end-of-input, expecting keyword_end
+app/views/book_orders/index.html.haml:19:in `_app_views_book_orders_index_html_haml___4214452979545920418_70278913397480'
+Started GET "/book_orders" for ::1 at 2020-02-13 16:49:09 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.1ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (1.8ms)
+  Rendered book_orders/index.html.haml within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:16: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:19: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/book_orders/_form.html.haml:16: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/book_orders/_form.html.haml:19: syntax error, unexpected end-of-input, expecting keyword_end
+app/views/book_orders/index.html.haml:19:in `_app_views_book_orders_index_html_haml___4214452979545920418_70278991266300'
+Started GET "/book_orders" for ::1 at 2020-02-13 16:49:10 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.1ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (2.3ms)
+  Rendered book_orders/index.html.haml within layouts/application (8.7ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:16: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:19: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/book_orders/_form.html.haml:16: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/book_orders/_form.html.haml:19: syntax error, unexpected end-of-input, expecting keyword_end
+app/views/book_orders/index.html.haml:19:in `_app_views_book_orders_index_html_haml___4214452979545920418_70278991399980'
+Started GET "/book_orders" for ::1 at 2020-02-13 16:49:10 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.2ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (2.0ms)
+  Rendered book_orders/index.html.haml within layouts/application (8.1ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:16: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:19: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/book_orders/_form.html.haml:16: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/book_orders/_form.html.haml:19: syntax error, unexpected end-of-input, expecting keyword_end
+app/views/book_orders/index.html.haml:19:in `_app_views_book_orders_index_html_haml___4214452979545920418_70278969943420'
+Started GET "/book_orders" for ::1 at 2020-02-13 16:49:19 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.2ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (2.4ms)
+  Rendered book_orders/index.html.haml within layouts/application (8.7ms)
+  Rendered layouts/_menu_top.html.haml (2.1ms)
+  Rendered layouts/_side_bar.html.haml (2.1ms)
+  Rendered layouts/_notice.html.haml (1.3ms)
+Completed 200 OK in 85ms (Views: 81.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/book_orders" for ::1 at 2020-02-13 16:49:51 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.4ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (2.3ms)
+  Rendered book_orders/index.html.haml within layouts/application (9.7ms)
+  Rendered layouts/_menu_top.html.haml (3.8ms)
+  Rendered layouts/_side_bar.html.haml (4.4ms)
+  Rendered layouts/_notice.html.haml (2.7ms)
+Completed 200 OK in 94ms (Views: 88.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-02-13 16:50:31 +0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (4.8ms)
+  Rendered layouts/_menu_top.html.haml (4.1ms)
+  Rendered layouts/_side_bar.html.haml (2.4ms)
+  Rendered layouts/_notice.html.haml (1.7ms)
+Completed 200 OK in 518ms (Views: 506.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book_orders" for ::1 at 2020-02-13 16:50:33 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.2ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:13
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (76.3ms)
+  Rendered book_orders/index.html.haml within layouts/application (85.2ms)
+  Rendered layouts/_menu_top.html.haml (3.8ms)
+  Rendered layouts/_side_bar.html.haml (3.1ms)
+  Rendered layouts/_notice.html.haml (2.1ms)
+Completed 200 OK in 192ms (Views: 172.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/book_orders" for ::1 at 2020-02-13 16:53:03 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.1ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:12
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/index.html.haml within layouts/application (5.8ms)
+  Rendered layouts/_menu_top.html.haml (2.4ms)
+  Rendered layouts/_side_bar.html.haml (2.2ms)
+  Rendered layouts/_notice.html.haml (1.5ms)
+Completed 200 OK in 100ms (Views: 96.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/book_orders" for ::1 at 2020-02-13 16:53:04 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.1ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:12
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/index.html.haml within layouts/application (3.1ms)
+  Rendered layouts/_menu_top.html.haml (2.4ms)
+  Rendered layouts/_side_bar.html.haml (2.3ms)
+  Rendered layouts/_notice.html.haml (1.5ms)
+Completed 200 OK in 62ms (Views: 58.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/book_orders" for ::1 at 2020-02-13 16:53:18 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.1ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:12
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/index.html.haml within layouts/application (3.2ms)
+  Rendered layouts/_menu_top.html.haml (2.4ms)
+  Rendered layouts/_side_bar.html.haml (2.0ms)
+  Rendered layouts/_notice.html.haml (2.0ms)
+Completed 200 OK in 66ms (Views: 62.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/book_orders" for ::1 at 2020-02-13 16:53:25 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.2ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:12
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (3.2ms)
+  Rendered book_orders/index.html.haml within layouts/application (10.7ms)
+  Rendered layouts/_menu_top.html.haml (2.5ms)
+  Rendered layouts/_side_bar.html.haml (2.0ms)
+  Rendered layouts/_notice.html.haml (1.8ms)
+Completed 200 OK in 77ms (Views: 73.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/book_orders" for ::1 at 2020-02-13 16:55:28 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.1ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:12
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (3.4ms)
+  Rendered book_orders/index.html.haml within layouts/application (10.3ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:17: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:20: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/book_orders/_form.html.haml:17: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/book_orders/_form.html.haml:20: syntax error, unexpected end-of-input, expecting keyword_end
+app/views/book_orders/index.html.haml:18:in `_app_views_book_orders_index_html_haml__1881437939355341949_70123863128560'
+Started GET "/book_orders" for ::1 at 2020-02-13 16:55:51 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.1ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:12
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (1.8ms)
+  Rendered book_orders/index.html.haml within layouts/application (7.1ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:17: syntax error, unexpected keyword_ensure, expecting keyword_end
+...:Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer....
+...                               ^
+/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:20: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/book_orders/_form.html.haml:17: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/book_orders/_form.html.haml:20: syntax error, unexpected end-of-input, expecting keyword_end
+app/views/book_orders/index.html.haml:18:in `_app_views_book_orders_index_html_haml__1881437939355341949_70123866614980'
+Started GET "/book_orders" for ::1 at 2020-02-13 16:56:06 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.1ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:12
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (864.1ms)
+  Rendered book_orders/index.html.haml within layouts/application (869.2ms)
+Completed 500 Internal Server Error in 884ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `amount_book' for #<ActiveRecord::Relation []>):
+    1: = simple_form_for :book_orders, remote: true do |form|
+    2:    
+    3:     = form.input :amount_book
+    4:     = form.input :brorrow_date
+    5:     = form.association :user
+    6:     
+  
+app/views/book_orders/_form.html.haml:3:in `block in _app_views_book_orders__form_html_haml___1469900111102686387_70123906304900'
+app/views/book_orders/_form.html.haml:1:in `_app_views_book_orders__form_html_haml___1469900111102686387_70123906304900'
+app/views/book_orders/index.html.haml:18:in `_app_views_book_orders_index_html_haml__1881437939355341949_70123799765420'
+Started GET "/book_orders" for ::1 at 2020-02-13 16:56:15 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.2ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:12
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (6.0ms)
+  Rendered book_orders/index.html.haml within layouts/application (12.3ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (Association cannot be used in forms not associated with an object):
+    2:    
+    3:     = form.input :amount_book
+    4:     = form.input :brorrow_date
+    5:     = form.association :user
+    6:     
+    7:     .button-add-new
+    8:         = form.submit "Save"
+  
+app/views/book_orders/_form.html.haml:5:in `block in _app_views_book_orders__form_html_haml___1469900111102686387_70123864056260'
+app/views/book_orders/_form.html.haml:1:in `_app_views_book_orders__form_html_haml___1469900111102686387_70123864056260'
+app/views/book_orders/index.html.haml:18:in `_app_views_book_orders_index_html_haml__1881437939355341949_70123817951420'
+Started GET "/book_orders" for ::1 at 2020-02-13 16:58:24 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.1ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:12
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (7.2ms)
+  Rendered book_orders/index.html.haml within layouts/application (21.7ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (Association cannot be used in forms not associated with an object):
+    2:    
+    3:     = form.input :amount_book
+    4:     = form.input :brorrow_date
+    5:     = form.association :user
+    6:     
+    7:     .button-add-new
+    8:         = form.submit "Save"
+  
+app/views/book_orders/_form.html.haml:5:in `block in _app_views_book_orders__form_html_haml___1469900111102686387_70123898719740'
+app/views/book_orders/_form.html.haml:1:in `_app_views_book_orders__form_html_haml___1469900111102686387_70123898719740'
+app/views/book_orders/index.html.haml:18:in `_app_views_book_orders_index_html_haml__1881437939355341949_70123898576700'
+Started GET "/" for ::1 at 2020-02-13 16:58:26 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (1.5ms)
+  Rendered layouts/_menu_top.html.haml (2.4ms)
+  Rendered layouts/_side_bar.html.haml (2.5ms)
+  Rendered layouts/_notice.html.haml (1.7ms)
+Completed 200 OK in 80ms (Views: 76.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2020-02-13 16:58:28 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.haml within layouts/application
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.haml:4
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_form.html.erb (3.2ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_order_for.html.erb (0.9ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_order_for.html.erb (0.4ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_order_for.html.erb (0.4ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_order_for.html.erb (0.5ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_head.html.erb (29.5ms)
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.haml:9
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ? OFFSET ?[0m  [["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.haml:9
+  Rendered users/_user.html.haml (2.9ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_row.html.erb (6.6ms)
+  Rendered users/_user.html.haml (0.2ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_row.html.erb (2.3ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_table.html.erb (63.6ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.haml:10
+  Rendered users/_form.html.haml (18.0ms)
+  Rendered users/index.html.haml within layouts/application (116.9ms)
+  Rendered layouts/_menu_top.html.haml (2.9ms)
+  Rendered layouts/_side_bar.html.haml (2.1ms)
+  Rendered layouts/_notice.html.haml (1.4ms)
+Completed 200 OK in 323ms (Views: 174.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/book_orders" for ::1 at 2020-02-13 16:58:29 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.1ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:12
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (6.6ms)
+  Rendered book_orders/index.html.haml within layouts/application (11.4ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (Association cannot be used in forms not associated with an object):
+    2:    
+    3:     = form.input :amount_book
+    4:     = form.input :brorrow_date
+    5:     = form.association :user
+    6:     
+    7:     .button-add-new
+    8:         = form.submit "Save"
+  
+app/views/book_orders/_form.html.haml:5:in `block in _app_views_book_orders__form_html_haml___1469900111102686387_70123878550940'
+app/views/book_orders/_form.html.haml:1:in `_app_views_book_orders__form_html_haml___1469900111102686387_70123878550940'
+app/views/book_orders/index.html.haml:18:in `_app_views_book_orders_index_html_haml__1881437939355341949_70123865530620'
+Started GET "/book_orders" for ::1 at 2020-02-13 16:59:59 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.2ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:12
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (6.3ms)
+  Rendered book_orders/index.html.haml within layouts/application (12.9ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (Association cannot be used in forms not associated with an object):
+    2:    
+    3:     = form.input :amount_book
+    4:     = form.input :brorrow_date
+    5:     = form.association :user
+    6:     
+    7:     .button-add-new
+    8:         = form.submit "Save"
+  
+app/views/book_orders/_form.html.haml:5:in `block in _app_views_book_orders__form_html_haml___1469900111102686387_70123906411760'
+app/views/book_orders/_form.html.haml:1:in `_app_views_book_orders__form_html_haml___1469900111102686387_70123906411760'
+app/views/book_orders/index.html.haml:18:in `_app_views_book_orders_index_html_haml__1881437939355341949_70123906090140'
+Started GET "/book_orders" for ::1 at 2020-02-13 17:00:01 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.1ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:12
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (6.9ms)
+  Rendered book_orders/index.html.haml within layouts/application (12.2ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (Association cannot be used in forms not associated with an object):
+    2:    
+    3:     = form.input :amount_book
+    4:     = form.input :brorrow_date
+    5:     = form.association :user
+    6:     
+    7:     .button-add-new
+    8:         = form.submit "Save"
+  
+app/views/book_orders/_form.html.haml:5:in `block in _app_views_book_orders__form_html_haml___1469900111102686387_70123860045740'
+app/views/book_orders/_form.html.haml:1:in `_app_views_book_orders__form_html_haml___1469900111102686387_70123860045740'
+app/views/book_orders/index.html.haml:18:in `_app_views_book_orders_index_html_haml__1881437939355341949_70123826304680'
+Started GET "/book_orders" for ::1 at 2020-02-13 17:00:02 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.2ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:12
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (5.8ms)
+  Rendered book_orders/index.html.haml within layouts/application (11.8ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (Association cannot be used in forms not associated with an object):
+    2:    
+    3:     = form.input :amount_book
+    4:     = form.input :brorrow_date
+    5:     = form.association :user
+    6:     
+    7:     .button-add-new
+    8:         = form.submit "Save"
+  
+app/views/book_orders/_form.html.haml:5:in `block in _app_views_book_orders__form_html_haml___1469900111102686387_70123866208660'
+app/views/book_orders/_form.html.haml:1:in `_app_views_book_orders__form_html_haml___1469900111102686387_70123866208660'
+app/views/book_orders/index.html.haml:18:in `_app_views_book_orders_index_html_haml__1881437939355341949_70123866455500'
+Started GET "/book_orders" for ::1 at 2020-02-13 17:00:03 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.1ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:12
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (6.5ms)
+  Rendered book_orders/index.html.haml within layouts/application (12.8ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (Association cannot be used in forms not associated with an object):
+    2:    
+    3:     = form.input :amount_book
+    4:     = form.input :brorrow_date
+    5:     = form.association :user
+    6:     
+    7:     .button-add-new
+    8:         = form.submit "Save"
+  
+app/views/book_orders/_form.html.haml:5:in `block in _app_views_book_orders__form_html_haml___1469900111102686387_70123863599620'
+app/views/book_orders/_form.html.haml:1:in `_app_views_book_orders__form_html_haml___1469900111102686387_70123863599620'
+app/views/book_orders/index.html.haml:18:in `_app_views_book_orders_index_html_haml__1881437939355341949_70123817220260'
+Started GET "/book_orders" for ::1 at 2020-02-13 17:00:04 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.2ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:12
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (5.3ms)
+  Rendered book_orders/index.html.haml within layouts/application (11.4ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (Association cannot be used in forms not associated with an object):
+    2:    
+    3:     = form.input :amount_book
+    4:     = form.input :brorrow_date
+    5:     = form.association :user
+    6:     
+    7:     .button-add-new
+    8:         = form.submit "Save"
+  
+app/views/book_orders/_form.html.haml:5:in `block in _app_views_book_orders__form_html_haml___1469900111102686387_70123818072180'
+app/views/book_orders/_form.html.haml:1:in `_app_views_book_orders__form_html_haml___1469900111102686387_70123818072180'
+app/views/book_orders/index.html.haml:18:in `_app_views_book_orders_index_html_haml__1881437939355341949_70123887605920'
+Started GET "/book_orders" for ::1 at 2020-02-13 17:00:04 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.1ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:12
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (6.2ms)
+  Rendered book_orders/index.html.haml within layouts/application (11.5ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (Association cannot be used in forms not associated with an object):
+    2:    
+    3:     = form.input :amount_book
+    4:     = form.input :brorrow_date
+    5:     = form.association :user
+    6:     
+    7:     .button-add-new
+    8:         = form.submit "Save"
+  
+app/views/book_orders/_form.html.haml:5:in `block in _app_views_book_orders__form_html_haml___1469900111102686387_70123865959840'
+app/views/book_orders/_form.html.haml:1:in `_app_views_book_orders__form_html_haml___1469900111102686387_70123865959840'
+app/views/book_orders/index.html.haml:18:in `_app_views_book_orders_index_html_haml__1881437939355341949_70123888146320'
+Started GET "/book_orders" for ::1 at 2020-02-13 17:00:46 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.1ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:12
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (9.5ms)
+  Rendered book_orders/index.html.haml within layouts/application (14.4ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (Association :user_id not found):
+    2:    
+    3:     = form.input :amount_book
+    4:     = form.input :brorrow_date
+    5:     = form.association :user_id
+    6:     
+    7:     .button-add-new
+    8:         = form.submit "Save"
+  
+app/views/book_orders/_form.html.haml:5:in `block in _app_views_book_orders__form_html_haml___1469900111102686387_70123887285920'
+app/views/book_orders/_form.html.haml:1:in `_app_views_book_orders__form_html_haml___1469900111102686387_70123887285920'
+app/views/book_orders/index.html.haml:18:in `_app_views_book_orders_index_html_haml__1881437939355341949_70123898997320'
+Started GET "/book_orders" for ::1 at 2020-02-13 17:00:53 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.1ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:12
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (8.4ms)
+  Rendered book_orders/index.html.haml within layouts/application (14.4ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant BookOrder::user):
+    2:    
+    3:     = form.input :amount_book
+    4:     = form.input :brorrow_date
+    5:     = form.association :user
+    6:     
+    7:     .button-add-new
+    8:         = form.submit "Save"
+  
+app/views/book_orders/_form.html.haml:5:in `block in _app_views_book_orders__form_html_haml___1469900111102686387_70123867169940'
+app/views/book_orders/_form.html.haml:1:in `_app_views_book_orders__form_html_haml___1469900111102686387_70123867169940'
+app/views/book_orders/index.html.haml:18:in `_app_views_book_orders_index_html_haml__1881437939355341949_70123885510980'
+Started GET "/book_orders" for ::1 at 2020-02-13 17:00:54 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.1ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:12
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (9.1ms)
+  Rendered book_orders/index.html.haml within layouts/application (14.9ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant BookOrder::user):
+    2:    
+    3:     = form.input :amount_book
+    4:     = form.input :brorrow_date
+    5:     = form.association :user
+    6:     
+    7:     .button-add-new
+    8:         = form.submit "Save"
+  
+app/views/book_orders/_form.html.haml:5:in `block in _app_views_book_orders__form_html_haml___1469900111102686387_70123802868180'
+app/views/book_orders/_form.html.haml:1:in `_app_views_book_orders__form_html_haml___1469900111102686387_70123802868180'
+app/views/book_orders/index.html.haml:18:in `_app_views_book_orders_index_html_haml__1881437939355341949_70123800960760'
+Started GET "/book_orders" for ::1 at 2020-02-13 17:01:18 +0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.3ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:12
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (954.5ms)
+  Rendered book_orders/index.html.haml within layouts/application (964.4ms)
+Completed 500 Internal Server Error in 1004ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant BookOrder::user):
+    2:    
+    3:     = form.input :amount_book
+    4:     = form.input :brorrow_date
+    5:     = form.association :user
+    6:     
+    7:     .button-add-new
+    8:         = form.submit "Save"
+  
+app/views/book_orders/_form.html.haml:5:in `block in _app_views_book_orders__form_html_haml__1668923049075276815_70308142067580'
+app/views/book_orders/_form.html.haml:1:in `_app_views_book_orders__form_html_haml__1668923049075276815_70308142067580'
+app/views/book_orders/index.html.haml:18:in `_app_views_book_orders_index_html_haml___2360955505369023902_70308193724500'
+Started GET "/" for ::1 at 2020-02-13 17:02:17 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (4.1ms)
+  Rendered layouts/_menu_top.html.haml (4.1ms)
+  Rendered layouts/_side_bar.html.haml (4.6ms)
+  Rendered layouts/_notice.html.haml (2.2ms)
+Completed 200 OK in 441ms (Views: 427.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book_orders" for ::1 at 2020-02-13 17:02:20 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.1ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:12
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (11.5ms)
+  Rendered book_orders/index.html.haml within layouts/application (19.3ms)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant BookOrder::user):
+    2:    
+    3:     = form.input :amount_book
+    4:     = form.input :brorrow_date
+    5:     = form.association :user
+    6:     
+    7:     .button-add-new
+    8:         = form.submit "Save"
+  
+app/views/book_orders/_form.html.haml:5:in `block in _app_views_book_orders__form_html_haml__1668923049075276815_70308133927700'
+app/views/book_orders/_form.html.haml:1:in `_app_views_book_orders__form_html_haml__1668923049075276815_70308133927700'
+app/views/book_orders/index.html.haml:18:in `_app_views_book_orders_index_html_haml___2360955505369023902_70308181745580'
+Started GET "/book_orders" for ::1 at 2020-02-13 17:04:02 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.2ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:12
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (1.6ms)
+  Rendered book_orders/index.html.haml within layouts/application (7.1ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.8ms)
+
+
+  
+SyntaxError (/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:10: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/book_orders/_form.html.haml:10: syntax error, unexpected keyword_ensure, expecting end-of-input
+app/views/book_orders/index.html.haml:18:in `_app_views_book_orders_index_html_haml___2360955505369023902_70308218486840'
+Started GET "/book_orders" for ::1 at 2020-02-13 17:06:25 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.2ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:12
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (1.9ms)
+  Rendered book_orders/index.html.haml within layouts/application (8.6ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:1: syntax error, unexpected tLABEL
+..._form_for(@book_order), remote: true do |form|
+...                               ^
+/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:10: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/book_orders/_form.html.haml:1: syntax error, unexpected tLABEL
+app/views/book_orders/_form.html.haml:10: syntax error, unexpected keyword_ensure, expecting end-of-input
+app/views/book_orders/index.html.haml:18:in `_app_views_book_orders_index_html_haml___2360955505369023902_70308151505180'
+Started GET "/book_orders" for ::1 at 2020-02-13 17:06:33 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.1ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:12
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (1.9ms)
+  Rendered book_orders/index.html.haml within layouts/application (7.8ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:1: syntax error, unexpected tLABEL, expecting keyword_end
+...e_form_for(@book_order) remote: true do |form|
+...                               ^
+/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:10: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/book_orders/_form.html.haml:1: syntax error, unexpected tLABEL, expecting keyword_end
+app/views/book_orders/_form.html.haml:10: syntax error, unexpected keyword_ensure, expecting end-of-input
+app/views/book_orders/index.html.haml:18:in `_app_views_book_orders_index_html_haml___2360955505369023902_70308135186860'
+Started GET "/book_orders" for ::1 at 2020-02-13 17:06:33 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.2ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:12
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (1.6ms)
+  Rendered book_orders/index.html.haml within layouts/application (8.6ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:1: syntax error, unexpected tLABEL, expecting keyword_end
+...e_form_for(@book_order) remote: true do |form|
+...                               ^
+/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:10: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/book_orders/_form.html.haml:1: syntax error, unexpected tLABEL, expecting keyword_end
+app/views/book_orders/_form.html.haml:10: syntax error, unexpected keyword_ensure, expecting end-of-input
+app/views/book_orders/index.html.haml:18:in `_app_views_book_orders_index_html_haml___2360955505369023902_70308195173900'
+Started GET "/book_orders" for ::1 at 2020-02-13 17:06:34 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.1ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:12
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (1.3ms)
+  Rendered book_orders/index.html.haml within layouts/application (6.2ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:1: syntax error, unexpected tLABEL, expecting keyword_end
+...e_form_for(@book_order) remote: true do |form|
+...                               ^
+/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:10: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/book_orders/_form.html.haml:1: syntax error, unexpected tLABEL, expecting keyword_end
+app/views/book_orders/_form.html.haml:10: syntax error, unexpected keyword_ensure, expecting end-of-input
+app/views/book_orders/index.html.haml:18:in `_app_views_book_orders_index_html_haml___2360955505369023902_70308230289000'
+Started GET "/book_orders" for ::1 at 2020-02-13 17:06:35 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.1ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:12
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (1.6ms)
+  Rendered book_orders/index.html.haml within layouts/application (6.8ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:1: syntax error, unexpected tLABEL, expecting keyword_end
+...e_form_for(@book_order) remote: true do |form|
+...                               ^
+/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:10: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/book_orders/_form.html.haml:1: syntax error, unexpected tLABEL, expecting keyword_end
+app/views/book_orders/_form.html.haml:10: syntax error, unexpected keyword_ensure, expecting end-of-input
+app/views/book_orders/index.html.haml:18:in `_app_views_book_orders_index_html_haml___2360955505369023902_70308161881680'
+Started GET "/book_orders" for ::1 at 2020-02-13 17:06:55 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.2ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:12
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (7.6ms)
+  Rendered book_orders/index.html.haml within layouts/application (13.3ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant BookOrder::user):
+    1: = simple_form_for @book_order, remote: true do |form| 
+    2:     = form.input :amount_book
+    3:     = form.input :brorrow_date
+    4:     = form.association :user   
+    5:     .button-add-new
+    6:         = form.submit "Save"
+  
+app/views/book_orders/_form.html.haml:4:in `block in _app_views_book_orders__form_html_haml__1668923049075276815_70308143197440'
+app/views/book_orders/_form.html.haml:1:in `_app_views_book_orders__form_html_haml__1668923049075276815_70308143197440'
+app/views/book_orders/index.html.haml:18:in `_app_views_book_orders_index_html_haml___2360955505369023902_70308152197280'
+Started GET "/book_orders" for ::1 at 2020-02-13 17:07:02 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.2ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:12
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (5.2ms)
+  Rendered book_orders/index.html.haml within layouts/application (11.7ms)
+  Rendered layouts/_menu_top.html.haml (2.9ms)
+  Rendered layouts/_side_bar.html.haml (2.6ms)
+  Rendered layouts/_notice.html.haml (1.7ms)
+Completed 200 OK in 111ms (Views: 105.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/book_orders" for ::1 at 2020-02-13 17:08:14 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.2ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:12
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (8.1ms)
+  Rendered book_orders/index.html.haml within layouts/application (15.7ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant BookOrder::user):
+    1: = simple_form_for @book_order, remote: true do |form| 
+    2:     = form.input :amount_book
+    3:     = form.input :brorrow_date
+    4:     = form.association :user   
+    5:     .button-add-new
+    6:         = form.submit "Save"
+  
+app/views/book_orders/_form.html.haml:4:in `block in _app_views_book_orders__form_html_haml__1668923049075276815_70308142019720'
+app/views/book_orders/_form.html.haml:1:in `_app_views_book_orders__form_html_haml__1668923049075276815_70308142019720'
+app/views/book_orders/index.html.haml:18:in `_app_views_book_orders_index_html_haml___2360955505369023902_70308195091700'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/bin/rake:22
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/bin/rake:22
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/bin/rake:22
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/bin/rake:22
+Started GET "/book_orders" for ::1 at 2020-02-13 17:12:07 +0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.2ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:12
+  Rendered collection of templates [0 times] (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/book_orders/_form.html.haml:4
+  Rendered book_orders/_form.html.haml (1081.8ms)
+  Rendered book_orders/index.html.haml within layouts/application (1094.3ms)
+  Rendered layouts/_menu_top.html.haml (3.0ms)
+  Rendered layouts/_side_bar.html.haml (2.6ms)
+  Rendered layouts/_notice.html.haml (1.5ms)
+Completed 200 OK in 1494ms (Views: 1465.5ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/book_orders" for ::1 at 2020-02-13 17:12:32 +0700
+Processing by BookOrdersController#create as JS
+  Parameters: {"utf8"=>"✓", "book_order"=>{"amount_book"=>"2", "brorrow_date(1i)"=>"2020", "brorrow_date(2i)"=>"2", "brorrow_date(3i)"=>"13", "user_id"=>"2"}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/book_orders_controller.rb:16
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/book_orders_controller.rb:16
+  [1m[36mBookOrder Create (0.3ms)[0m  [1m[32mINSERT INTO "book_orders" ("amount_book", "brorrow_date", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["amount_book", 2], ["brorrow_date", "2020-02-13"], ["created_at", "2020-02-13 10:12:32.030063"], ["updated_at", "2020-02-13 10:12:32.030063"], ["user_id", 2]]
+  ↳ app/controllers/book_orders_controller.rb:16
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/book_orders_controller.rb:16
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.7ms)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::BusyException: database is locked: INSERT INTO "book_orders" ("amount_book", "brorrow_date", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)):
+  
+app/controllers/book_orders_controller.rb:16:in `block in create'
+app/controllers/book_orders_controller.rb:15:in `create'
+Started POST "/book_orders" for ::1 at 2020-02-13 17:12:33 +0700
+Processing by BookOrdersController#create as JS
+  Parameters: {"utf8"=>"✓", "book_order"=>{"amount_book"=>"2", "brorrow_date(1i)"=>"2020", "brorrow_date(2i)"=>"2", "brorrow_date(3i)"=>"13", "user_id"=>"2"}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/book_orders_controller.rb:16
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/book_orders_controller.rb:16
+  [1m[36mBookOrder Create (0.4ms)[0m  [1m[32mINSERT INTO "book_orders" ("amount_book", "brorrow_date", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["amount_book", 2], ["brorrow_date", "2020-02-13"], ["created_at", "2020-02-13 10:12:33.532459"], ["updated_at", "2020-02-13 10:12:33.532459"], ["user_id", 2]]
+  ↳ app/controllers/book_orders_controller.rb:16
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/book_orders_controller.rb:16
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.7ms)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::BusyException: database is locked: INSERT INTO "book_orders" ("amount_book", "brorrow_date", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)):
+  
+app/controllers/book_orders_controller.rb:16:in `block in create'
+app/controllers/book_orders_controller.rb:15:in `create'
+Started GET "/book_orders" for ::1 at 2020-02-13 17:12:35 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.1ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:12
+  Rendered collection of templates [0 times] (0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/book_orders/_form.html.haml:4
+  Rendered book_orders/_form.html.haml (8.8ms)
+  Rendered book_orders/index.html.haml within layouts/application (16.1ms)
+  Rendered layouts/_menu_top.html.haml (2.4ms)
+  Rendered layouts/_side_bar.html.haml (3.3ms)
+  Rendered layouts/_notice.html.haml (1.4ms)
+Completed 200 OK in 89ms (Views: 84.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/book_orders" for ::1 at 2020-02-13 17:12:37 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.2ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:12
+  Rendered collection of templates [0 times] (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/book_orders/_form.html.haml:4
+  Rendered book_orders/_form.html.haml (8.8ms)
+  Rendered book_orders/index.html.haml within layouts/application (15.4ms)
+  Rendered layouts/_menu_top.html.haml (2.0ms)
+  Rendered layouts/_side_bar.html.haml (3.0ms)
+  Rendered layouts/_notice.html.haml (1.3ms)
+Completed 200 OK in 77ms (Views: 72.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/book_orders" for ::1 at 2020-02-13 17:12:53 +0700
+Processing by BookOrdersController#create as JS
+  Parameters: {"utf8"=>"✓", "book_order"=>{"amount_book"=>"", "brorrow_date(1i)"=>"2020", "brorrow_date(2i)"=>"2", "brorrow_date(3i)"=>"13", "user_id"=>""}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/book_orders_controller.rb:16
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/book_orders_controller.rb:16
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::MissingTemplate (Missing template book_orders/new, application/new with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder, :haml]}. Searched in:
+  * "/Users/phamthikimoanh/Documents/ruby/library_manager/app/views"
+  * "/Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/kaminari-core-1.2.0/app/views"
+  * "/Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views"
+):
+  
+app/controllers/book_orders_controller.rb:20:in `block (2 levels) in create'
+app/controllers/book_orders_controller.rb:15:in `create'
+Started POST "/book_orders" for ::1 at 2020-02-13 17:12:53 +0700
+Processing by BookOrdersController#create as JS
+  Parameters: {"utf8"=>"✓", "book_order"=>{"amount_book"=>"", "brorrow_date(1i)"=>"2020", "brorrow_date(2i)"=>"2", "brorrow_date(3i)"=>"13", "user_id"=>""}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/book_orders_controller.rb:16
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/book_orders_controller.rb:16
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::MissingTemplate (Missing template book_orders/new, application/new with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder, :haml]}. Searched in:
+  * "/Users/phamthikimoanh/Documents/ruby/library_manager/app/views"
+  * "/Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/kaminari-core-1.2.0/app/views"
+  * "/Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views"
+):
+  
+app/controllers/book_orders_controller.rb:20:in `block (2 levels) in create'
+app/controllers/book_orders_controller.rb:15:in `create'
+Started POST "/book_orders" for ::1 at 2020-02-13 17:13:02 +0700
+Processing by BookOrdersController#create as JS
+  Parameters: {"utf8"=>"✓", "book_order"=>{"amount_book"=>"2", "brorrow_date(1i)"=>"2020", "brorrow_date(2i)"=>"2", "brorrow_date(3i)"=>"13", "user_id"=>"2"}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/book_orders_controller.rb:16
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/book_orders_controller.rb:16
+  [1m[36mBookOrder Create (0.2ms)[0m  [1m[32mINSERT INTO "book_orders" ("amount_book", "brorrow_date", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["amount_book", 2], ["brorrow_date", "2020-02-13"], ["created_at", "2020-02-13 10:13:02.268839"], ["updated_at", "2020-02-13 10:13:02.268839"], ["user_id", 2]]
+  ↳ app/controllers/book_orders_controller.rb:16
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/book_orders_controller.rb:16
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::BusyException: database is locked: INSERT INTO "book_orders" ("amount_book", "brorrow_date", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)):
+  
+app/controllers/book_orders_controller.rb:16:in `block in create'
+app/controllers/book_orders_controller.rb:15:in `create'
+Started POST "/book_orders" for ::1 at 2020-02-13 17:13:03 +0700
+Processing by BookOrdersController#create as JS
+  Parameters: {"utf8"=>"✓", "book_order"=>{"amount_book"=>"2", "brorrow_date(1i)"=>"2020", "brorrow_date(2i)"=>"2", "brorrow_date(3i)"=>"13", "user_id"=>"2"}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/book_orders_controller.rb:16
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/book_orders_controller.rb:16
+  [1m[36mBookOrder Create (0.3ms)[0m  [1m[32mINSERT INTO "book_orders" ("amount_book", "brorrow_date", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["amount_book", 2], ["brorrow_date", "2020-02-13"], ["created_at", "2020-02-13 10:13:03.206277"], ["updated_at", "2020-02-13 10:13:03.206277"], ["user_id", 2]]
+  ↳ app/controllers/book_orders_controller.rb:16
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/book_orders_controller.rb:16
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.6ms)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::BusyException: database is locked: INSERT INTO "book_orders" ("amount_book", "brorrow_date", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)):
+  
+app/controllers/book_orders_controller.rb:16:in `block in create'
+app/controllers/book_orders_controller.rb:15:in `create'
+Started POST "/book_orders" for ::1 at 2020-02-13 17:13:04 +0700
+Processing by BookOrdersController#create as JS
+  Parameters: {"utf8"=>"✓", "book_order"=>{"amount_book"=>"2", "brorrow_date(1i)"=>"2020", "brorrow_date(2i)"=>"2", "brorrow_date(3i)"=>"13", "user_id"=>"2"}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/book_orders_controller.rb:16
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/book_orders_controller.rb:16
+  [1m[36mBookOrder Create (0.3ms)[0m  [1m[32mINSERT INTO "book_orders" ("amount_book", "brorrow_date", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["amount_book", 2], ["brorrow_date", "2020-02-13"], ["created_at", "2020-02-13 10:13:04.705016"], ["updated_at", "2020-02-13 10:13:04.705016"], ["user_id", 2]]
+  ↳ app/controllers/book_orders_controller.rb:16
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/book_orders_controller.rb:16
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.6ms)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::BusyException: database is locked: INSERT INTO "book_orders" ("amount_book", "brorrow_date", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)):
+  
+app/controllers/book_orders_controller.rb:16:in `block in create'
+app/controllers/book_orders_controller.rb:15:in `create'
+Started POST "/book_orders" for ::1 at 2020-02-13 17:13:05 +0700
+Processing by BookOrdersController#create as JS
+  Parameters: {"utf8"=>"✓", "book_order"=>{"amount_book"=>"2", "brorrow_date(1i)"=>"2020", "brorrow_date(2i)"=>"2", "brorrow_date(3i)"=>"13", "user_id"=>"2"}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/book_orders_controller.rb:16
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/book_orders_controller.rb:16
+  [1m[36mBookOrder Create (0.5ms)[0m  [1m[32mINSERT INTO "book_orders" ("amount_book", "brorrow_date", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["amount_book", 2], ["brorrow_date", "2020-02-13"], ["created_at", "2020-02-13 10:13:05.456980"], ["updated_at", "2020-02-13 10:13:05.456980"], ["user_id", 2]]
+  ↳ app/controllers/book_orders_controller.rb:16
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/book_orders_controller.rb:16
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.8ms)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::BusyException: database is locked: INSERT INTO "book_orders" ("amount_book", "brorrow_date", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)):
+  
+app/controllers/book_orders_controller.rb:16:in `block in create'
+app/controllers/book_orders_controller.rb:15:in `create'
+Started GET "/book_orders" for ::1 at 2020-02-13 17:13:52 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.2ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:12
+  Rendered collection of templates [0 times] (0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/book_orders/_form.html.haml:4
+  Rendered book_orders/_form.html.haml (8.2ms)
+  Rendered book_orders/index.html.haml within layouts/application (13.7ms)
+  Rendered layouts/_menu_top.html.haml (2.2ms)
+  Rendered layouts/_side_bar.html.haml (2.4ms)
+  Rendered layouts/_notice.html.haml (1.4ms)
+Completed 200 OK in 86ms (Views: 81.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/book_orders" for ::1 at 2020-02-13 17:13:55 +0700
+Processing by BookOrdersController#create as JS
+  Parameters: {"utf8"=>"✓", "book_order"=>{"amount_book"=>"", "brorrow_date(1i)"=>"2020", "brorrow_date(2i)"=>"2", "brorrow_date(3i)"=>"13", "user_id"=>""}, "commit"=>"Save"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/book_orders_controller.rb:16
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/book_orders_controller.rb:16
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::MissingTemplate (Missing template book_orders/new, application/new with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder, :haml]}. Searched in:
+  * "/Users/phamthikimoanh/Documents/ruby/library_manager/app/views"
+  * "/Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/kaminari-core-1.2.0/app/views"
+  * "/Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views"
+):
+  
+app/controllers/book_orders_controller.rb:20:in `block (2 levels) in create'
+app/controllers/book_orders_controller.rb:15:in `create'
+Started GET "/book_orders" for ::1 at 2020-02-13 17:14:51 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.2ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:12
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered book_orders/_form.html.haml (1.8ms)
+  Rendered book_orders/index.html.haml within layouts/application (8.6ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/Users/phamthikimoanh/Documents/ruby/library_manager/app/views/book_orders/_form.html.haml:3: syntax error, unexpected '='
+...(( form.input :brorrow_date , = form.association :user
+...                               ^):
+  
+app/views/book_orders/_form.html.haml:3: syntax error, unexpected '='
+app/views/book_orders/index.html.haml:18:in `_app_views_book_orders_index_html_haml__4092783995492401587_70205645950800'
+Started GET "/book_orders" for ::1 at 2020-02-13 17:16:26 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.2ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:12
+  Rendered collection of templates [0 times] (0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/book_orders/_form.html.haml:4
+  Rendered book_orders/_form.html.haml (8.2ms)
+  Rendered book_orders/index.html.haml within layouts/application (15.1ms)
+  Rendered layouts/_menu_top.html.haml (2.2ms)
+  Rendered layouts/_side_bar.html.haml (2.4ms)
+  Rendered layouts/_notice.html.haml (1.4ms)
+Completed 200 OK in 96ms (Views: 91.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/book_orders" for ::1 at 2020-02-13 17:16:58 +0700
+Processing by BookOrdersController#create as JS
+  Parameters: {"utf8"=>"✓", "book_order"=>{"amount_book"=>"", "brorrow_date(1i)"=>"2020", "brorrow_date(2i)"=>"2", "brorrow_date(3i)"=>"13", "user_id"=>"2"}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/book_orders_controller.rb:16
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/book_orders_controller.rb:16
+  [1m[36mBookOrder Create (0.3ms)[0m  [1m[32mINSERT INTO "book_orders" ("brorrow_date", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["brorrow_date", "2020-02-13"], ["created_at", "2020-02-13 10:16:58.998551"], ["updated_at", "2020-02-13 10:16:58.998551"], ["user_id", 2]]
+  ↳ app/controllers/book_orders_controller.rb:16
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/book_orders_controller.rb:16
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.6ms)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::BusyException: database is locked: INSERT INTO "book_orders" ("brorrow_date", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)):
+  
+app/controllers/book_orders_controller.rb:16:in `block in create'
+app/controllers/book_orders_controller.rb:15:in `create'
+Started GET "/book_orders" for ::1 at 2020-02-13 17:19:57 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.9ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:12
+  Rendered collection of book_orders/_book_order.html.haml [3 times] (5.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/book_orders/_form.html.haml:4
+  Rendered book_orders/_form.html.haml (10.9ms)
+  Rendered book_orders/index.html.haml within layouts/application (29.3ms)
+  Rendered layouts/_menu_top.html.haml (3.4ms)
+  Rendered layouts/_side_bar.html.haml (2.1ms)
+  Rendered layouts/_notice.html.haml (1.9ms)
+Completed 200 OK in 124ms (Views: 118.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/book_orders?class=btn+btn-xl+btn-success&style=color%3A+%23fff" for ::1 at 2020-02-13 17:20:01 +0700
+Processing by BookOrdersController#index as HTML
+  Parameters: {"class"=>"btn btn-xl btn-success", "style"=>"color: #fff"}
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.2ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:12
+  Rendered collection of book_orders/_book_order.html.haml [3 times] (2.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/book_orders/_form.html.haml:4
+  Rendered book_orders/_form.html.haml (9.3ms)
+  Rendered book_orders/index.html.haml within layouts/application (19.7ms)
+  Rendered layouts/_menu_top.html.haml (2.6ms)
+  Rendered layouts/_side_bar.html.haml (2.0ms)
+  Rendered layouts/_notice.html.haml (1.7ms)
+Completed 200 OK in 82ms (Views: 77.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/book_orders?class=btn+btn-xl+btn-success&style=color%3A+%23fff" for ::1 at 2020-02-13 17:20:33 +0700
+Processing by BookOrdersController#index as HTML
+  Parameters: {"class"=>"btn btn-xl btn-success", "style"=>"color: #fff"}
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.2ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:12
+  Rendered collection of book_orders/_book_order.html.haml [3 times] (3.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/book_orders/_form.html.haml:4
+  Rendered book_orders/_form.html.haml (10.0ms)
+  Rendered book_orders/index.html.haml within layouts/application (23.1ms)
+  Rendered layouts/_menu_top.html.haml (2.8ms)
+  Rendered layouts/_side_bar.html.haml (2.6ms)
+  Rendered layouts/_notice.html.haml (1.8ms)
+Completed 200 OK in 105ms (Views: 100.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/book_orders" for ::1 at 2020-02-13 17:21:37 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.3ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:12
+  Rendered collection of book_orders/_book_order.html.haml [3 times] (2.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/book_orders/_form.html.haml:4
+  Rendered book_orders/_form.html.haml (8.0ms)
+  Rendered book_orders/index.html.haml within layouts/application (20.0ms)
+  Rendered layouts/_menu_top.html.haml (1.9ms)
+  Rendered layouts/_side_bar.html.haml (2.1ms)
+  Rendered layouts/_notice.html.haml (1.2ms)
+Completed 200 OK in 92ms (Views: 88.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/book_orders?class=btn+btn-xl+btn-success&style=color%3A+%23fff" for ::1 at 2020-02-13 17:21:45 +0700
+Processing by BookOrdersController#index as HTML
+  Parameters: {"class"=>"btn btn-xl btn-success", "style"=>"color: #fff"}
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.1ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:12
+  Rendered collection of book_orders/_book_order.html.haml [3 times] (1.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/book_orders/_form.html.haml:4
+  Rendered book_orders/_form.html.haml (8.3ms)
+  Rendered book_orders/index.html.haml within layouts/application (17.7ms)
+  Rendered layouts/_menu_top.html.haml (3.3ms)
+  Rendered layouts/_side_bar.html.haml (2.2ms)
+  Rendered layouts/_notice.html.haml (1.4ms)
+Completed 200 OK in 84ms (Views: 80.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/book_orders?class=btn+btn-xl+btn-success&style=color%3A+%23fff" for ::1 at 2020-02-13 17:23:15 +0700
+Processing by BookOrdersController#index as HTML
+  Parameters: {"class"=>"btn btn-xl btn-success", "style"=>"color: #fff"}
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.3ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:12
+  Rendered collection of book_orders/_book_order.html.haml [3 times] (3.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/book_orders/_form.html.haml:4
+  Rendered book_orders/_form.html.haml (13.8ms)
+  Rendered book_orders/index.html.haml within layouts/application (29.6ms)
+  Rendered layouts/_menu_top.html.haml (2.3ms)
+  Rendered layouts/_side_bar.html.haml (2.4ms)
+  Rendered layouts/_notice.html.haml (2.2ms)
+Completed 200 OK in 124ms (Views: 118.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/book_orders" for ::1 at 2020-02-13 17:23:41 +0700
+Processing by BookOrdersController#create as JS
+  Parameters: {"utf8"=>"✓", "book_order"=>{"amount_book"=>"4", "brorrow_date(1i)"=>"2020", "brorrow_date(2i)"=>"2", "brorrow_date(3i)"=>"13", "user_id"=>"2"}, "commit"=>"Save"}
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/book_orders_controller.rb:16
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/book_orders_controller.rb:16
+  [1m[36mBookOrder Create (0.4ms)[0m  [1m[32mINSERT INTO "book_orders" ("amount_book", "brorrow_date", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["amount_book", 4], ["brorrow_date", "2020-02-13"], ["created_at", "2020-02-13 10:23:41.524077"], ["updated_at", "2020-02-13 10:23:41.524077"], ["user_id", 2]]
+  ↳ app/controllers/book_orders_controller.rb:16
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/book_orders_controller.rb:16
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.1ms)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::BusyException: database is locked: INSERT INTO "book_orders" ("amount_book", "brorrow_date", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)):
+  
+app/controllers/book_orders_controller.rb:16:in `block in create'
+app/controllers/book_orders_controller.rb:15:in `create'
+Started GET "/" for ::1 at 2020-02-13 17:30:32 +0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (4.7ms)
+  Rendered layouts/_menu_top.html.haml (4.8ms)
+  Rendered layouts/_side_bar.html.haml (3.9ms)
+  Rendered layouts/_notice.html.haml (2.4ms)
+Completed 200 OK in 435ms (Views: 419.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book_orders" for ::1 at 2020-02-13 17:30:37 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.2ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:12
+  Rendered collection of book_orders/_book_order.html.haml [3 times] (4.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/book_orders/_form.html.haml:4
+  Rendered book_orders/_form.html.haml (989.6ms)
+  Rendered book_orders/index.html.haml within layouts/application (1005.3ms)
+  Rendered layouts/_menu_top.html.haml (2.2ms)
+  Rendered layouts/_side_bar.html.haml (3.8ms)
+  Rendered layouts/_notice.html.haml (1.5ms)
+Completed 200 OK in 1083ms (Views: 1060.1ms | ActiveRecord: 1.8ms)
+
+
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" ORDER BY "categories"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/" for ::1 at 2020-02-13 17:42:07 +0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (7.4ms)
+  Rendered layouts/_menu_top.html.haml (3.4ms)
+  Rendered layouts/_side_bar.html.haml (2.7ms)
+  Rendered layouts/_notice.html.haml (2.3ms)
+Completed 200 OK in 421ms (Views: 410.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/book_orders" for ::1 at 2020-02-13 17:42:11 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.4ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:12
+  Rendered collection of book_orders/_book_order.html.haml [3 times] (5.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/book_orders/_form.html.haml:4
+  Rendered book_orders/_form.html.haml (1009.4ms)
+  Rendered book_orders/index.html.haml within layouts/application (1029.6ms)
+  Rendered layouts/_menu_top.html.haml (2.9ms)
+  Rendered layouts/_side_bar.html.haml (2.7ms)
+  Rendered layouts/_notice.html.haml (1.2ms)
+Completed 200 OK in 1119ms (Views: 1092.8ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/book_orders" for ::1 at 2020-02-13 17:42:29 +0700
+Processing by BookOrdersController#create as JS
+  Parameters: {"utf8"=>"✓", "book_order"=>{"amount_book"=>"3", "brorrow_date(1i)"=>"2020", "brorrow_date(2i)"=>"2", "brorrow_date(3i)"=>"13", "user_id"=>"3"}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/book_orders_controller.rb:16
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/book_orders_controller.rb:16
+  [1m[36mBookOrder Create (0.5ms)[0m  [1m[32mINSERT INTO "book_orders" ("amount_book", "brorrow_date", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["amount_book", 3], ["brorrow_date", "2020-02-13"], ["created_at", "2020-02-13 10:42:29.582980"], ["updated_at", "2020-02-13 10:42:29.582980"], ["user_id", 3]]
+  ↳ app/controllers/book_orders_controller.rb:16
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/book_orders_controller.rb:16
+  Rendering book_orders/create.js.erb
+  Rendered book_orders/_book_order.html.haml (2.4ms)
+  Rendered book_orders/create.js.erb (8.3ms)
+Completed 200 OK in 62ms (Views: 34.9ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for ::1 at 2020-02-13 17:57:32 +0700
+Processing by HomeController#index as HTML
+  Rendering home/index.html.haml within layouts/application
+  Rendered home/index.html.haml within layouts/application (12.5ms)
+  Rendered layouts/_menu_top.html.haml (4.5ms)
+  Rendered layouts/_side_bar.html.haml (5.5ms)
+  Rendered layouts/_notice.html.haml (2.5ms)
+Completed 200 OK in 208ms (Views: 198.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories" for ::1 at 2020-02-13 17:57:34 +0700
+Processing by CategoriesController#index as HTML
+  Rendering categories/index.html.haml within layouts/application
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "categories"[0m
+  ↳ app/views/categories/index.html.haml:4
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_form.html.erb (5.1ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_order_for.html.erb (1.4ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_order_for.html.erb (0.5ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_head.html.erb (18.2ms)
+  [1m[36mCategory Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "categories" LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/views/categories/index.html.haml:9
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/categories/index.html.haml:9
+  Rendered categories/_category.html.haml (1.9ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_row.html.erb (5.6ms)
+  Rendered categories/_category.html.haml (0.6ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_row.html.erb (4.6ms)
+  Rendered categories/_category.html.haml (0.2ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_row.html.erb (2.2ms)
+  Rendered categories/_category.html.haml (0.2ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_row.html.erb (2.5ms)
+  Rendered categories/_category.html.haml (0.2ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_row.html.erb (2.4ms)
+  Rendered /Users/phamthikimoanh/.rbenv/versions/2.3.8/lib/ruby/gems/2.3.0/gems/datagrid-1.5.9/app/views/datagrid/_table.html.erb (88.4ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "categories"[0m
+  ↳ app/views/categories/index.html.haml:10
+  Rendered categories/_form.html.haml (11.8ms)
+  Rendered categories/index.html.haml within layouts/application (150.0ms)
+  Rendered layouts/_menu_top.html.haml (3.3ms)
+  Rendered layouts/_side_bar.html.haml (2.1ms)
+  Rendered layouts/_notice.html.haml (1.7ms)
+Completed 200 OK in 323ms (Views: 218.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/book_orders" for ::1 at 2020-02-13 17:58:06 +0700
+Processing by BookOrdersController#index as HTML
+  Rendering book_orders/index.html.haml within layouts/application
+  [1m[36mBookOrder Load (0.7ms)[0m  [1m[34mSELECT "book_orders".* FROM "book_orders"[0m
+  ↳ app/views/book_orders/index.html.haml:12
+  Rendered collection of book_orders/_book_order.html.haml [4 times] (5.6ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/book_orders/_form.html.haml:4
+  Rendered book_orders/_form.html.haml (11.5ms)
+  Rendered book_orders/index.html.haml within layouts/application (28.5ms)
+  Rendered layouts/_menu_top.html.haml (1.8ms)
+  Rendered layouts/_side_bar.html.haml (1.7ms)
+  Rendered layouts/_notice.html.haml (1.2ms)
+Completed 200 OK in 110ms (Views: 103.0ms | ActiveRecord: 1.4ms)
+
+

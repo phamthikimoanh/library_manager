@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_10_082515) do
+ActiveRecord::Schema.define(version: 2020_02_13_031827) do
 
   create_table "admins", force: :cascade do |t|
     t.string "name"
@@ -21,14 +21,27 @@ ActiveRecord::Schema.define(version: 2020_02_10_082515) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "book_cards", force: :cascade do |t|
+    t.string "name"
+    t.date "return_date"
+    t.integer "price_borrow"
+    t.boolean "status"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "book_id"
+    t.integer "book_order_id"
+    t.index ["book_id"], name: "index_book_cards_on_book_id"
+    t.index ["book_order_id"], name: "index_book_cards_on_book_order_id"
+  end
+
   create_table "book_orders", force: :cascade do |t|
     t.integer "amount_book"
     t.date "brorrow_date"
-    t.date "return_date"
     t.boolean "status"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "user_id"
+    t.integer "deposits"
     t.index ["user_id"], name: "index_book_orders_on_user_id"
   end
 
@@ -43,6 +56,7 @@ ActiveRecord::Schema.define(version: 2020_02_10_082515) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "category_id"
+    t.integer "price"
     t.index ["category_id"], name: "index_books_on_category_id"
   end
 

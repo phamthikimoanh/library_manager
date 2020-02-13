@@ -7,5 +7,5 @@ Rails.application.routes.draw do
   root 'home#index'
   # get 'book/index'
   resources :books
-  resources :categories
+  resources :categories, :book_orders
 end

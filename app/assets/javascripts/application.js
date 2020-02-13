@@ -33,4 +33,12 @@ function addFill() {
     x.style.display = "block";
   }
 }
+function addNewBookOrder() {
+  var x = document.getElementById("form-add");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
 
