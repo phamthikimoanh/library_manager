@@ -3,7 +3,7 @@
     = f.input :brorrow_date , as: :date
     = f.association :user
 
-    %h3 Book cards 
+    %h3 List book borrow
     #book_cards
         = f.simple_fields_for :book_cards do |book_card|
             = render 'book_card_fields', f: book_card

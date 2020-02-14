@@ -7,6 +7,7 @@ class CategoriesController < ApplicationController
     @categories_grid = CategoriesGrid.new(params[:categories_grid]) do |scope|
       scope.page(params[:page])  
     end
+    
   end
 
   def edit

@@ -43,3 +43,16 @@
   border: 1px solid #ccc;
   border-top: none;
 }
+.list_book_order {
+  color: #808080;
+  margin: 15px;
+  h4 {
+    border-bottom: 0.5px solid #00000087;
+  }
+  ul {
+    margin: 0px 30px;
+    li {
+      list-style-type: circle;
+    }
+  }
+}

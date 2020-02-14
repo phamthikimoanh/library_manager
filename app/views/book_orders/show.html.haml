@@ -1,0 +1,27 @@
+#wapper-content
+    %h1 Book order detail 
+    .content-detail
+        %p
+            %strong User:
+            = @book_order.user.name
+            %strong Id User:
+            = @book_order.user_id
+        %p
+            %strong Brorrow Date:
+            = @book_order.brorrow_date
+        %p
+            %strong Amount Book:
+            = @book_order.amount_book       
+        .list_book_order 
+            %h4 List all the books here
+            %table.table.table-dark
+                %thead
+                    %tr
+                        %th{:scope => "col"} Id book
+                        %th{:scope => "col"} Name book
+
+                %tbody
+                    - @book_order.book_cards.each do |book_card|  
+                        %tr
+                            %td= book_card.book_id
+                            %td= book_card.book.name 

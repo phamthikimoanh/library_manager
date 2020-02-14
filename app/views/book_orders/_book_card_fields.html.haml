@@ -1,15 +1,7 @@
 .nested-fields
     .field
-        = f.label :book_id
+        = f.label "Id book"
         %br
         = f.text_field :book_id
-    .field
-        = f.label :return_date
-        %br
-        = f.text_field :return_date
-    .field
-        = f.label :price_borrow
-        %br
-        = f.text_field :price_borrow
 
     = link_to_remove_association "remove book card", f
