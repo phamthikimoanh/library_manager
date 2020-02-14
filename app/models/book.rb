@@ -4,5 +4,4 @@ class Book < ApplicationRecord
   validates :name, presence: true, length: { maximum: 30 }
   validates :desc, presence: true
   mount_uploader :image, ImageUploader
-
 end

@@ -5,6 +5,7 @@ class BookOrdersController < ApplicationController
     @book_orders = BookOrder.all
     @book_order = BookOrder.new
   end
+  
   # def new
   #   @book_order = BookOrder.new
   # end
@@ -27,7 +28,8 @@ class BookOrdersController < ApplicationController
 
   def book_order_params
     params.require(:book_order).permit(
-      :amount_book, :brorrow_date, :user_id
+      :amount_book, :brorrow_date, :user_id,
+      book_cards_attributes: [:book_id, :return_date, :price_borrow, :_destroy]
     )
   end
 end

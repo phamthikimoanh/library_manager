@@ -71,3 +71,4 @@ gem 'jquery-rails'
 gem 'kaminari'
 # upload and resize image
 gem 'carrierwave'
+gem "cocoon"
