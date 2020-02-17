@@ -1,0 +1,16 @@
+#wapper-content
+    %h1 Listing book card order 
+    %table.table.table-hover
+        %thead
+            %tr
+                %th No.
+                %th Book id
+                %th Name
+                %th Book_order_id
+        - @book_cards.each do |book_card|
+            %tr
+                %td= book_card.id
+                %td= book_card.book_id
+                %td= book_card.name
+                %td= book_card.book_order_id
+        
