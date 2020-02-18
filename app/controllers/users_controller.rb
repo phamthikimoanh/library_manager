@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class UsersController < ApplicationController
-  before_action :set_user, only: %i[show edit update destroy]
+  before_action :load_user, only: %i[show edit update destroy]
 
   def index
     @users_grid = UsersGrid.new(params[:users_grid]) do |scope|
@@ -49,7 +49,7 @@ class UsersController < ApplicationController
 
   private
 
-  def set_user
+  def load_user
     @user = User.find(params[:id])
   end
 

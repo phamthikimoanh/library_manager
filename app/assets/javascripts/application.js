@@ -43,3 +43,20 @@ function addNewBookOrder() {
     x.style.display = "block";
   }
 }
+// $(document).ready(function() {
+
+//   $("#btn_submit").bind("ajax:complete", function(event, xhr, status) {
+//     $("#new_category").reset();
+//   });
+
+// });
+// function submitForm() {
+//   // Get the first form with the name
+//   // Usually the form name is not repeated
+//   // but duplicate names are possible in HTML
+//   // Therefore to work around the issue, enforce the correct index
+//   var frm = document.getElementById("new_category")[0];
+//   frm.submit(); // Submit the form
+//   frm.reset(); // Reset all form data
+//   return false; // Prevent page refresh
+// }

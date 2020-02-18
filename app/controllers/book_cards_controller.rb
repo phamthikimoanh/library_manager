@@ -1,24 +1,15 @@
 # frozen_string_literal: true
 
 class BookCardsController < ApplicationController
+  before_action :load_book_card, only: %i[show edit update]
+
   def index
-    # @book_cards = BookCard.all
     @book_cards_grid = BookCardsGrid.new(params[:book_cards_grid]) do |scope|
       scope.page(params[:page])
     end
   end
 
-  def show
-    @book_card = BookCard.find(params[:id])
-  end
-
-  def edit
-    @book_card = BookCard.find(params[:id])
-  end
-
   def update
-    @book_card = BookCard.find(params[:id])
-
     if @book_card.update(book_card_params)
       redirect_to book_cards_path
     else
@@ -27,6 +18,10 @@ class BookCardsController < ApplicationController
   end
 
   private
+
+  def load_book_card
+    @book_card = BookCard.find(params[:id])
+  end
 
   def book_card_params
     params.require(:book_card).permit(:status)

@@ -1,13 +1,10 @@
 # frozen_string_literal: true
 
 class BookOrdersController < ApplicationController
+  before_action :load_book_order, only: [:show]
   def index
     @book_orders = BookOrder.all
     @book_order = BookOrder.new
-  end
-  
-  def show
-    @book_order = BookOrder.find(params[:id])
   end
 
   def create
@@ -26,10 +23,14 @@ class BookOrdersController < ApplicationController
 
   private
 
+  def load_book_order
+    @book_order = BookOrder.find(params[:id])
+  end
+
   def book_order_params
     params.require(:book_order).permit(
       :amount_book, :brorrow_date, :user_id,
-      book_cards_attributes: [:book_id, :_destroy]
+      book_cards_attributes: %i[book_id _destroy]
     )
   end
 end

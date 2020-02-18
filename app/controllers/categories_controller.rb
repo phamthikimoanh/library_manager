@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class CategoriesController < ApplicationController
+    before_action :load_category, only: [:edit, :update]
+
   def index
     # @categories = Category.all.page params[:page]
     @category = Category.new
@@ -10,12 +12,7 @@ class CategoriesController < ApplicationController
     
   end
 
-  def edit
-    @category = Category.find(params[:id])
-  end
-
   def update
-    @category = Category.find(params[:id])
 
     if @category.update(category_params)
       redirect_to categories_path
@@ -39,7 +36,10 @@ class CategoriesController < ApplicationController
   end
 
   private
-
+  def load_category
+    @category = Category.find(params[:id])
+  end
+  
   def category_params
     params.require(:category).permit(:name)
   end
