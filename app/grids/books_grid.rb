@@ -19,6 +19,7 @@ class BooksGrid
   column(:name, mandatory: true)
   column(:desc, mandatory: true)
   column(:books_total, mandatory: true) 
+  column(:price, mandatory: true) 
   column(:status, :mandatory => true) do
     status? ? "Yes" : "No"
   end

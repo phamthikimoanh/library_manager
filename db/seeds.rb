@@ -14,6 +14,7 @@
         image: Faker::Avatar.image,
         books_total: Faker::Number.number(digits: 3),
         status: Faker::Boolean.boolean, 
-        category_id: Faker::Number.between(from: 1, to: 2)
+        category_id: Faker::Number.between(from: 1, to: 2),
+        price: Faker::Number.decimal(l_digits: 3, r_digits: 3)
     }])
 end

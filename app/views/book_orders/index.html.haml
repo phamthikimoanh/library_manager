@@ -1,6 +1,13 @@
 #wapper-content
   %h1 List book order
-  -# = @book_orders.reduce_book_in_db
+  - if @book_order.errors.any?
+    #error_explanation
+      %h2
+        = pluralize(@book_order.errors.count, "error")
+        Error:
+      %ul
+        - @book_order.errors.full_messages.each do |msg|
+          %li= msg
   %table.table.table-hover
     %thead
       %tr
@@ -8,6 +15,8 @@
         %th Amount book
         %th Brorrow_date
         %th User Id
+        %th User name
+        %th Deposits
         %th #
     %tbody#book_orders
       = render @book_orders

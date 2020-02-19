@@ -14,6 +14,8 @@ class BooksController < ApplicationController
 
 
   def create
+    @book = Book.new(book_params)
+
     # render plain: params[:book].inspect
     respond_to do |format|
       if @book.save

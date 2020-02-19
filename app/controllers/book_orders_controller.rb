@@ -2,6 +2,7 @@
 
 class BookOrdersController < ApplicationController
   before_action :load_book_order, only: [:show]
+
   def index
     @book_orders = BookOrder.all
     @book_order = BookOrder.new
@@ -9,7 +10,6 @@ class BookOrdersController < ApplicationController
 
   def create
     @book_order = BookOrder.new(book_order_params)
-
     respond_to do |format|
       if @book_order.save
         format.html { redirect_to @book_order, notice: 'Book order was successfully created.' }
