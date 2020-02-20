@@ -3,5 +3,13 @@
 class BookCard < ApplicationRecord
   belongs_to :book_order
   belongs_to :book
-  # accepts_nested_attributes_for :books, :reject_if => :all_blank
+  max_paginates_per 5
+  
+  before_save :check_status
+
+  def check_status
+    status = 0
+    if
+  end
+  
 end
