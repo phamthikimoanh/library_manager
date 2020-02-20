@@ -5,7 +5,7 @@
 
   .form-inputs
     = f.input :name
-    = f.input :birthday
+    = f.input :birthday, start_year: Time.now.year - 100, end_year: Time.now.year - 18, order: %i(day month year)
     = f.input :phone
     = f.input :address
     = f.file_field :image

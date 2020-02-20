@@ -1,5 +1,13 @@
 = simple_form_for @category, remote: true do |f|
-  = f.error_notification
+  - if @category.errors.any?
+    #error_explanation
+      %h2
+        = pluralize(@category.errors.count, "error")
+        prohibited
+        this category from being saved:
+      %ul
+        - @category.errors.full_messages.each do |msg|
+          %li= msg
   = f.input :name
   -# .button-add-new
   = f.button :submit, class: "btn-primary"

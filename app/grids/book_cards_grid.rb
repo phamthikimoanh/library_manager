@@ -8,7 +8,7 @@ class BookCardsGrid
   end
 
   # Filters
-  filter(:book_order_id, :string, :multiple => ',')
+  filter(:book_order_id, :string, :multiple => ",")
   filter(:status, :boolean)
 
   # Columns
@@ -22,6 +22,6 @@ class BookCardsGrid
   end
   column(:actions, :html => true, :mandatory => true) do |record|
     #tự động vào trong view
-     render :partial => "book_cards/book_card", :object => record
+    render :partial => "book_cards/book_card", :object => record
   end
 end

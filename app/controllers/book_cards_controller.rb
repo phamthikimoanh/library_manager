@@ -13,7 +13,7 @@ class BookCardsController < ApplicationController
     if @book_card.update(book_card_params)
       redirect_to book_cards_path
     else
-      render 'edit'
+      render "edit"
     end
   end
 

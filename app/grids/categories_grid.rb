@@ -16,6 +16,6 @@ class CategoriesGrid
   column(:name, mandatory: true)
   column(:actions, html: true, mandatory: true) do |record|
     # tự động vào trong view
-    render partial: 'categories/category', object: record
+    render partial: "categories/category", object: record
   end
 end

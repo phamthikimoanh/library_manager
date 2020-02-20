@@ -2,29 +2,14 @@
 
 class Book < ApplicationRecord
   belongs_to :category
+  validates_associated :category
   has_many :book_cards
   max_paginates_per 5
-  validates :name, presence: true, length: { maximum: 30 }
-  validates :desc, presence: true
-  # mount_uploader :image, ImageUploader
-
-  # def book_count
-  #   group_book_by_ids = BookCard.group(:book_id).count
-  #   books = Book.all
-
-  #   books.each do |book|
-  #     group_book_by_ids.each do |k,v|
-  #       # binding.pry
-  #       if book.id == k
-  #         # puts "book_id dang = k : #{k}"
-  #          book_stock = book.books_total - v
-  #         if book_stock > 0
-  #           return "Stock #{book_stock}"
-  #         else
-  #           return "Out stock"
-  #         end
-  #       end      
-  #     end
-  #   end
-  # end
+  validates :name, format: { with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/i }, presence: true, length: { maximum: 30 }
+  validates :desc, format: { with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/i }, presence: true, length: { minimum: 30 }
+  validates :author, format: { with: /[a-zA-Z]/ }, presence: true, length: { maximum: 25 }
+  validates :books_total, presence: true, numericality: { only_integer: true }
+  validates :price, presence: true, numericality: true
+  validates :books_total, presence: true, numericality: { only_integer: true }
+  validates :status, inclusion: { in: [true, false] }
 end
