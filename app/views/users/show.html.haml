@@ -17,7 +17,8 @@
     = @user.address
   %p
     %b Image:
-    = image_tag @user.image.thumb.url
+    - if @user.image?
+      = image_tag @user.image.thumb.url
 
   = link_to 'Edit', edit_user_path(@user)
   \|

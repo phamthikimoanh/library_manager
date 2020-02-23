@@ -12,15 +12,6 @@
 
 ActiveRecord::Schema.define(version: 2020_02_18_083203) do
 
-  create_table "admins", force: :cascade do |t|
-    t.string "name"
-    t.date "birthday"
-    t.string "phone"
-    t.string "address"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "book_cards", force: :cascade do |t|
     t.string "name"
     t.date "return_date"
