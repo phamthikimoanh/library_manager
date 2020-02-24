@@ -63,3 +63,4 @@ gem "kaminari"
 # upload and resize image
 gem "carrierwave"
 gem "cocoon"
+gem 'rufo', '~> 0.4.2'

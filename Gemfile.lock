@@ -199,6 +199,7 @@ GEM
       ffi (~> 1.9)
     ruby_parser (3.14.1)
       sexp_processor (~> 4.9)
+    rufo (0.4.2)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -260,6 +261,7 @@ DEPENDENCIES
   puma (~> 3.11)
   rails (~> 5.2.4, >= 5.2.4.1)
   rspec-rails
+  rufo (~> 0.4.2)
   sass-rails (~> 5.0)
   simple_form
   sqlite3

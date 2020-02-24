@@ -1,7 +1,6 @@
 #wapper-content
   %h1.text-center Edit category
-  -# = render 'form'
-  = simple_form_for @category do |form|
+  = simple_form_for @category do |f|
     - if @category.errors.any?
       #error_explanation
         %h2
@@ -11,7 +10,7 @@
         %ul
           - @category.errors.full_messages.each do |msg|
             %li= msg
-    = form.input :name
+    = f.input :name
     .button-add-new
-      = form.submit "Save"
+      = f.submit "Save"
     = link_to "Cancle", categories_path

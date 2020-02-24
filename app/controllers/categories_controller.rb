@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class CategoriesController < ApplicationController
-  before_action :load_category, only: [:edit, :update]
+  before_action :load_category, only: [:show, :edit, :update, :destroy]
 
   def index
     # @categories = Category.all.page params[:page]
@@ -11,11 +11,23 @@ class CategoriesController < ApplicationController
     end
   end
 
+  # def show
+  #   @category = Category.find(params[:id])
+  # end
+  # def edit
+  #   @category = Category.find(params[:id])
+  # end
   def update
-    if @category.update(category_params)
-      redirect_to categories_path
-    else
-      render "edit"
+    # @category = Category.find(params[:id])
+
+    respond_to do |format|
+      if @category.update(category_params)
+        format.html { redirect_to @category, success: "Category was successfully updated." }
+        format.json { render :show, status: :ok, location: @category }
+      else
+        format.html { render :edit }
+        format.json { render json: @category.errors, status: :unprocessable_entity }
+      end
     end
   end
 
@@ -24,7 +36,7 @@ class CategoriesController < ApplicationController
 
     respond_to do |format|
       if @category.save
-        format.html { redirect_to @category, notice: "Category was successfully created." }
+        format.html { redirect_to @category, success: "Category was successfully created." }
         format.js {}
       else
         format.html { render :new }

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class BooksController < ApplicationController
-  # before_action :load_book, only: [:show, :edit, :update, :destroy]
+  before_action :load_book, only: [:show, :edit, :update, :destroy]
 
   def index
     # @books = Book.all.page params[:page]
@@ -14,7 +14,6 @@ class BooksController < ApplicationController
 
   def create
     @book = Book.new(book_params)
-
     # render plain: params[:book].inspect
     respond_to do |format|
       if @book.save
@@ -28,25 +27,28 @@ class BooksController < ApplicationController
     end
   end
 
-  def edit
-    @book = Book.find(params[:id])
-  end
-    def show
-    @book = Book.find(params[:id])
-  end
+  # def edit
+  #   @book = Book.find(params[:id])
+  # end
+  # def show
+  #   @book = Book.find(params[:id])
+  # end
 
   def update
-    @book = Book.find(params[:id])
-
-    if @book.update(book_params)
-      redirect_to @book
-    else
-      render "index"
+    # @book = Book.find(params[:id])
+    respond_to do |format|
+      if @book.update(book_params)
+        format.html { redirect_to @book, success: "Book was successfully updated." }
+        format.json { render :show, status: :ok, location: @book }
+      else
+        format.html { render :edit }
+        format.json { render json: @book.errors, status: :unprocessable_entity }
+      end
     end
   end
 
   def destroy
-        @book = Book.find(params[:id])
+    # @book = Book.find(params[:id])
 
     @book.destroy
     respond_to do |format|
@@ -58,9 +60,9 @@ class BooksController < ApplicationController
 
   private
 
-  # def load_book
-  #   @book = Book.find(params[:id])
-  # end
+  def load_book
+    @book = Book.find(params[:id])
+  end
 
   def book_params
     params.require(:book).permit(:isbn, :name, :desc, :author, :book_total, :category_id)
