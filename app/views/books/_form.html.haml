@@ -1,4 +1,4 @@
-= simple_form_for @book, remote: true do |form|
+= simple_form_for @book, remote: true do |f|
   - if @book.errors.any?
     #error_explanation
       %h2
@@ -9,15 +9,18 @@
         - @book.errors.full_messages.each do |msg|
           %li= msg
   .row-one
-    = form.input :isbn
-    = form.input :name
+    = f.input :isbn
+    = f.input :name
+    = f.input :status, :as => :boolean, :input_html => { :checked => "checked" }
+
   .row-one
-    = form.input :author
-    = form.input :books_total
-    = form.association :category
+    = f.input :author
+    = f.input :books_total
+    = f.input :price
+    = f.association :category
   .div
-    = form.input :desc, as: :text
+    = f.input :desc, as: :text
   -# .div
   -#   = form.file_field :image
   .button-add-new
-    = form.submit "Save"
+    = f.submit "Save"

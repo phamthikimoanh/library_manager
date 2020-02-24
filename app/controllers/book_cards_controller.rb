@@ -10,10 +10,14 @@ class BookCardsController < ApplicationController
   end
 
   def update
-    if @book_card.update(book_card_params)
-      redirect_to book_cards_path
-    else
-      render "edit"
+    respond_to do |format|
+      if @book_card.update(book_card_params)
+        format.html { redirect_to @book_card, success: "Book card was successfully updated." }
+        format.json { render :show, status: :ok, location: @book_card }
+      else
+        format.html { render :edit }
+        format.json { render json: @book_card.errors, status: :unprocessable_entity }
+      end
     end
   end
 

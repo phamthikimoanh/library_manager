@@ -12,7 +12,7 @@ class BookOrdersController < ApplicationController
     @book_order = BookOrder.new(book_order_params)
     respond_to do |format|
       if @book_order.save
-        format.html { redirect_to @book_order, notice: "Book order was successfully created." }
+        format.html { redirect_to @book_order, success: "Book order was successfully created." }
         format.js { }
       else
         format.html { render :new }

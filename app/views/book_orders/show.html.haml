@@ -6,8 +6,8 @@
             = @book_order.user.name
             %strong Id User:
             = @book_order.user_id
-            %strong Image User:
-            = image_tag @book_order.user.image.thumb.url
+            -# %strong Image User:
+            -# = image_tag @book_order.user.image.thumb.url
 
         %p
             %strong Brorrow Date:
@@ -29,3 +29,4 @@
                             %td= book_card.book_id
                             %td= book_card.book.name
 
+    = link_to('Back', book_orders_path)

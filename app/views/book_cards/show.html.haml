@@ -1,0 +1,16 @@
+#wapper-content
+    %h1 Book card detail 
+    .content-detail
+    %p
+        %strong Book card:
+        = @book_card.book.name
+   
+    %p
+        %strong Book order id:
+        = @book_card.book_order_id
+    
+    %p
+        %strong Status:
+        = @book_card.status
+
+    = link_to('Back', book_cards_path)

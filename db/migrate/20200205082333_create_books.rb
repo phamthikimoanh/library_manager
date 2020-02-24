@@ -7,7 +7,7 @@ class CreateBooks < ActiveRecord::Migration[5.2]
       t.string :author
       t.string :image
       t.integer :books_total
-      t.boolean :status
+      t.boolean :status, :default => 1
 
       t.timestamps
     end

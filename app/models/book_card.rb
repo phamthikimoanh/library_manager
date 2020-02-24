@@ -9,9 +9,13 @@ class BookCard < ApplicationRecord
 
   def check_status
     if self.status == true
-      binding.pry
+      # binding.pry
       self.update_column(:status, 1)
       book_stock = book.books_total + 1
+      book.update_column(:books_total, book_stock)
+    else
+      self.update_column(:status, 0)
+      book_stock = book.books_total - 1
       book.update_column(:books_total, book_stock)
     end
   end

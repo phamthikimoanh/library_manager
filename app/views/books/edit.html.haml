@@ -1,6 +1,5 @@
 #wapper-content
   %h1.text-center Edit book
-  -# = render 'form'
   = simple_form_for @book do |form|
     - if @book.errors.any?
       #error_explanation

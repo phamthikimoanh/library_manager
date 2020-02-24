@@ -17,6 +17,7 @@ class BookOrder < ApplicationRecord
       if book.books_total <= 0
         could_borrow = false
         err += "#{book.name}, "
+
       end
     end
     return true if could_borrow == true
@@ -42,9 +43,15 @@ class BookOrder < ApplicationRecord
     book_cards.each do |book_card|
       book = book_card.book
       book_stock = book.books_total - 1
-
-      if book_stock > 0
-        book.update_attribute(:books_total, book_stock)
+      
+      # binding.pry
+      
+      if book_stock <= 0
+        book.update_column(:books_total, 0)        
+        book.update_column(:status, false)
+      else
+        book.update_column(:books_total, book_stock)    
+        book.update_column(:status, true)    
       end
     end
   end
