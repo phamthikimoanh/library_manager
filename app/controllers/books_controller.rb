@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class BooksController < ApplicationController
-  before_action :load_book, only: [:show, :edit, :update, :destroy]
+  # before_action :load_book, only: [:show, :edit, :update, :destroy]
 
   def index
     # @books = Book.all.page params[:page]
@@ -31,8 +31,13 @@ class BooksController < ApplicationController
   def edit
     @book = Book.find(params[:id])
   end
+    def show
+    @book = Book.find(params[:id])
+  end
 
   def update
+    @book = Book.find(params[:id])
+
     if @book.update(book_params)
       redirect_to @book
     else
@@ -41,6 +46,8 @@ class BooksController < ApplicationController
   end
 
   def destroy
+        @book = Book.find(params[:id])
+
     @book.destroy
     respond_to do |format|
       format.html { redirect_to books_url, notice: "Book was successfully destroyed." }
@@ -51,9 +58,9 @@ class BooksController < ApplicationController
 
   private
 
-  def load_book
-    @book = Book.find(params[:id])
-  end
+  # def load_book
+  #   @book = Book.find(params[:id])
+  # end
 
   def book_params
     params.require(:book).permit(:isbn, :name, :desc, :author, :book_total, :category_id)

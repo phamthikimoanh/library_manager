@@ -1,6 +1,7 @@
 #wapper-content
   %h1.text-center Return book card
   = simple_form_for @book_card do |f|
+    = f.association :book
     = f.input :status, :as => :boolean, :input_html => { :checked => "checked" }
     .button-add-new
       = f.submit "Save"
