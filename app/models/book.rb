@@ -2,7 +2,7 @@
 
 class Book < ApplicationRecord
   belongs_to :category
-  # validates_associated :category
+  belongs_to :user
   has_many :book_cards
   validates :name, format: {with: /[a-zA-Z]/}, presence: true, length: { maximum: 30 }
   validates :desc, format: {with: /[a-zA-Z]/}, presence: true, presence: true, length: { minimum: 30 }

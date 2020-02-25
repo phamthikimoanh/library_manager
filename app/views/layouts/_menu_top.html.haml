@@ -1,7 +1,9 @@
 %nav#menu-top
-    %a.brand(href="#") Library Kim Oanh
-    %ul.d-flex
-        %li.active 
-            = link_to 'Home' , root_url
-        %li 
-            = link_to 'Đăng xuất', root_url
+    %a.brand(href="http://localhost:3000/") Library Kim Oanh
+    = link_to "Sign out", destroy_user_session_path, method: :delete, class: "btn btn-xl btn-success", style: "color: #fff"
+
+    -# %ul.d-flex
+    -#     %li.active 
+    -#         = link_to 'Home' , root_url
+    -#     %li 
+    -#         = link_to 'Đăng xuất', root_url

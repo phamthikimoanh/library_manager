@@ -1,6 +1,7 @@
 = link_to 'Show', book_path(book), class: "btn btn-xl btn-primary", style: "color: #fff"
-= link_to 'Edit', edit_book_path(book), class: "btn btn-xl btn-success", style: "color: #fff"
-= link_to 'Destroy', book, method: :delete, remote: true, data: { confirm: 'Are you sure?' }, class: "btn btn-xl btn-danger", style: "color: #fff"
+-if current_user && current_user.admin
+    = link_to 'Edit', edit_book_path(book), class: "btn btn-xl btn-success", style: "color: #fff"
+    = link_to 'Destroy', book, method: :delete, remote: true, data: { confirm: 'Are you sure?' }, class: "btn btn-xl btn-danger", style: "color: #fff"
 
 -# %tr
 -#   %td= book.id

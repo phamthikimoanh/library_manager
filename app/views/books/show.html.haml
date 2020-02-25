@@ -18,5 +18,9 @@
       = @book.author
     %p
       %strong Total:
-      = @book.books_total  
+      = @book.books_total 
+      
+    %p
+      %strong User Add Book:
+      = @book.user.username
   = link_to('Back', books_path)
