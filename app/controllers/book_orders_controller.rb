@@ -11,7 +11,6 @@ class BookOrdersController < ApplicationController
 
   def create
     @book_order = BookOrder.new(book_order_params)
-    @book_order.user = current_user
     binding.pry
     respond_to do |format|
       if @book_order.save

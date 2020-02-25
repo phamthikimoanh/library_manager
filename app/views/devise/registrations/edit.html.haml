@@ -1,0 +1,46 @@
+%h2
+  Edit #{resource_name.to_s.humanize}
+= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f|
+  = f.error_notification
+  .form-inputs
+    = f.input :name,                       
+      required: false,                     
+      autofocus: true,                     
+      input_html: { autocomplete: "name" } 
+    /
+      <haml_loud> f.input :email, required: true, autofocus: true </haml_loud>
+      
+      <haml_silent>     if devise_mapping.confirmable? &amp;&amp; resource.pending_reconfirmation?
+      </haml_silent><haml_block>      <p>Currently waiting confirmation for: <haml_loud> resource.unconfirmed_email </haml_loud></p>
+      </haml_block>
+    /
+      <haml_loud> f.input :password,
+      hint: &quot;leave it blank if you don&#39;t want to change it&quot;,
+      required: false,
+      input_html: { autocomplete: &quot;new-password&quot; } </haml_loud>
+      <haml_loud> f.input :password_confirmation,
+      required: false,
+      input_html: { autocomplete: &quot;new-password&quot; } </haml_loud>
+      <haml_loud> f.input :current_password,
+      hint: &quot;we need your current password to confirm your changes&quot;,
+      required: false,
+      input_html: { autocomplete: &quot;current-password&quot; } </haml_loud>
+    = f.input :birthday,                       
+      required: false,                         
+      autofocus: true,                         
+      input_html: { autocomplete: "birthday" } 
+    = f.input :phone,                       
+      required: false,                      
+      autofocus: true,                      
+      input_html: { autocomplete: "phone" } 
+    = f.input :address,                       
+      required: false,                        
+      autofocus: true,                        
+      input_html: { autocomplete: "address" } 
+  .form-actions
+    = f.button :submit, "Update"
+/
+  <h3>Cancel my account</h3>
+  
+  <p>Unhappy? <haml_loud> link_to &quot;Cancel my account&quot;, registration_path(resource_name), data: { confirm: &quot;Are you sure?&quot; }, method: :delete </haml_loud></p>
+= link_to "Back", :back

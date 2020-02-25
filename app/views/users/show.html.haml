@@ -1,0 +1,29 @@
+#wapper-content
+  %h1 User 
+  %table.table.table-hover
+    %thead
+      %tr
+        %th No.
+        %th Name
+        %th Email
+        %th Phone
+        %th Address
+        %th Birthday
+
+    %tbody
+      %tr
+        %td= @user.id
+        %td= @user.name
+        %td= @user.email
+        %td= @user.phone
+        %td= @user.address
+        %td= @user.birthday
+
+  %hr
+
+    %button.btn.btn-default{:type => "button", :onclick => "addNew()"} Edit
+    #form-add-new
+      = render 'edit'
+
+-#   = link_to 'Edit', edit_users_path(@user), class: "btn btn-xl btn-success", style: "color: #fff"
+

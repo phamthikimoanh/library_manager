@@ -1,0 +1,45 @@
+#wapper-content
+  %h1 User 
+  %table.table.table-hover
+    %thead
+      %tr
+        %th No.
+        %th Name
+        %th Email
+        %th Phone
+        %th Address
+        %th Birthday
+
+    %tbody
+      %tr
+        %td= @user.id
+        %td= @user.name
+        %td= @user.email
+        %td= @user.phone
+        %td= @user.address
+        %td= @user.birthday
+
+  %hr
+%h2 Edit User
+= simple_form_for(@user, :url => { :action => "update_user" }) do |f|
+  = f.error_notification
+  .form-inputs
+    = f.input :name,                       
+      required: false,                     
+      autofocus: true,                     
+      input_html: { autocomplete: "name" } 
+    = f.input :birthday,                       
+      required: false,                         
+      autofocus: true,                         
+      input_html: { autocomplete: "birthday" } 
+    = f.input :phone,                       
+      required: false,                      
+      autofocus: true,                      
+      input_html: { autocomplete: "phone" } 
+    = f.input :address,                       
+      required: false,                        
+      autofocus: true,                        
+      input_html: { autocomplete: "address" } 
+  .form-actions
+    = f.button :submit, "Update"
+= link_to "Back", :back

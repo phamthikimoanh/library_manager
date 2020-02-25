@@ -2,6 +2,7 @@
 
 class BookCardsController < ApplicationController
   before_action :load_book_card, only: %i[show edit update]
+  before_action :authenticate_user!, except: [:show, :index]
 
   def index
     @book_cards_grid = BookCardsGrid.new(params[:book_cards_grid]) do |scope|
