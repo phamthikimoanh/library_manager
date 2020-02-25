@@ -10,8 +10,8 @@
   = paginate @categories_grid.assets
 
   %br
-
-  %button.btn.btn-default{:type => "button", :onclick => "addNew()"} Add New Category
-  #form-add-new
-    = render 'form'
+  -if current_user && current_user.admin
+    %button.btn.btn-default{:type => "button", :onclick => "addNew()"} Add New Category
+    #form-add-new
+      = render 'form'
 

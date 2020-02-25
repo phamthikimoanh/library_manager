@@ -2,6 +2,7 @@
 
 class CategoriesController < ApplicationController
   before_action :load_category, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, except: [:show, :index]
 
   def index
     # @categories = Category.all.page params[:page]
@@ -33,6 +34,7 @@ class CategoriesController < ApplicationController
 
   def create
     @category = Category.new(category_params)
+    # @category.books.user = current_user
 
     respond_to do |format|
       if @category.save

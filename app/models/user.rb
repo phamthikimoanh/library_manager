@@ -7,5 +7,11 @@ class User < ApplicationRecord
   def username
     return self.email.split('@')[0].capitalize 
   end
-  
+  # validate :at_least_15
+
+  # def at_least_15
+  #   if self.birthday
+  #     errors.add(:birthdate, "You must be 15 years or older.") if self.birthday > 15.years.ago.to_date
+  #   end
+  # end
 end

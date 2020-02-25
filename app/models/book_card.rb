@@ -5,7 +5,7 @@ class BookCard < ApplicationRecord
   belongs_to :book
   max_paginates_per 5
 
-  before_save :check_status
+  after_save :check_status
 
   def check_status
     if self.status == true

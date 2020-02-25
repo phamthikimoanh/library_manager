@@ -9,28 +9,8 @@
   = datagrid_table(@books_grid)
   = paginate @books_grid.assets
   %br
+  -if current_user && current_user.admin
+    %button.btn.btn-default{:type => "button", :onclick => "addNew()"} Add New Book
+    #form-add-new
+      = render 'form'
 
-  %button.btn.btn-default{:type => "button", :onclick => "addNew()"} Add New Book
-  #form-add-new
-    = render 'form'
-  -# = @book.book_count
-
--# #wapper-content
--#   %h1 Listing books 
--#   %table.table.table-hover
--#     %thead
--#       %tr
--#         %th No.
--#         %th Image
--#         %th Name
--#         %th Description
--#         %th #
--#     %tbody#books
--#       = render @books
--#   = paginate @books 
-
--#   %hr
-
--#   %button.btn.btn-default{:type => "button", :onclick => "addNew()"} Add New
--#   #form-add-new
--#     = render 'form'

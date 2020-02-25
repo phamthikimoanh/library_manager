@@ -1,7 +1,7 @@
 #wapper-content 
   %h3 Home Page
-  - if current_user
-    = link_to "Sign out", destroy_user_session_path, method: :delete, class: "btn btn-xl btn-success", style: "color: #fff"
-  - else
-    = link_to "Sign up", new_user_registration_path, class: "btn btn-xl btn-success", style: "color: #fff"
-    = link_to "Sign in", new_user_session_path, class: "btn btn-xl btn-primary", style: "color: #fff"
+  -# - if current_user
+  -#   = link_to "Sign out", destroy_user_session_path, method: :delete, class: "btn btn-xl btn-success", style: "color: #fff"
+  -# - else
+  -#   = link_to "Sign up", new_user_registration_path, class: "btn btn-xl btn-success", style: "color: #fff"
+  -#   = link_to "Sign in", new_user_session_path, class: "btn btn-xl btn-primary", style: "color: #fff"

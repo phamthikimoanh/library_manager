@@ -8,7 +8,7 @@ class User < ApplicationRecord
   validates :phone, presence: true, length: { minimum: 1, maximun:10 }
   mount_uploader :image, ImageUploader
   validate :at_least_15
-    max_paginates_per 5
+  max_paginates_per 5
 
   def at_least_15
     if self.birthday

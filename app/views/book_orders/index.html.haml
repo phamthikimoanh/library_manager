@@ -22,7 +22,7 @@
       = render @book_orders
 
   %hr
-
-  %button.btn.btn-default{:type => "button", :onclick => "addNewBookOrder()"} Add New 
-  #form-add
-    = render 'form'
+  - if current_user && current_user.admin
+    %button.btn.btn-default{:type => "button", :onclick => "addNewBookOrder()"} Add New 
+    #form-add
+      = render 'form'
