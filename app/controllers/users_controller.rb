@@ -10,7 +10,7 @@ class UsersController < ApplicationController
     if @user.update(user_params)
       # Sign in the user by passing validation in case their password changed
       bypass_sign_in(@user)
-      redirect_to root_path
+      redirect_to edit_user_path
     else
       render "edit"
     end

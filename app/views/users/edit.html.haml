@@ -20,26 +20,26 @@
         %td= @user.birthday
 
   %hr
-%h2 Edit User
-= simple_form_for(@user, :url => { :action => "update_user" }) do |f|
-  = f.error_notification
-  .form-inputs
-    = f.input :name,                       
-      required: false,                     
-      autofocus: true,                     
-      input_html: { autocomplete: "name" } 
-    = f.input :birthday,                       
-      required: false,                         
-      autofocus: true,                         
-      input_html: { autocomplete: "birthday" } 
-    = f.input :phone,                       
-      required: false,                      
-      autofocus: true,                      
-      input_html: { autocomplete: "phone" } 
-    = f.input :address,                       
-      required: false,                        
-      autofocus: true,                        
-      input_html: { autocomplete: "address" } 
-  .form-actions
-    = f.button :submit, "Update"
-= link_to "Back", :back
+  %h2 Edit User
+  = simple_form_for(@user, :url => { :action => "update_user" }) do |f|
+    = f.error_notification
+    .form-inputs
+      = f.input :name,                       
+        required: false,                     
+        autofocus: true,                     
+        input_html: { autocomplete: "name" } 
+      = f.input :birthday, start_year: Time.now.year - 60, end_year: Time.now.year, order: %i(day month year),
+        required: false,                         
+        autofocus: true,                         
+        input_html: { autocomplete: "birthday" } 
+      = f.input :phone,                       
+        required: false,                      
+        autofocus: true,                      
+        input_html: { autocomplete: "phone" } 
+      = f.input :address,                       
+        required: false,                        
+        autofocus: true,                        
+        input_html: { autocomplete: "address" } 
+    .form-actions
+      = f.button :submit, "Update"
+  = link_to "Back", :back
