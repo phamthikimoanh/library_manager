@@ -1,7 +1,6 @@
 # frozen_string_literal: true
-
 class CategoriesController < ApplicationController
-  before_action :load_category, only: [:show, :edit, :update, :destroy]
+  before_action :load_category, only: [:show, :edit, :update]
   before_action :authenticate_user!, except: [:show, :index]
 
   def index

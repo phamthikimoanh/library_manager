@@ -40,14 +40,23 @@ gem "mini_magick", :git => "git://github.com/minimagick/minimagick.git"
 # gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
-  gem "listen"
+  gem "byebug", platform: :mri
   gem "pry"
-  gem "faker", "~> 2.2"
+  gem "listen"
+  # gem "rspec"
   gem "rspec-rails"
+  gem "rails-controller-testing"
+  # gem "factory_girl_rails"
+  # gem "faker"
+  gem 'capybara'
+  # gem "selenium-webdriver"
 end
 
+# group :test do
+#   gem "shoulda-matchers"
+#   # gem "simplecov", require: false
+#   # gem "simplecov-rcov", require: false
+# end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 # gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 

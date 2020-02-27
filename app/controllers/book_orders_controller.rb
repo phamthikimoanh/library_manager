@@ -11,7 +11,6 @@ class BookOrdersController < ApplicationController
 
   def create
     @book_order = BookOrder.new(book_order_params)
-    binding.pry
     respond_to do |format|
       if @book_order.save
         format.html { redirect_to @book_order, success: "Book order was successfully created." }
