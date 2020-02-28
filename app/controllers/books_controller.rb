@@ -18,8 +18,12 @@ class BooksController < ApplicationController
     # render plain: params[:book].inspect
     respond_to do |format|
       if @book.save
+        @books_grid = BooksGrid.new(params[:books_grid]) do |scope|
+          scope.page(params[:page])
+        end
         format.html { redirect_to @book, success: "Book was successfully created." }
         format.json { render :show, status: :created, location: @book }
+        format.js{ render :create}
       else
         format.html { render :new }
         format.json { render json: @book.errors, status: :unprocessable_entity }

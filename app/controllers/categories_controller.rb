@@ -37,8 +37,12 @@ class CategoriesController < ApplicationController
 
     respond_to do |format|
       if @category.save
+        @categories_grid = CategoriesGrid.new(params[:categories_grid]) do |scope|
+          scope.page(params[:page])
+        end
         format.html { redirect_to @category, success: "Category was successfully created." }
-        format.js {}
+        format.json { render :show, status: :created, location: @category }
+        format.js { render :create}
       else
         format.html { render :new }
         format.json { render json: @category.errors, status: :unprocessable_entity }

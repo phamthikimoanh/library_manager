@@ -43,14 +43,14 @@ group :development, :test do
   gem "byebug", platform: :mri
   gem "pry"
   gem "listen"
-  # gem "rspec"
+  gem "rspec"
   gem "rspec-rails"
   gem "rails-controller-testing"
-  # gem "factory_girl_rails"
   gem "faker"
   gem 'capybara'
-  gem 'factory_bot_rails'
+  gem 'factory_bot'
   gem "selenium-webdriver"
+  gem 'database_cleaner'
 end
 
 # group :test do

@@ -12,8 +12,8 @@ Rails.application.routes.draw do
   resources :book_cards
   # resource :users, only: [:index, :show, :edit] 
   resource :user, only: [:edit] do
-  collection do
-    patch 'update_user'
+    collection do
+      patch 'update_user'
+    end
   end
-end
 end

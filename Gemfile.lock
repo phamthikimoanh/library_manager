@@ -86,6 +86,7 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.5)
     crass (1.0.6)
+    database_cleaner (1.8.3)
     datagrid (1.5.9)
       rails (>= 4.0)
     devise (4.7.1)
@@ -100,9 +101,6 @@ GEM
     execjs (2.7.0)
     factory_bot (5.1.1)
       activesupport (>= 4.2.0)
-    factory_bot_rails (5.1.1)
-      factory_bot (~> 5.1.0)
-      railties (>= 4.2.0)
     faker (2.10.2)
       i18n (>= 1.6, < 2)
     ffi (1.12.2)
@@ -208,6 +206,10 @@ GEM
     responders (2.4.1)
       actionpack (>= 4.2.0, < 6.0)
       railties (>= 4.2.0, < 6.0)
+    rspec (3.9.0)
+      rspec-core (~> 3.9.0)
+      rspec-expectations (~> 3.9.0)
+      rspec-mocks (~> 3.9.0)
     rspec-core (3.9.1)
       rspec-support (~> 3.9.1)
     rspec-expectations (3.9.0)
@@ -288,9 +290,10 @@ DEPENDENCIES
   carrierwave
   cocoon
   coffee-rails (~> 4.2)
+  database_cleaner
   datagrid (~> 1.4, >= 1.4.4)
   devise
-  factory_bot_rails
+  factory_bot
   faker
   haml-rails (~> 1.0.0)
   jbuilder (~> 2.5)
@@ -302,6 +305,7 @@ DEPENDENCIES
   puma (~> 3.11)
   rails (~> 5.2.4, >= 5.2.4.1)
   rails-controller-testing
+  rspec
   rspec-rails
   rufo (~> 0.4.2)
   sass-rails (~> 5.0)

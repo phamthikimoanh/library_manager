@@ -1,17 +1,3 @@
--# #wapper-content
--#   %h1 Category list 
--#   %table.table.table-hover
--#     %thead
--#       %tr
--#         %th No.
--#         %th Name
--#         %th #
--#     %tbody
--#       - @categories.each do |cate|
--#         %tr
--#           %td= cate.name
-    
-
 #wapper-content
   %h1 Listing categories
   %p.total
@@ -20,7 +6,8 @@
   #form-fill
     = datagrid_form_for @categories_grid, url: categories_path
 
-  = datagrid_table(@categories_grid)
+  %div.data_grid_category
+    = render 'data_grid_category'
   = paginate @categories_grid.assets
 
   %br
