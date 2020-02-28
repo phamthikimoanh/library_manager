@@ -1,5 +1,13 @@
 #wapper-content
   %h1 User 
+  %p
+    %b Image:
+    - if @user.image?
+      = image_tag @user.image.thumb.url
+    - else 
+      %p 
+        %b 
+          %i Update image, pleaes
   %table.table.table-hover
     %thead
       %tr
@@ -40,6 +48,7 @@
         required: false,                        
         autofocus: true,                        
         input_html: { autocomplete: "address" } 
+      = f.file_field :image, accept: "image/jpeg, image/gif, image/png, image/jpg"
     .form-actions
       = f.button :submit, "Update"
   = link_to "Back", :back

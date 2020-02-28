@@ -20,7 +20,7 @@
     = f.association :category
   .div
     = f.input :desc, as: :text
-  -# .div
-  -#   = form.file_field :image
+  .div
+    = f.file_field :image
   .button-add-new
     = f.submit "Save"

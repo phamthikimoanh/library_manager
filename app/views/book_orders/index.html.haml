@@ -20,7 +20,7 @@
         %th #
     %tbody#book_orders
       = render @book_orders
-
+  = paginate @book_orders
   %hr
   - if current_user && current_user.admin
     %button.btn.btn-default{:type => "button", :onclick => "addNewBookOrder()"} Add New 

@@ -5,7 +5,7 @@ class BookOrdersController < ApplicationController
   before_action :authenticate_user!, except: [:show, :index]
 
   def index
-    @book_orders = BookOrder.all
+    @book_orders = BookOrder.order(created_at: :desc).page params[:page]
     @book_order = BookOrder.new
   end
 

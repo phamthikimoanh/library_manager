@@ -8,7 +8,9 @@ require File.expand_path('../config/environment', __dir__)
 abort("The Rails environment is running in production mode!") if Rails.env.production?
 require 'rspec/rails'
 require 'capybara/rspec'
-require_relative 'support/controller_macros' # or require_relative './controller_macros' if write in `spec/support/devise.rb`
+require_relative 'support/controller_macros'
+require 'support/factory_bot'
+# or require_relative './controller_macros' if write in `spec/support/devise.rb`
 # Add additional requires below this line. Rails is not loaded until this point!
 
 # Requires supporting ruby files with custom matchers and macros, etc, in

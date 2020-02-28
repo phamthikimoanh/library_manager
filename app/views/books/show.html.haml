@@ -4,9 +4,10 @@
     %p
       %strong ISBN:
       = @book.isbn
-    -# %p
-    -#   %strong Image:
-    -#   = image_tag @book.image.thumb.url
+    %p
+      %strong Image:
+      - if @book.image?
+        = image_tag @book.image.thumb.url 
     %p
       %strong Name:
       = @book.name

@@ -11,5 +11,7 @@ class Book < ApplicationRecord
   validates :price, presence: true
   validates :books_total, presence: true, numericality: { only_integer: true }
   validates :status, inclusion: { in: [true, false] }
+  mount_uploader :image, PictureUploader
+
   max_paginates_per 5
 end

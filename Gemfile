@@ -47,9 +47,10 @@ group :development, :test do
   gem "rspec-rails"
   gem "rails-controller-testing"
   # gem "factory_girl_rails"
-  # gem "faker"
+  gem "faker"
   gem 'capybara'
-  # gem "selenium-webdriver"
+  gem 'factory_bot_rails'
+  gem "selenium-webdriver"
 end
 
 # group :test do

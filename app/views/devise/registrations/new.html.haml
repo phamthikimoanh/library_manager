@@ -17,7 +17,7 @@
     = f.input :password_confirmation,              
       required: true,                              
       input_html: { autocomplete: "new-password" } 
-    = f.input :birthday,                       
+    = f.input :birthday, start_year: Time.now.year - 60, end_year: Time.now.year, order: %i(day month year),                     
       autofocus: true,                         
       input_html: { autocomplete: "birthday" } 
     = f.input :phone,                       
