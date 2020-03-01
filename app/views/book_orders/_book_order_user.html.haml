@@ -1,0 +1,11 @@
+- @book_orders.each do |book_order|
+    -if book_order.user_id == current_user.id   
+        %tr
+            %td= book_order.id
+            %td= book_order.amount_book
+            %td= book_order.brorrow_date
+            %td= book_order.user_id
+            %td= book_order.user.name
+            %td= book_order.deposits
+            %td= link_to 'Show', book_order_path(book_order), class: "btn btn-xl btn-success", style: "color: #fff"
+

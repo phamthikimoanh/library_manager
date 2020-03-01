@@ -4,9 +4,10 @@
             = link_to "Books", books_path, class: "btn-sidebar" 
         %li
             = link_to "Category", categories_path
-        %li
-            = link_to "User", edit_user_path
-        %li
-            = link_to "Borrow Book", book_orders_path
-        %li
-            = link_to "Return Book", book_cards_path
+        -if current_user 
+            %li
+                = link_to "User", edit_user_path
+            %li
+                = link_to "Borrow Book", book_orders_path
+            %li
+                = link_to "Return Book", book_cards_path

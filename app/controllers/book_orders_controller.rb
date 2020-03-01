@@ -14,7 +14,8 @@ class BookOrdersController < ApplicationController
     respond_to do |format|
       if @book_order.save
         format.html { redirect_to @book_order, success: "Book order was successfully created." }
-        format.js {}
+        format.json { render :show, status: :created, location: @book_order }
+        format.js {render :create}
       else
         format.html { render :new }
         format.json { render json: @book_order.errors, status: :unprocessable_entity }

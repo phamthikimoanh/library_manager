@@ -14,15 +14,16 @@ RSpec.describe UsersController, type: :controller do
   end
 
   context "PUT #update" do
+
     before(:each) do
       @user = build(:user)
     end
     describe "PUT 'update/:id'" do
       it "allows an user to be updated" do
         @attr = { name: 'OanhAnh', phone: '0123456635', birthday: '1996-04-27', address: '123 Nguyễn Thị Minh Khai, phường 2, Quận 1' }
-        put :update_user 
-        # @user.reload
-        # response.should be_successful
+        put :update_user, params: { id: @user.id, user: @attr}
+        find('.feedbackLink').click
+        expect(response).to have_http_status(:ok)
       end
     end
   end

@@ -26,11 +26,9 @@ class BookOrder < ApplicationRecord
     book_cards.each do |book_card|
       book = book_card.book
       book_stock = book.books_total - 1
-      
-      # exirbinding.pry
-      
+            
       if book_stock <= 0
-        book.update_column(:books_total, 0 + 1)        
+        book.update_column(:books_total, 0)        
         book.update_column(:status, false)
       else
         book.update_column(:books_total, book_stock + 1)    

@@ -6,7 +6,7 @@ class BookCard < ApplicationRecord
   max_paginates_per 5
 
   after_save :check_status
-  validate :price_borrow
+  # validate :price_borrow
 
   def check_status
     if self.status != true
@@ -28,7 +28,6 @@ class BookCard < ApplicationRecord
     cr_date = (start_date - end_date)/3600
     br_date = cr_date/24
     price_borrow = br_date * 5000
-    # binding.pry
     self.update_column(:price_borrow, price_borrow.to_i)
   end
 end
