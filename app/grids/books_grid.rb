@@ -17,7 +17,6 @@ class BooksGrid
   column(:id, mandatory: true)
   column(:isbn, mandatory: true)
   column(:name, mandatory: true)
-  column(:desc, mandatory: true)
   column(:books_total, mandatory: true)
   column(:price, mandatory: true)
   column(:status, :mandatory => true) do

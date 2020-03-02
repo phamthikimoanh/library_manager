@@ -26,6 +26,7 @@ class BooksController < ApplicationController
         format.json { render :show, status: :created, location: @book }
         format.js{ render :create}
       else
+        binding.pry
         format.html { render :new }
         format.json { render json: @book.errors, status: :unprocessable_entity }
       end
@@ -77,6 +78,6 @@ class BooksController < ApplicationController
   end
 
   def book_params
-    params.require(:book).permit(:isbn, :name, :desc, :author, :books_total, :status, :price, :category_id)
+    params.require(:book).permit(:isbn, :name, :desc, :author, :books_total, :status, :price, :category_id, :image)
   end
 end
