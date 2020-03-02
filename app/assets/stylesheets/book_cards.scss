@@ -10,15 +10,40 @@
       display: flex;
       margin: auto 10px;
       align-items: center;
+      width: 80%;
+
       label {
         margin-right: 5px;
+        width: 12%;
       }
       input {
         margin-right: 15px;
         border-radius: 5px;
         padding: 4px 6px;
-        width: 30%;
+        width: 38%;
       }
+    }
+  }
+}
+a.remove_fields {
+  color: #e93a29 !important;
+  text-transform: capitalize;
+  align-self: center;
+
+  &:hover {
+    color: #3c3d42;
+    background: transparent;
+  }
+}
+.links {
+  margin: 20px 15px;
+
+  a.add_fields {
+    color: #f8a304 !important;
+    text-transform: capitalize;
+    &:hover {
+      color: #3c3d42;
+      background: transparent;
     }
   }
 }

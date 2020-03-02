@@ -5,3 +5,42 @@
 // #user_birthday_1i, #user_birthday_2i, #user_birthday_3i {
 //     width: 20%;
 // }
+#user_birthday_3i,
+#user_birthday_2i,
+#user_birthday_1i {
+  width: 32%;
+  float: left;
+  margin-right: 4px;
+}
+
+.user-row-one {
+  .user_name {
+    width: 55%;
+  }
+  .user_birthday {
+    float: right;
+    width: 45%;
+  }
+}
+.user-info {
+  display: flex;
+  flex-direction: row;
+  .user-left {
+    margin-right: 30px;
+  }
+  .user-right {
+    width: 100%;
+
+    .user-label {
+      display: flex;
+      flex-direction: row;
+      p.label {
+        width: 100px;
+        margin-right: 10px;
+        color: #000;
+        font-size: 13px;
+        text-align: left;
+      }
+    }
+  }
+}

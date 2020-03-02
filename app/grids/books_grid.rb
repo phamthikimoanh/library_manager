@@ -16,6 +16,9 @@ class BooksGrid
   # Columns
   column(:id, mandatory: true)
   column(:isbn, mandatory: true)
+  column(:image, :html => true, :mandatory => true) do |book|
+      image_tag("#{book.image}", title: "image", style: "max-height: 30px; max-width: 20px")
+  end  
   column(:name, mandatory: true)
   column(:books_total, mandatory: true)
   column(:price, mandatory: true)

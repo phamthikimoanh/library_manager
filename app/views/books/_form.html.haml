@@ -10,17 +10,19 @@
           %li= msg
   .row-one
     = f.input :isbn
-    = f.input :name
-    = f.input :status, :as => :boolean, :input_html => { :checked => "checked" }
+    = f.input :name   
+    = f.association :category
 
-  .row-one
+  .row-one.book-row-one
     = f.input :author
     = f.input :books_total
     = f.input :price
-    = f.association :category
+    = f.input :status, :as => :boolean, :input_html => { :checked => "checked" }
+
   .div
     = f.input :desc, as: :text
   .div
     = f.file_field :image
   
+
   = f.button :submit , data: { "disable-with": "Saving..." }, class: "btn-save"

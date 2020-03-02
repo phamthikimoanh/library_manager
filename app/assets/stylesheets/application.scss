@@ -132,11 +132,11 @@ h4 {
       a {
         color: #fff;
         font-size: 15px;
-        padding: 15px 20px 15px 0;
+        padding: 15px 80px 15px 0;
         transition: 0.5s ease;
 
         &:hover {
-          color: #000;
+          color: #f8a304;
           text-decoration: none;
           background: #f0f8ff00;
           margin-left: 20px;
@@ -156,11 +156,21 @@ h4 {
     margin: auto;
 
     .form-check {
-      margin-top: 10px;
+      margin-top: 30px;
       .form-check-input {
         margin-right: 5px;
       }
     }
+  }
+}
+.book-row-one {
+  display: flex;
+  flex-direction: row;
+  .form-group {
+    width: 30%;
+  }
+  .book_status{
+    width: 7%;
   }
 }
 .form-group {
@@ -281,6 +291,24 @@ h4 {
     background-color: #c5c5c5;
   }
 }
-#book_image, #user_image{
+#book_image,
+#user_image {
   margin: 15px 0;
+}
+.btn-sign_up {
+  color: #fff;
+  background-color: #ea4129;
+  border-color: #e93a29;
+  margin-right: 10px;
+  &:hover {
+    background-color: #cc4a39;
+  }
+}
+.btn-sign_in {
+  color: #fff;
+  background-color: #c17e00;
+  border-color: #ad7100;
+  &:hover {
+    background-color: #ad7100;
+  }
 }
