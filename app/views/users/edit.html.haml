@@ -31,7 +31,8 @@
   %h2 Edit User
   = simple_form_for(@user, :url => { :action => "update_user" }) do |f|
     = f.error_notification
-    .form-inputs
+    .row-one
+
       = f.input :name,                       
         required: false,                     
         autofocus: true,                     
@@ -40,6 +41,8 @@
         required: false,                         
         autofocus: true,                         
         input_html: { autocomplete: "birthday" } 
+    .row-one
+
       = f.input :phone,                       
         required: false,                      
         autofocus: true,                      
@@ -49,6 +52,6 @@
         autofocus: true,                        
         input_html: { autocomplete: "address" } 
       = f.file_field :image, accept: "image/jpeg, image/gif, image/png, image/jpg"
-    .form-actions
-      = f.button :submit, "Update"
-  = link_to "Back", :back
+    .form
+    = f.button :submit , data: { "disable-with": "Saving..." }, class: "btn-save"
+    = link_to "Back", :back

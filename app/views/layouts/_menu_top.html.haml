@@ -1,9 +1,11 @@
 %nav#menu-top
-    %a.brand(href="http://localhost:3000/") Library Kim Oanh
+    %a.brand(href="http://localhost:3000/")
+        %img{:alt => "logo", :src => 'assets/logo-retina1.png'}
+
     .menu-top-right
         - if current_user
             %p Welcome #{ current_user.email }
-            = link_to "Sign out", destroy_user_session_path, method: :delete, class: "btn btn-xl btn-success btn-signOut", style: "color: #fff"
+            = link_to "Sign out", destroy_user_session_path, method: :delete, class: "btn btn-xl btn-sign_out btn-signOut"
         - else
             = link_to "Sign up", new_user_registration_path, class: "btn btn-xl btn-success", style: "color: #fff"
             = link_to "Sign in", new_user_session_path, class: "btn btn-xl btn-primary", style: "color: #fff"

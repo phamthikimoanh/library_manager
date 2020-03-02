@@ -1,12 +1,14 @@
 = simple_form_for @book_order, remote: true do |f| 
-    = f.input :amount_book
-    = f.input :brorrow_date , as: :date
-    = f.association :user
+    .row-one
+        = f.input :amount_book
+        = f.input :brorrow_date , as: :date
+    .row-one
+        = f.association :user
 
-    %h3 List book borrow
+    %h4 List book borrow
     #book_cards
         = f.simple_fields_for :book_cards do |book_card|
             = render 'book_card_fields', f: book_card
         .links
             = link_to_add_association 'add book cards', f, :book_cards
-    = f.submit "Save", data: { "disable-with": "Saving..." }
+    = f.button :submit , data: { "disable-with": "Saving..." }, class: "btn-save"

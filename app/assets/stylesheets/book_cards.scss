@@ -1,3 +1,24 @@
 // Place all the styles related to the Book_cards controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#book_cards {
+  .nested-fields {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px auto;
+    .field {
+      display: flex;
+      margin: auto 10px;
+      align-items: center;
+      label {
+        margin-right: 5px;
+      }
+      input {
+        margin-right: 15px;
+        border-radius: 5px;
+        padding: 4px 6px;
+        width: 30%;
+      }
+    }
+  }
+}

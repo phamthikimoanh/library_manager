@@ -22,5 +22,5 @@
     = f.input :desc, as: :text
   .div
     = f.file_field :image
-  .button-add-new
-    = f.submit "Save", data: { "disable-with": "Saving..." }
+  
+  = f.button :submit , data: { "disable-with": "Saving..." }, class: "btn-save"
