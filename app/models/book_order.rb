@@ -27,12 +27,10 @@ class BookOrder < ApplicationRecord
       book = book_card.book
       book_stock = book.books_total - 1
             
-      if book_stock <= 0
-        book.update_column(:books_total, 0)        
-        book.update_column(:status, false)
-      else
-        book.update_column(:books_total, book_stock + 1)    
-        book.update_column(:status, true)    
+      if book_stock >= 1
+        book.update_columns(:books_total => book_stock, :status => 1)
+      else       
+        book.update_columns(:books_total => 0, :status => 0)
       end
     end
   end

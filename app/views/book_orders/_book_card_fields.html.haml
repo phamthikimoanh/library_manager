@@ -1,7 +1,8 @@
 .nested-fields
     .field
         = f.label "Id book"
-        %br
         = f.text_field :book_id
-
+        %br
+        = f.label "Book Name"
+        = f.text_field :name 
     = link_to_remove_association "remove book card", f

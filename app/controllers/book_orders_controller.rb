@@ -32,7 +32,7 @@ class BookOrdersController < ApplicationController
   def book_order_params
     params.require(:book_order).permit(
       :amount_book, :brorrow_date, :user_id,
-      book_cards_attributes: %i[book_id _destroy]
+      book_cards_attributes: %i[book_id name _destroy]
     )
   end
 end

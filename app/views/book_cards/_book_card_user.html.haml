@@ -1,0 +1,22 @@
+
+%table.table.table-hover
+    %thead
+        %tr
+            %th No.
+            %th Id Book
+            %th Book name
+            %th Price borrow
+            %th User name
+            %th Status
+            %th #
+    %tbody#book_orders
+    - @book_cards.each do |book_card|
+        -if book_card.book_order.user_id == current_user.id   
+            %tr
+                %td= book_card.id
+                %td= book_card.book_id
+                %td= book_card.name
+                %td= book_card.price_borrow
+                %td= book_card.book_order.user.name
+                %td= book_card.status
+                %td= link_to 'Show', book_card_path(book_card), class: "btn btn-xl btn-success", style: "color: #fff"

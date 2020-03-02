@@ -1,5 +1,5 @@
 - @book_orders.each do |book_order|
-    -if book_order.user_id == current_user.id   
+    - if book_order.user_id == current_user.id   
         %tr
             %td= book_order.id
             %td= book_order.amount_book
