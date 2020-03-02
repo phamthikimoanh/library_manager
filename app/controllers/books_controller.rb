@@ -5,7 +5,6 @@ class BooksController < ApplicationController
   before_action :authenticate_user!, except: [:show, :index]
   def index
     @book = Book.new
-
     @books_grid = BooksGrid.new(params[:books_grid]) do |scope|
       scope.page(params[:page])
     end
@@ -17,16 +16,15 @@ class BooksController < ApplicationController
     @book.user = current_user
     # render plain: params[:book].inspect
     respond_to do |format|
-      if @book.save
+      if @book.save    
         @books_grid = BooksGrid.new(params[:books_grid]) do |scope|
           scope.page(params[:page])
         end
         format.html { redirect_to @book, success: "Book was successfully created." }
-        # binding.pry
         format.json { render :show, status: :created, location: @book }
         format.js{ render :create}
       else
-        binding.pry
+       
         format.html { render :new }
         format.json { render json: @book.errors, status: :unprocessable_entity }
       end
@@ -65,14 +63,6 @@ class BooksController < ApplicationController
   end
 
   private
-  # def book_stock
-  #   if @book.books_total > 0
-  #     @book.status = 1
-  #   else
-  #     @book.status = 0
-  #   end
-  # end
-
   def load_book
     @book = Book.find(params[:id])
   end

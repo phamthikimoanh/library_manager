@@ -4,9 +4,9 @@ class Book < ApplicationRecord
   belongs_to :category
   belongs_to :user
   has_many :book_cards
-  validates :name, format: {with: /[a-zA-Z]/}, presence: true, length: { maximum: 30 }
-  validates :desc, format: {with: /[a-zA-Z]/}, presence: true, presence: true, length: { minimum: 30 }
-  validates :author, format: { with: /[a-zA-Z]/ }, presence: true, length: { maximum: 25 }
+  validates :name, presence: true, length: { maximum: 100 }
+  validates :desc, presence: true, presence: true, length: { minimum: 30 }
+  validates :author, presence: true, length: { maximum: 50 }
   validates :books_total, presence: true, numericality: { only_integer: true }
   validates :price, presence: true
   validates :books_total, presence: true, numericality: { only_integer: true }
