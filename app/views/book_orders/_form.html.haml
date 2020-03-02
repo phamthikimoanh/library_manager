@@ -9,4 +9,4 @@
             = render 'book_card_fields', f: book_card
         .links
             = link_to_add_association 'add book cards', f, :book_cards
-    = f.submit "Save"
+    = f.submit "Save", data: { "disable-with": "Saving..." }

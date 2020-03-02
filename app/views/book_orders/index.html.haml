@@ -18,10 +18,10 @@
         %th User name
         %th Deposits
         %th #
-    %tbody#book_orders
+    %tbody.data_grid_book_order
       -# = render @book_orders
       -if current_user && current_user.admin == true
-        = render @book_orders
+        = render 'book_order'
       - else
         = render 'book_order_user'
   = paginate @book_orders

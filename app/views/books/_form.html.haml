@@ -23,4 +23,4 @@
   .div
     = f.file_field :image
   .button-add-new
-    = f.submit "Save"
+    = f.submit "Save", data: { "disable-with": "Saving..." }

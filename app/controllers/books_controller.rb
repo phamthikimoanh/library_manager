@@ -22,6 +22,7 @@ class BooksController < ApplicationController
           scope.page(params[:page])
         end
         format.html { redirect_to @book, success: "Book was successfully created." }
+        # binding.pry
         format.json { render :show, status: :created, location: @book }
         format.js{ render :create}
       else

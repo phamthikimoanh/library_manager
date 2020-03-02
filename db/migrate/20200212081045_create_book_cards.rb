@@ -6,7 +6,7 @@ class CreateBookCards < ActiveRecord::Migration[5.2]
       t.string :name
       t.date :return_date
       t.integer :price_borrow
-      t.boolean :status, :default => 0
+      t.boolean :status
 
       t.timestamps
     end

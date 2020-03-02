@@ -10,13 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_25_041043) do
+ActiveRecord::Schema.define(version: 2020_03_02_042502) do
 
   create_table "book_cards", force: :cascade do |t|
     t.string "name"
     t.date "return_date"
-    t.integer "price_borrow"
-    t.boolean "status"
+    t.integer "price_borrow", default: 0
+    t.boolean "status", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "book_id"

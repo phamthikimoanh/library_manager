@@ -6,9 +6,7 @@ class BookCardsGrid
   scope do
     BookCard
   end
-  # scope do
-  #   BookCard.order("book_cards.created_at desc").joins(:group)
-  # end
+
   # Filters
   filter(:book_order_id, :string, :multiple => ",")
   # filter(:status, :boolean, default: false) 

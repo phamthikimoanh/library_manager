@@ -9,7 +9,8 @@ class BookCardsController < ApplicationController
     @book_cards_grid = BookCardsGrid.new(params[:book_cards_grid]) do |scope|
       scope.page(params[:page])
     end
-    @book_cards = BookCard.all
+    # binding.pry
+    @book_cards = BookCard.all.page params[:page]
   end
 
   def update 
@@ -48,8 +49,8 @@ class BookCardsController < ApplicationController
       cr_date = (start_date - end_date)/3600
       br_date = cr_date/24
       price_borrow = (br_date * 5000).to_i.abs
-      binding.pry
-      @book_card.update_column(:price_borrow, price_borrow)
+      # binding.pry
+      @book_card.update_columns(:price_borrow => price_borrow, :status => 1)
     else
       @book_card.update_column(:price_borrow, 0)
     end

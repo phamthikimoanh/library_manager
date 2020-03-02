@@ -4,5 +4,5 @@
     = f.association :book
     = f.input :status, :as => :boolean, :input_html => { :checked => "checked" }
     .button-add-new
-      = f.submit "Save"
+      = f.submit "Save", data: { "disable-with": "Saving..." }
     = link_to "Cancle", book_cards_path

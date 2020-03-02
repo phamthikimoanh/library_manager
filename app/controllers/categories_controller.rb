@@ -24,6 +24,7 @@ class CategoriesController < ApplicationController
       if @category.update(category_params)
         format.html { redirect_to @category, success: "Category was successfully updated." }
         format.json { render :show, status: :ok, location: @category }
+        format.js   {render :create}
       else
         format.html { render :edit }
         format.json { render json: @category.errors, status: :unprocessable_entity }

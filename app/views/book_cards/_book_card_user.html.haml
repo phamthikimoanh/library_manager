@@ -20,3 +20,4 @@
                 %td= book_card.book_order.user.name
                 %td= book_card.status
                 %td= link_to 'Show', book_card_path(book_card), class: "btn btn-xl btn-success", style: "color: #fff"
+= paginate @book_cards

@@ -1,2 +1,2 @@
-$("#{escape_javascript(render @book_order)}").appendTo("#book_orders");
-<%# $('.data_grid_book_order').html("<%=escape_javascript(render 'book_order')%>") %>
+<%# $("#{escape_javascript(render @book_order)}").appendTo("#book_orders"); %>
+$('.data_grid_book_order').html("<%=escape_javascript(render 'book_order')%>")

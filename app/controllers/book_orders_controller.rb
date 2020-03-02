@@ -13,6 +13,8 @@ class BookOrdersController < ApplicationController
     @book_order = BookOrder.new(book_order_params)
     respond_to do |format|
       if @book_order.save
+        @book_orders = BookOrder.order(created_at: :desc).page params[:page]
+
         format.html { redirect_to @book_order, success: "Book order was successfully created." }
         format.json { render :show, status: :created, location: @book_order }
         format.js {render :create}
