@@ -169,7 +169,7 @@ h4 {
   .form-group {
     width: 30%;
   }
-  .book_status{
+  .book_status {
     width: 7%;
   }
 }
@@ -310,5 +310,16 @@ h4 {
   border-color: #ad7100;
   &:hover {
     background-color: #ad7100;
+  }
+}
+.btn-back {
+  padding: 8px 30px;
+  border: 0.2px solid #999;
+  border-radius: 4px;
+  background-color: #adadad;
+  &:hover {
+    background-color: #8c8c8c;
+    color: #fff;
+    text-decoration: none;
   }
 }

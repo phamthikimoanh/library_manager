@@ -16,7 +16,6 @@ class BookCardsController < ApplicationController
   def update 
     respond_to do |format|
       if @book_card.update(book_card_params)
-        # binding.pry
         check_status  
         price_borrow
         format.html { redirect_to @book_card, success: "Book card was successfully updated." }

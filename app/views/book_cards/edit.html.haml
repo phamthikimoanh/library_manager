@@ -5,5 +5,5 @@
     = f.input :status, :as => :boolean, :input_html => { :checked => "checked" }
     .button
     = f.button :submit , data: { "disable-with": "Saving..." }, class: "btn-save"    
-    = link_to "Cancle", book_cards_path
+    = link_to "Back", :back , class: "btn-back"
 

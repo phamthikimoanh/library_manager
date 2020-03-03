@@ -17,7 +17,6 @@
         status: Faker::Boolean.boolean, 
         category_id: Faker::Number.between(from: 1, to: 4),
         price: Faker::Number.decimal(l_digits: 3, r_digits: 3),
-        user_id: Faker::Number.between(from: 1, to: 4),
     }])
 end
 

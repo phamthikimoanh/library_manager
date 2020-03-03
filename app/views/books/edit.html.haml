@@ -22,6 +22,6 @@
       = form.input :desc, as: :text
     .div
       = form.file_field :image
-    .button-add-new
-      = form.submit "Save"
-    = link_to "Cancle", books_path
+    -# .button-add-new
+    = form.button :submit, data: { "disable-with": "Saving..." }, class: "btn-save"
+    = link_to "Back", :back , class: "btn-back"
