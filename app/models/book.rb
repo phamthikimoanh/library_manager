@@ -5,7 +5,7 @@ class Book < ApplicationRecord
   belongs_to :user
   has_many :book_cards
   validates :name, presence: true, length: { maximum: 100 }
-  validates :desc, presence: true, presence: true, length: { minimum: 30 }
+  validates :desc, presence: true, length: { minimum: 30 }
   validates :author, presence: true, length: { maximum: 50 }
   validates :books_total, presence: true, numericality: { only_integer: true }
   validates :price, presence: true

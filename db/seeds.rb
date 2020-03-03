@@ -16,7 +16,8 @@
         books_total: Faker::Number.number(digits: 3),
         status: Faker::Boolean.boolean, 
         category_id: Faker::Number.between(from: 1, to: 4),
-        price: Faker::Number.decimal(l_digits: 3, r_digits: 3)
+        price: Faker::Number.decimal(l_digits: 3, r_digits: 3),
+        user_id: Faker::Number.between(from: 1, to: 4),
     }])
 end
 
@@ -28,6 +29,23 @@ end
 
 4.times do  
     User.create([{
-        name: Faker::Name.name,
+        email: Faker::Name.email,
+        encrypted_password: Faker::Code.nric(min_age: 27, max_age: 34),
+        name: Faker::Name.name, 
+        phone: Faker::PhoneNumber.cell_phone_with_country_code,
+        birthday: Faker::Date.birthday(min_age: 18, max_age: 65),
+        address: Faker::Address.full_address,
+        admin: Faker::Boolean.boolean(true_ratio: 0.2),
+        image: Faker::Avatar.image,
     }])
 end
+
+# 4.times do  
+#     BookOrder.create([{
+#         amount_book: Faker::Number.between(from: 1, to: 5),
+#         brorrow_date: Faker::Date.between(from: 2.days.ago, to: Date.today),
+#         status: Faker::Boolean.boolean, 
+#         user_id: Faker::Number.between(from: 1, to: 4),
+#         deposits: Faker::Number.decimal(l_digits: 3, r_digits: 3)
+#     }])
+# end
