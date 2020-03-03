@@ -8,7 +8,7 @@
 
   %div.data_grid_category
     = render 'data_grid_category'
-  = paginate @categories_grid.assets
+  = paginate @categories_grid.assets , theme: 'twitter-bootstrap-3'
 
   %br
   -if current_user && current_user.admin

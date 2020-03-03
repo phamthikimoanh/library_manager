@@ -7,7 +7,7 @@
     = datagrid_form_for @books_grid, url: books_path
   %div.data_grid_book
     = render 'data_grid_book'
-  = paginate @books_grid.assets
+  = paginate @books_grid.assets, theme: 'twitter-bootstrap-3'
   %br
   -if current_user && current_user.admin
     %button.btn.btn-default{:type => "button", :onclick => "addNew()"} Add New Book

@@ -24,7 +24,7 @@
         = render 'book_order'
       - else
         = render 'book_order_user'
-  = paginate @book_orders
+  = paginate @book_orders, theme: 'twitter-bootstrap-3'
   %hr
   - if current_user && current_user.admin
     %button.btn.btn-default{:type => "button", :onclick => "addNewBookOrder()"} Add New 

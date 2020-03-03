@@ -69,7 +69,9 @@ gem "bootstrap-sass"
 #filter data form
 gem "datagrid", "~> 1.4", ">= 1.4.4"
 gem "jquery-rails"
+#pagination
 gem "kaminari"
+gem 'bootstrap-kaminari-views'
 # upload and resize image
 gem "carrierwave"
 gem "cocoon"

@@ -3,13 +3,13 @@
 
     -# = datagrid_table(@book_cards_grid)
     -if current_user && current_user.admin == true
-        %p.total
-        Total book: #{@book_cards_grid.assets.total_count}
-        %button.btn.btn-default{:type => "button", :onclick => "addFill()"} Fillter 
+        %p.total 
+            Total book: #{@book_cards_grid.assets.total_count}
+            %button.btn.btn-default{:type => "button", :onclick => "addFill()"} Fillter 
         #form-fill
             = datagrid_form_for @book_cards_grid, url: book_cards_path
         = datagrid_table(@book_cards_grid)
-        = paginate @book_cards_grid.assets
+        = paginate @book_cards_grid.assets, theme: 'twitter-bootstrap-3'
 
     - else
         = render 'book_card_user'
