@@ -1,14 +1,17 @@
 #wapper-content
-    %h1 Book order detail 
+    %h1= "Book order detail: #{@book_order.id}"
     .content-detail
         %p
             %strong User:
             = @book_order.user.name
             %strong Id User:
             = @book_order.user_id
-            -# %strong Image User:
-            -# = image_tag @book_order.user.image.thumb.url
-
+        %p
+            %strong Image User:
+            - if @book_order.user.image?
+                = image_tag @book_order.user.image.thumb.url
+            - else
+                %p Update image, please
         %p
             %strong Brorrow Date:
             = @book_order.brorrow_date
@@ -22,11 +25,16 @@
                     %tr
                         %th{:scope => "col"} Id book
                         %th{:scope => "col"} Name book
+                        %th{:scope => "col"} Image
 
                 %tbody
                     - @book_order.book_cards.each do |book_card|  
                         %tr
                             %td= book_card.book_id
                             %td= book_card.book.name
+                            - if book_card.book.image?
+                                %td= image_tag book_card.book.image.thumb.url
+                            - else
+                                %p Update image, please
     -# = link_to "Return Book" 
     = link_to "Back", :back , class: "btn-back"

@@ -10,15 +10,18 @@
       required: true,                       
       autofocus: true,                      
       input_html: { autocomplete: "email" } 
-    = f.input :password,                                                                    |
-      required: true,                                                                       
+    = f.input :password,                                                                    
+      required: true,
+      autofocus: true,                                                                                            
       hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length), 
       input_html: { autocomplete: "new-password" }                                          
     = f.input :password_confirmation,              
-      required: true,                              
+      required: true,   
+      autofocus: true,                                                
       input_html: { autocomplete: "new-password" } 
     = f.input :birthday, start_year: Time.now.year - 60, end_year: Time.now.year, order: %i(day month year),                     
-      autofocus: true,                         
+      autofocus: true,
+      hint: ("Select your birthday"),                         
       input_html: { autocomplete: "birthday" } 
     = f.input :phone,                       
       autofocus: true,                      
