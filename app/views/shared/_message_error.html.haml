@@ -1,0 +1,9 @@
+- if @book_order.errors.any?
+    #error_explanation
+        %h2
+            = pluralize(@book_order.errors.count, "error")
+            prohibited
+            this book order from being saved:
+        %ul
+            - @book_order.errors.full_messages.each do |msg|
+                %li= msg

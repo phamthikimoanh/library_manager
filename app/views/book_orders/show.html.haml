@@ -15,7 +15,7 @@
         %p
             %strong Amount Book:
             = @book_order.amount_book       
-        .list_book_order 
+        #list_book_order 
             %h4 List all the books here
             %table.table.table-dark
                 %thead
@@ -29,4 +29,4 @@
                             %td= book_card.book_id
                             %td= book_card.book.name
 
-    = link_to('Back', book_orders_path)
+    = link_to "Back", :back , class: "btn-back"

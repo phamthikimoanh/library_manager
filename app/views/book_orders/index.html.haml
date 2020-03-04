@@ -18,7 +18,7 @@
         %th User name
         %th Deposits
         %th #
-    %tbody.data_grid_book_order
+    %tbody#data_grid_book_order
       -# = render @book_orders
       -if current_user && current_user.admin == true
         = render 'book_order'

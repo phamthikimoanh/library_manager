@@ -23,7 +23,7 @@ class BooksGrid
   column(:books_total, mandatory: true)
   column(:price, mandatory: true)
   column(:status, :mandatory => true) do
-    status? ? "Yes" : "No"
+    status? ? "Stocking" : "Out of stock"
   end
   column(:actions, :html => true, :mandatory => true) do |record|
     #tự động vào trong view

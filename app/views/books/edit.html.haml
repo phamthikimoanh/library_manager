@@ -1,15 +1,15 @@
 #wapper-content
   %h1.text-center Edit book
   = simple_form_for @book do |form|
-    - if @book.errors.any?
-      #error_explanation
-        %h2
-          = pluralize(@book.errors.count, "error")
-          prohibited
-          this book from being saved:
-        %ul
-          - @book.errors.full_messages.each do |msg|
-            %li= msg
+    -# - if @book.errors.any?
+    -#   #error_explanation
+    -#     %h2
+    -#       = pluralize(@book.errors.count, "error")
+    -#       prohibited
+    -#       this book from being saved:
+    -#     %ul
+    -#       - @book.errors.full_messages.each do |msg|
+    -#         %li= msg
     .row-one
       = form.input :isbn
       = form.input :name

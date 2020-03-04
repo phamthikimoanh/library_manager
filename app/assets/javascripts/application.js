@@ -10,13 +10,15 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require rails-ujs
 //= require activestorage
 //= require_tree .
+//= require rails-ujs
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap.min
 //= require cocoon
+//= require chartkick
+//= require Chart.bundle
 
 function addNew() {
   var x = document.getElementById("form-add-new");
@@ -43,20 +45,25 @@ function addNewBookOrder() {
     x.style.display = "block";
   }
 }
-// $(document).ready(function() {
 
-//   $("#btn_submit").bind("ajax:complete", function(event, xhr, status) {
-//     $("#new_category").reset();
-//   });
+window.addEventListener("load", () => {
+  const element = document.querySelector(
+    "#new_book_order, #new_book, #edit_user_1, #new_category"
+  );
+  element.addEventListener("ajax:success", event => {
+    const [_data, _status, xhr] = event.detail;
+    element.insertAdjacentHTML("beforeend", xhr.responseText);
+  });
 
-// });
-// function submitForm() {
-//   // Get the first form with the name
-//   // Usually the form name is not repeated
-//   // but duplicate names are possible in HTML
-//   // Therefore to work around the issue, enforce the correct index
-//   var frm = document.getElementById("new_category")[0];
-//   frm.submit(); // Submit the form
-//   frm.reset(); // Reset all form data
-//   return false; // Prevent page refresh
-// }
+  // element.addEventListener("ajax:error", function(event, xhr, status, error) {
+  //   // insert the failure message inside the "#account_settings" element
+  //   $("#form-add").append(xhr.responseText);
+  // });
+
+  element.addEventListener("ajax:error", () => {
+    element.insertAdjacentHTML(
+      "beforeend",
+      alert("Error creating form, please fill it correctly and completely")
+    );
+  });
+});

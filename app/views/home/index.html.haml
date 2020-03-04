@@ -1,2 +1,8 @@
 #wapper-content 
-  %h3 Home Page
+  .chart-home
+    .chart-home-user
+      %h3 User register
+      = line_chart @users.group(:created_at).count
+    .chart-home-borrow-book
+      %h3 Borrow book
+      = line_chart @br.group(:id).group(:created_at).count

@@ -77,3 +77,5 @@ gem "carrierwave"
 gem "cocoon"
 gem 'rufo', '~> 0.4.2'
 gem 'devise'
+#chart
+gem "chartkick"

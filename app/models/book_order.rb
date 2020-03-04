@@ -6,6 +6,8 @@ class BookOrder < ApplicationRecord
   accepts_nested_attributes_for :book_cards, reject_if: :all_blank, allow_destroy: true
   validates :amount_book, numericality: { only_integer: true, greater_than_or_equal_to: 1, less_than_or_equal_to: 5 },presence: true
   validates :brorrow_date, presence: true
+  validates :user_id, presence: true
+
   max_paginates_per 5
 
   after_save :sum_deposits

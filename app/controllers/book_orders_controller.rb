@@ -13,12 +13,18 @@ class BookOrdersController < ApplicationController
     @book_order = BookOrder.new(book_order_params)
     respond_to do |format|
       if @book_order.save
+        
         @book_orders = BookOrder.order(created_at: :desc).page params[:page]
-
+        flash[:success] = "Create Product Success!"
         format.html { redirect_to @book_order, success: "Book order was successfully created." }
         format.json { render :show, status: :created, location: @book_order }
         format.js {render :create}
+
       else
+        flash[:success] = "Create Product Fail!"
+        
+        # binding.pry
+        
         format.html { render :new }
         format.json { render json: @book_order.errors, status: :unprocessable_entity }
       end

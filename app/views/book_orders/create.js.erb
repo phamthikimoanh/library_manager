@@ -1,2 +1,10 @@
-<%# $("#{escape_javascript(render @book_order)}").appendTo("#book_orders"); %>
-$('.data_grid_book_order').html("<%=escape_javascript(render 'book_order')%>")
+$('#data_grid_book_order').html("<%=escape_javascript(render 'book_order')%>")
+
+<!--<% if @book_order.errors.any? %>
+  $(".alert").remove()
+  $("#error_explanation").remove()
+  $("#new_book_order").prepend(
+    "<%= j render "../../shared/message_error" %>")
+  $("#new_book_order").prepend(
+    "<%= j render "../../shared/flash" %>")
+<% end %>-->
