@@ -22,30 +22,30 @@ class CategoriesController < ApplicationController
 
     respond_to do |format|
       if @category.update(category_params)
+        format.js {}
         format.html { redirect_to @category, success: "Category was successfully updated." }
         format.json { render :show, status: :ok, location: @category }
-        format.js   {render :create}
       else
+        format.js {}
         format.html { render :edit }
         format.json { render json: @category.errors, status: :unprocessable_entity }
       end
     end
   end
-
   def create
     @category = Category.new(category_params)
-    # @category.books.user = current_user
-
     respond_to do |format|
       if @category.save
         @categories_grid = CategoriesGrid.new(params[:categories_grid]) do |scope|
           scope.page(params[:page])
         end
+        format.js {}
         format.html { redirect_to @category, success: "Category was successfully created." }
         format.json { render :show, status: :created, location: @category }
-        format.js { render :create}
-      else
-        format.html { render :new }
+        
+      else   
+        format.js {}    
+        format.html { render :create }
         format.json { render json: @category.errors, status: :unprocessable_entity }
       end
     end

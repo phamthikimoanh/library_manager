@@ -1,0 +1,13 @@
+.all-book
+    - @books.each do |book|
+        .card
+            - if book.image?
+                = image_tag book.image.thumb.url 
+            - else
+                %b No Image
+            .card-body
+                %h4.card-title= book.name
+                %p.card-text= book.desc
+                = link_to 'Read more', book_path(book), class: "btn btn-xl btn-primary", style: "color: #fff"
+
+= paginate @books, theme: 'twitter-bootstrap-3'

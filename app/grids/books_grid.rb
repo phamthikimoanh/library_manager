@@ -11,7 +11,7 @@ class BooksGrid
   filter(:isbn, :string)
   filter(:name, :string)
   filter(:author, :string)
-  filter(:status, :boolean)
+  filter(:status, :xboolean)
 
   # Columns
   column(:id, mandatory: true)

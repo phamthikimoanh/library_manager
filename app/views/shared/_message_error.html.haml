@@ -1,9 +1,9 @@
-- if @book_order.errors.any?
+- if @category.errors.any?
     #error_explanation
         %h2
-            = pluralize(@book_order.errors.count, "error")
+            = pluralize(@category.errors.count, "error")
             prohibited
-            this book order from being saved:
+            this category from being saved:
         %ul
-            - @book_order.errors.full_messages.each do |msg|
+            - @category.errors.full_messages.each do |msg|
                 %li= msg

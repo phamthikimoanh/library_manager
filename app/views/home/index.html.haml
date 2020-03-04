@@ -1,8 +1,19 @@
 #wapper-content 
-  .chart-home
-    .chart-home-user
-      %h3 User register
-      = line_chart @users.group(:created_at).count
-    .chart-home-borrow-book
-      %h3 Borrow book
-      = line_chart @br.group(:id).group(:created_at).count
+  
+  - if current_user && current_user.admin
+    .chart-home
+      .chart-home-user
+        %h3 New user register for the week
+        -if @u != 0
+          = line_chart @u, width: "450px", height: "250px"
+        - else
+          %p This week no new subscribers
+      .chart-home-borrow-book
+        %h3 Members borrow books during the week
+        = line_chart @br.group(:id).group_by_day(:created_at).count , width: "450px", height: "250px"
+    -# .chart-home-borrow-book
+    -#   %h3 Total borrow book by day
+    -#   = column_chart @br.group_by_day_of_week(:created_at, format: "%a").count
+  - else
+    %h2 List book
+    = render 'book'

@@ -54,16 +54,11 @@ window.addEventListener("load", () => {
     const [_data, _status, xhr] = event.detail;
     element.insertAdjacentHTML("beforeend", xhr.responseText);
   });
-
-  // element.addEventListener("ajax:error", function(event, xhr, status, error) {
-  //   // insert the failure message inside the "#account_settings" element
-  //   $("#form-add").append(xhr.responseText);
-  // });
-
-  element.addEventListener("ajax:error", () => {
+  element.addEventListener("ajax:error", (xhr) => {
     element.insertAdjacentHTML(
       "beforeend",
-      alert("Error creating form, please fill it correctly and completely")
+      '<p class="error-ajax" style="color:red;float: right; margin: 10px auto;">Error creating form, please fill it correctly and completely</p>'
+      //alert("Error creating form, please fill it correctly and completely")
     );
   });
 });

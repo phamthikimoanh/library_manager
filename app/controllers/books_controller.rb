@@ -24,7 +24,8 @@ class BooksController < ApplicationController
         format.js{ render :create}
         format.json { render :show, status: :created, location: @book }
       else
-        format.html { render :new }
+        format.js {}    
+        format.html { render :create }
         format.json { render json: @book.errors, status: :unprocessable_entity }
       end
     end
@@ -41,9 +42,11 @@ class BooksController < ApplicationController
     # @book = Book.find(params[:id])
     respond_to do |format|
       if @book.update(book_params)
+        format.js {}    
         format.html { redirect_to @book, success: "Book was successfully updated." }
         format.json { render :show, status: :ok, location: @book }
       else
+        format.js {}    
         format.html { render :edit }
         format.json { render json: @book.errors, status: :unprocessable_entity }
       end

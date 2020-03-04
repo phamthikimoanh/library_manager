@@ -9,7 +9,7 @@ class BookCardsGrid
 
   # Filters
   filter(:book_order_id, :string, :multiple => ",")
-  # filter(:status, :boolean, default: false) 
+  filter(:status, :xboolean) 
   filter(:created_at, :datetime, :range => true, :default => proc { [1.month.ago.to_date, Time.now]})
 
   # Columns
