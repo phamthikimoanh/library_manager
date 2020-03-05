@@ -6,6 +6,6 @@ class HomeController < ApplicationController
     
     @users = User.all
     @u = @users.group_by_day(:created_at, range: 1.weeks.ago.midnight..Time.now).count
-    @br = BookOrder.all
+    @br = BookOrder.all    
   end
 end

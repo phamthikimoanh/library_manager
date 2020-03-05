@@ -46,19 +46,19 @@ function addNewBookOrder() {
   }
 }
 
-window.addEventListener("load", () => {
-  const element = document.querySelector(
-    "#new_book_order, #new_book, #edit_user_1, #new_category"
-  );
-  element.addEventListener("ajax:success", event => {
-    const [_data, _status, xhr] = event.detail;
-    element.insertAdjacentHTML("beforeend", xhr.responseText);
-  });
-  element.addEventListener("ajax:error", (xhr) => {
-    element.insertAdjacentHTML(
-      "beforeend",
-      '<p class="error-ajax" style="color:red;float: right; margin: 10px auto;">Error creating form, please fill it correctly and completely</p>'
-      //alert("Error creating form, please fill it correctly and completely")
-    );
-  });
-});
+// window.addEventListener("load", () => {
+//   const element = document.querySelector(
+//     "#new_book_order, #new_book, #edit_user_1, #new_category"
+//   );
+//   element.addEventListener("ajax:success", event => {
+//     const [_data, _status, xhr] = event.detail;
+//     element.insertAdjacentHTML("beforeend", xhr.responseText);
+//   });
+//   element.addEventListener("ajax:error", (xhr) => {
+//     element.insertAdjacentHTML(
+//       "beforeend",
+//       '<p class="error-ajax" style="color:red;float: right; margin: 10px auto;">Error creating form, please fill it correctly and completely</p>'
+//       //alert("Error creating form, please fill it correctly and completely")
+//     );
+//   });
+// });

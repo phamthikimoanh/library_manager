@@ -8,8 +8,8 @@ Rails.application.routes.draw do
     registration: 'register'
   }
   root 'home#index'
-  resources :categories, :book_orders, :books
-  resources :book_cards
+  resources :categories, :books, :book_cards
+  resources :book_orders 
   # resource :users, only: [:index, :show, :edit] 
   resource :user, only: [:edit] do
     collection do

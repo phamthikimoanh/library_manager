@@ -1,1 +1,5 @@
-$('.data_grid_book').html("<%=escape_javascript(render 'data_grid_book')%>")
+<% if @book.errors.any? %>
+    $('.errors_msg').html("Error : <%= j (render 'layouts/error') %>")
+<% else %>
+    $('.data_grid_book').html("<%=escape_javascript(render 'data_grid_book')%>")
+<% end %>

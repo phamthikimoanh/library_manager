@@ -1,11 +1,23 @@
-- @book_orders.each do |book_order|
-    - if book_order.user_id == current_user.id   
-        %tr
-            %td= book_order.id
-            %td= book_order.amount_book
-            %td= book_order.brorrow_date
-            %td= book_order.user_id
-            %td= book_order.user.name
-            %td= book_order.deposits
-            %td= link_to 'Show', book_order_path(book_order), class: "btn btn-xl btn-primary", style: "color: #fff"
+#wapper-content
+    %table.table.table-hover
+        %thead
+            %tr
+                %th Book order id
+                %th Amount book
+                %th Brorrow_date
+                %th User Id
+                %th User name
+                %th Deposits
+                %th #
+        %tbody#data_grid_book_order
+        - @book_orders.each do |book_order|
+            - if book_order.user_id == current_user.id   
+                %tr
+                    %td= book_order.id
+                    %td= book_order.amount_book
+                    %td= book_order.brorrow_date
+                    %td= book_order.user_id
+                    %td= book_order.user.name
+                    %td= book_order.deposits
+                    %td= link_to 'Show', book_order_path(book_order), class: "btn btn-xl btn-primary", style: "color: #fff"
 

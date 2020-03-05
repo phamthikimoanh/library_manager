@@ -1,1 +1,5 @@
-$('.data_grid_category').html("<%=escape_javascript(render 'data_grid_category')%>")
+<% if @category.errors.any? %>
+    $('.errors_msg').html("Error : <%= j (render 'layouts/error') %>")
+<% else %>
+    $('.data_grid_category').html("<%=escape_javascript(render 'data_grid_category')%>")
+<% end %>

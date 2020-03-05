@@ -26,6 +26,7 @@
                         %th{:scope => "col"} Id book
                         %th{:scope => "col"} Name book
                         %th{:scope => "col"} Image
+                        %th{:scope => "col"} Action
 
                 %tbody
                     - @book_order.book_cards.each do |book_card|  
@@ -36,5 +37,8 @@
                                 %td= image_tag book_card.book.image.thumb.url
                             - else
                                 %p Update image, please
-    -# = link_to "Return Book" 
+                            - if book_card.status != true && current_user.admin
+                                %td= link_to 'Return Book', edit_book_card_path(book_card), class: "btn btn-xl btn-edit"
+                            - else
+                                %td Have paid
     = link_to "Back", :back , class: "btn-back"

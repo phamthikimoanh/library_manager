@@ -326,6 +326,22 @@ h4 {
     text-decoration: none;
   }
 }
-.invalid-feedback{
+.invalid-feedback {
   color: red;
+}
+
+.errors_msg {
+  // border: 0.5px dashed red;
+  // background: #b222223b;
+  padding: 10px 20px;
+  margin: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  .errors {
+    .err_msg {
+      text-indent: 35px;
+      color: #e93a29;
+      font-weight: 300;
+    }
+  }
 }

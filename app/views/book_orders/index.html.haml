@@ -1,31 +1,18 @@
 #wapper-content
   %h2 List book order
-  - if @book_order.errors.any?
-    #error_explanation
-      %h2
-        = pluralize(@book_order.errors.count, "error")
-        Error:
-      %ul
-        - @book_order.errors.full_messages.each do |msg|
-          %li= msg
-  %table.table.table-hover
-    %thead
-      %tr
-        %th Book order id
-        %th Amount book
-        %th Brorrow_date
-        %th User Id
-        %th User name
-        %th Deposits
-        %th #
-    %tbody#data_grid_book_order
-      -# = render @book_orders
-      -if current_user && current_user.admin == true
-        = render 'book_order'
-      - else
-        = render 'book_order_user'
-  = paginate @book_orders, theme: 'twitter-bootstrap-3'
+  -if current_user && current_user.admin == true
+    %p.total 
+      Total book order: #{@book_orders_grid.assets.total_count}
+      %button.btn.btn-default{:type => "button", :onclick => "addFill()"} Fillter 
+    #form-fill
+      = datagrid_form_for @book_orders_grid, url: book_orders_path
+    = datagrid_table(@book_orders_grid)
+    = paginate @book_orders_grid.assets, theme: 'twitter-bootstrap-3'
+  - else
+    = render 'book_order_user'
   %hr
+  .errors_msg
+
   - if current_user && current_user.admin
     %button.btn.btn-default{:type => "button", :onclick => "addNewBookOrder()"} Add New 
     #form-add

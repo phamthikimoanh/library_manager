@@ -10,7 +10,9 @@
     = render 'data_grid_category'
   = paginate @categories_grid.assets , theme: 'twitter-bootstrap-3'
 
-  %br
+  %hr
+  .errors_msg
+
   -if current_user && current_user.admin
     %button.btn.btn-default{:type => "button", :onclick => "addNew()"} Add New Category
     #form-add-new

@@ -43,7 +43,8 @@ class CategoriesController < ApplicationController
         format.html { redirect_to @category, success: "Category was successfully created." }
         format.json { render :show, status: :created, location: @category }
         
-      else   
+      else  
+        @error_messages = @category.errors.full_messages
         format.js {}    
         format.html { render :create }
         format.json { render json: @category.errors, status: :unprocessable_entity }

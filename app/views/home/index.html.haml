@@ -10,7 +10,7 @@
           %p This week no new subscribers
       .chart-home-borrow-book
         %h3 Members borrow books during the week
-        = line_chart @br.group(:id).group_by_day(:created_at).count , width: "450px", height: "250px"
+        = line_chart @br.group(:user_id).group_by_day(:created_at).count , width: "450px", height: "250px"
     -# .chart-home-borrow-book
     -#   %h3 Total borrow book by day
     -#   = column_chart @br.group_by_day_of_week(:created_at, format: "%a").count
