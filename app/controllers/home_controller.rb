@@ -7,7 +7,7 @@ class HomeController < ApplicationController
     # Chart user
     @users = User.all
     @u = @users.group_by_day(:created_at, range: 1.weeks.ago.midnight..Time.now).count
-    get_ajax
+    # get_ajax
   end
 
   def get_ajax  
@@ -23,3 +23,4 @@ class HomeController < ApplicationController
     end
   end
 end
+

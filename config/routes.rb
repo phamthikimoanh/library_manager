@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   }
   root 'home#index'
   resources :categories, :books, :book_cards, :book_orders
-  get '', to: 'home#get_ajax'
+  get '/get_ajax', to: 'home#get_ajax'
   # resource :users, only: [:index, :show, :edit] 
   resource :user, only: [:edit] do
     collection do

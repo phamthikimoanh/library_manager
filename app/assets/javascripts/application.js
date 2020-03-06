@@ -75,7 +75,7 @@ function get_datetime() {
   console.log(endDay);
   data = { start: startDay, end: endDay };
   $.ajax({
-    url: "",
+    url: "/get_ajax",
     method: "GET",
     data: { data: JSON.stringify(data) },
     contentType: "text/javascript",
