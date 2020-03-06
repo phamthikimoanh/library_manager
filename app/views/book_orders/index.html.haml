@@ -2,7 +2,7 @@
   %h2 List book order
   -if current_user && current_user.admin == true
     %p.total 
-      Total book order: #{@book_orders_grid.assets.total_count}
+      -# Total book order: #{@book_orders_grid.assets.total}
       %button.btn.btn-default{:type => "button", :onclick => "addFill()"} Fillter 
     #form-fill
       = datagrid_form_for @book_orders_grid, url: book_orders_path

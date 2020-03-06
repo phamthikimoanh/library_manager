@@ -7,7 +7,7 @@ class BookOrder < ApplicationRecord
   validates :amount_book, numericality: { only_integer: true, greater_than_or_equal_to: 1, less_than_or_equal_to: 5 },presence: true
   validates :brorrow_date, presence: true
   validates :user_id, presence: true
-  # validates :book_cards, presence: true
+  validates :book_cards, presence: true
   max_paginates_per 5
 
   after_save :sum_deposits

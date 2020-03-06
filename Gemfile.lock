@@ -54,6 +54,8 @@ GEM
     autoprefixer-rails (9.7.4)
       execjs
     bcrypt (3.1.13)
+    bootstrap-datepicker-rails (1.9.0.1)
+      railties (>= 3.0)
     bootstrap-kaminari-views (0.0.5)
       kaminari (>= 0.13)
       rails (>= 3.1)
@@ -108,6 +110,8 @@ GEM
     faker (2.10.2)
       i18n (>= 1.6, < 2)
     ffi (1.12.2)
+    font-awesome-rails (4.7.0.5)
+      railties (>= 3.2, < 6.1)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     groupdate (4.1.2)
@@ -290,6 +294,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-datepicker-rails
   bootstrap-kaminari-views
   bootstrap-sass
   byebug
@@ -303,6 +308,7 @@ DEPENDENCIES
   devise
   factory_bot
   faker
+  font-awesome-rails
   groupdate
   haml-rails (~> 1.0.0)
   jbuilder (~> 2.5)

@@ -1,22 +1,35 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.all-book {
+@mixin display-flex {
   display: flex;
   flex-direction: row;
+}
+.all-book {
+  @include display-flex;
+
   flex-wrap: wrap;
-  .card{
+  .card {
     width: 28% !important;
     height: auto;
     margin: 10px 20px;
-    .card-body{
-      .card-text{
+    .card-body {
+      .card-text {
         color: #888;
       }
     }
   }
 }
-.chart-home{
-  display: flex;
-  flex-direction: row;
+.chart-home {
+  @include display-flex;
+}
+#date-selector {
+  @include display-flex; margin:20px auto;
+  .input-daterange {
+    margin-right: 10px;
+    height: 35px;
+    .input-sm {
+      height: 35px;
+    }
+  }
 }

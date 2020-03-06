@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class BookOrdersController < ApplicationController
-  # before_action :load_book_order, only: [:show]
+  before_action :load_book_order, only: %i[show]
   before_action :authenticate_user!, except: [:show, :index]
 
   def index
@@ -12,9 +12,6 @@ class BookOrdersController < ApplicationController
     @book_order = BookOrder.new
   end
 
-  def show
-    @book_order = BookOrder.find(params[:id])
-  end
   def create
     @book_order = BookOrder.new(book_order_params)
     respond_to do |format|
@@ -24,10 +21,7 @@ class BookOrdersController < ApplicationController
         format.js {render :create}
         format.html { redirect_to @book_order, success: "Book order was successfully created." }
         format.json { render :show, status: :created, location: @book_order }
-      else      
-        
-        # binding.pry
-          
+      else                
         @error_messages = @book_order.errors.full_messages
         format.js {}
         format.html { render :create }
@@ -41,7 +35,7 @@ class BookOrdersController < ApplicationController
   def load_book_order
     @book_order = BookOrder.find(params[:id])
   end
-
+  
   def book_order_params
     params.require(:book_order).permit(
       :amount_book, :brorrow_date, :user_id,

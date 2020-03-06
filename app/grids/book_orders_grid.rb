@@ -6,9 +6,8 @@ class BookOrdersGrid
   scope do
     BookOrder
   end
-
   # Filters
-  filter(:book_order_id, :string, :multiple => ",")
+  filter(:id, :string, :multiple => ",")
   filter(:status, :xboolean) 
   filter(:user_id, :integer, :range => true) 
   filter(:created_at, :datetime, :range => true, :default => proc { [1.month.ago.to_date, Time.now]})
@@ -19,10 +18,10 @@ class BookOrdersGrid
   column(:created_at, mandatory: true)
   column(:user_id, mandatory: true)
   column(:status, :mandatory => true) do
-    status? ? "Have paid" : "Not paid yet"
+    status? ? "√" : "X"
   end
   column(:actions, :html => true, :mandatory => true) do |record|
     #tự động vào trong view
-    render :partial => "book_orders/book_order_action", :book_order => record
+    render :partial => "book_orders/book_order_action", :object => record
   end
 end

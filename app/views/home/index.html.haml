@@ -1,19 +1,25 @@
 #wapper-content 
   
   - if current_user && current_user.admin
-    .chart-home
-      .chart-home-user
+    .chart-home-1
+      .chart-home-user-1
         %h3 New user register for the week
         -if @u != 0
-          = line_chart @u, width: "450px", height: "250px"
+          = area_chart @u, width: "100%", height: "250px", id: 'chart-12'
         - else
           %p This week no new subscribers
-      .chart-home-borrow-book
-        %h3 Members borrow books during the week
-        = line_chart @br.group(:user_id).group_by_day(:created_at).count , width: "450px", height: "250px"
-    -# .chart-home-borrow-book
-    -#   %h3 Total borrow book by day
-    -#   = column_chart @br.group_by_day_of_week(:created_at, format: "%a").count
+    .chart-home-borrow-book
+      %h3 Members borrow books during the week
+
+      #date-selector
+        #datepicker.input-daterange.input-group
+          %span.input-group-addon From
+          %input.input-sm.form-control#datepicker1{:name => "start", :type => "text"}/
+          %span.input-group-addon To
+          %input.input-sm.form-control#datepicker2{:name => "end", :type => "text"}/
+        %button.btn.btn-warning{:onclick => "get_datetime()"} Search 
+      #chart-borrow
+      -# = line_chart @br,colors: ["#b00", "#666"]
   - else
     %h2 List book
     = render 'book'
