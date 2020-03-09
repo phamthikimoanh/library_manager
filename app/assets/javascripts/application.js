@@ -89,4 +89,3 @@ function get_datetime() {
     }
   });
 }
-// ?get_ajax=abc

@@ -14,40 +14,31 @@ class BooksController < ApplicationController
   def create
     @book = Book.new(book_params)
     @book.user = current_user
-    # render plain: params[:book].inspect
     respond_to do |format|
-      if @book.save    
+      if @book.save
         @books_grid = BooksGrid.new(params[:books_grid]) do |scope|
           scope.page(params[:page])
         end
         format.html { redirect_to @book, success: "Book was successfully created." }
-        format.js{ render :create}
+        format.js{ render :create }
         format.json { render :show, status: :created, location: @book }
       else
         @error_messages = @book.errors.full_messages
-        format.js {}    
+        format.js {}
         format.html { render :create }
         format.json { render json: @book.errors, status: :unprocessable_entity }
       end
     end
   end
 
-  # def edit
-  #   @book = Book.find(params[:id])
-  # end
-  # def show
-  #   @book = Book.find(params[:id])
-  # end
-
   def update
-    # @book = Book.find(params[:id])
     respond_to do |format|
       if @book.update(book_params)
-        format.js {}    
+        format.js {}
         format.html { redirect_to @book, success: "Book was successfully updated." }
         format.json { render :show, status: :ok, location: @book }
       else
-        format.js {}    
+        format.js {}
         format.html { render :edit }
         format.json { render json: @book.errors, status: :unprocessable_entity }
       end
@@ -55,8 +46,6 @@ class BooksController < ApplicationController
   end
 
   def destroy
-    # @book = Book.find(params[:id])
-
     @book.destroy
     respond_to do |format|
       format.html { redirect_to books_url, danger: "Book was successfully destroyed." }
@@ -66,6 +55,7 @@ class BooksController < ApplicationController
   end
 
   private
+
   def load_book
     @book = Book.find(params[:id])
   end

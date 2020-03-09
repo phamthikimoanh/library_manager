@@ -75,7 +75,7 @@ gem 'bootstrap-kaminari-views'
 # upload and resize image
 gem "carrierwave"
 gem "cocoon"
-gem 'rufo', '~> 0.4.2'
+gem 'rubocop', require: false
 gem 'devise'
 #chart
 gem "chartkick"

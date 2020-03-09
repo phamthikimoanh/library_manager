@@ -22,9 +22,9 @@
       = @book.books_total 
     %p
       %strong Status:
-      - if @book.status == 1
+      - if @book.status == true
         %p{:style => "color:#f8a304;font-style: italic;"} Stocking
-      -else 
+      - else 
         %p{:style => "color:#6b0202;font-weight: 600;font-style: italic;"} Out of stock
     %p
       %strong User Add Book:

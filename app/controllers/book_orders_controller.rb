@@ -2,7 +2,7 @@
 
 class BookOrdersController < ApplicationController
   before_action :load_book_order, only: %i[show]
-  before_action :authenticate_user!, except: [:show, :index]
+  before_action :authenticate_user!, except: %i[show index]
 
   def index
     @book_orders_grid = BookOrdersGrid.new(params[:book_orders_grid]) do |scope|
@@ -16,12 +16,11 @@ class BookOrdersController < ApplicationController
     @book_order = BookOrder.new(book_order_params)
     respond_to do |format|
       if @book_order.save
-        
         @book_orders = BookOrder.order(created_at: :desc).page params[:page]
         format.js {render :create}
         format.html { redirect_to @book_order, success: "Book order was successfully created." }
         format.json { render :show, status: :created, location: @book_order }
-      else                
+      else
         @error_messages = @book_order.errors.full_messages
         format.js {}
         format.html { render :create }

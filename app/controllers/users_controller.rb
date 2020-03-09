@@ -15,10 +15,10 @@ class UsersController < ApplicationController
       render "edit"
     end
   end
+  
   private
 
   def user_params
-    # NOTE: Using `strong_parameters` gem
     params.require(:user).permit(:name, :phone, :address, :birthday, :image)
   end
 end
