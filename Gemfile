@@ -49,6 +49,7 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem "selenium-webdriver"
   gem 'database_cleaner'
+  gem 'brakeman'
 end
 
 group :test do
