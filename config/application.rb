@@ -29,5 +29,16 @@ module LibraryManager
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    # config.generators do |g|
+    #   g.test_framework :rspec,
+    #     :fixtures => true,
+    #     :view_specs => true,
+    #     :helper_specs => true,
+    #     :routing_specs => true,
+    #     :controller_specs => true,
+    #     :request_specs => true
+    #   g.fixture_replacement :factory_bot, :dir => "spec/factories"
+    # end
   end
 end

@@ -3,4 +3,4 @@ Style/Encoding:
   Enabled: true
 
 Layout/LineLength:
-  Max: 200
+  Max: 400

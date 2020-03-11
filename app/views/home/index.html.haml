@@ -19,7 +19,6 @@
           %input.input-sm.form-control#datepicker2{:name => "end", :type => "text"}/
         %button.btn.btn-warning{:onclick => "get_datetime()"} Search 
       #chart-borrow
-      -# = line_chart @br,colors: ["#b00", "#666"]
   - else
     %h2 List book
     = render 'book'

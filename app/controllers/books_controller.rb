@@ -8,7 +8,6 @@ class BooksController < ApplicationController
     @books_grid = BooksGrid.new(params[:books_grid]) do |scope|
       scope.page(params[:page])
     end
-
   end
 
   def create

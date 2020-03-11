@@ -17,13 +17,5 @@ RSpec.describe CategoriesController, type: :routing do
     it "routes to #create" do
       expect(:post => "/categories").to route_to("categories#create")
     end
-
-    it "routes to #update via PUT" do
-      expect(:put => "/categories/1").to route_to("categories#update", :id => "1")
-    end
-
-    it "routes to #update via PATCH" do
-      expect(:patch => "/categories/1").to route_to("categories#update", :id => "1")
-    end
   end
 end
