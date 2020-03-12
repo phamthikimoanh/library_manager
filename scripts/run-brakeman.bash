@@ -2,6 +2,7 @@
 
 set -e
 
+# cd directory of script
 cd "${0%/*}/.."
 
 echo "Running brakeman"
