@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-echo "prepare-commit-msg: Test prepare commit msg";
+echo "prepare-commit-msg: Test prepare commit msg 1";
+echo "prepare-commit-msg: Test prepare commit msg 2";
 
 branchPath = $(git symbolic-ref -q HEAD) #Somthing like refs/heads/myBranchName
 branchName = ${branchPath##*/} #Get text behind the last / of the branch path
